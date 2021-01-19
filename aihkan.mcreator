@@ -2,6 +2,15 @@
   "id_map": {},
   "mod_elements": [
     {
+      "name": "Aihkan",
+      "type": "tab",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aihkan"
+    },
+    {
       "name": "SihkumiteOre",
       "type": "block",
       "sortid": 1,
@@ -11,22 +20,28 @@
       "registry_name": "sihkumite_ore"
     },
     {
-      "name": "Aihkan",
-      "type": "tab",
+      "name": "AihKite",
+      "type": "block",
       "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "aihkan"
+      "registry_name": "aih_kite"
+    },
+    {
+      "name": "SihKumite",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sih_kumite"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {
-      "block.aihkan.sihkumite_ore": "Sihkumite Ore",
-      "itemGroup.tabaihkan": "Aihkan"
-    }
+    "en_us": {}
   },
   "workspaceSettings": {
     "modid": "aihkan",

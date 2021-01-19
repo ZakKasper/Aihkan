@@ -4,12 +4,12 @@ package net.mcreator.aihkan.block;
 import net.minecraft.block.material.Material;
 
 @AihkanModElements.ModElement.Tag
-public class SihkumiteOreBlock extends AihkanModElements.ModElement {
+public class SihKumiteBlock extends AihkanModElements.ModElement {
 
-	@ObjectHolder("aihkan:sihkumite_ore")
+	@ObjectHolder("aihkan:sih_kumite")
 	public static final Block block = null;
 
-	public SihkumiteOreBlock(AihkanModElements instance) {
+	public SihKumiteBlock(AihkanModElements instance) {
 		super(instance, 1);
 
 	}
@@ -17,7 +17,8 @@ public class SihkumiteOreBlock extends AihkanModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
-		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(AihkanItemGroup.tab)).setRegistryName(block.getRegistryName()));
+		elements.items
+				.add(() -> new BlockItem(block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(block.getRegistryName()));
 	}
 
 	public static class CustomBlock extends Block {
@@ -25,10 +26,10 @@ public class SihkumiteOreBlock extends AihkanModElements.ModElement {
 		public CustomBlock() {
 			super(
 
-					Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1f, 10f).lightValue(0).harvestLevel(3)
+					Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1.5f, 10f).lightValue(1).harvestLevel(3)
 							.harvestTool(ToolType.PICKAXE));
 
-			setRegistryName("sihkumite_ore");
+			setRegistryName("sih_kumite");
 		}
 
 		@Override
@@ -60,12 +61,18 @@ public class SihkumiteOreBlock extends AihkanModElements.ModElement {
 
 					return super.place(world, generator, rand, pos, config);
 				}
-			}.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.create("sihkumite_ore", "sihkumite_ore", blockAt -> {
+			}.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.create("sih_kumite", "sih_kumite", blockAt -> {
 				boolean blockCriteria = false;
 				if (blockAt.getBlock() == Blocks.STONE.getDefaultState().getBlock())
 					blockCriteria = true;
+				if (blockAt.getBlock() == Blocks.DIORITE.getDefaultState().getBlock())
+					blockCriteria = true;
+				if (blockAt.getBlock() == Blocks.GRANITE.getDefaultState().getBlock())
+					blockCriteria = true;
+				if (blockAt.getBlock() == Blocks.DIRT.getDefaultState().getBlock())
+					blockCriteria = true;
 				return blockCriteria;
-			}), block.getDefaultState(), 4)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(4, 12, 12, 32))));
+			}), block.getDefaultState(), 3)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(1, 5, 5, 35))));
 		}
 	}
 

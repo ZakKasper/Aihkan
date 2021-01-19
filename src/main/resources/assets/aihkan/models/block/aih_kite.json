@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "aihkan:blocks/aihkite",
+    "up": "aihkan:blocks/aihkite",
+    "north": "aihkan:blocks/aihkite",
+    "east": "aihkan:blocks/aihkite",
+    "south": "aihkan:blocks/aihkite",
+    "west": "aihkan:blocks/aihkite",
+    "particle": "aihkan:blocks/aihkite"
+  }
+}
