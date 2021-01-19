@@ -5,7 +5,7 @@
       "name": "AihKite",
       "type": "block",
       "sortid": 2,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "aih_kite"
@@ -23,7 +23,7 @@
       "name": "MagicGrassBlock",
       "type": "block",
       "sortid": 5,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_grass_block"
@@ -32,7 +32,7 @@
       "name": "MagicForest",
       "type": "biome",
       "sortid": 3,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_forest"
@@ -41,7 +41,7 @@
       "name": "MagicWood",
       "type": "block",
       "sortid": 3,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_wood"
@@ -65,6 +65,15 @@
       "registry_name": "sihkumite_ore"
     },
     {
+      "name": "MagicFlower",
+      "type": "plant",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_flower"
+    },
+    {
       "name": "MagicDirt",
       "type": "block",
       "sortid": 6,
@@ -74,13 +83,13 @@
       "registry_name": "magic_dirt"
     },
     {
-      "name": "MagicFlower",
-      "type": "plant",
-      "sortid": 7,
+      "name": "AihkanItems",
+      "type": "tab",
+      "sortid": 6,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "magic_flower"
+      "registry_name": "aihkan_items"
     }
   ],
   "variable_elements": [],
@@ -92,10 +101,8 @@
       "block.aihkan.aih_kite": "Aih Kite",
       "block.aihkan.magic_leaves": "Magic Leaves",
       "block.aihkan.sihkumite_ore": "Sihkumite Ore",
-      "block.aihkan.magic_dirt": "Magic Dirt",
       "block.aihkan.magic_grass_block": "Magic Grass Block",
-      "itemGroup.tabaihkan": "Aihkan",
-      "block.aihkan.magic_flower": "Magic Flower"
+      "item.aihkan.aihkan": "Aihkan Portal Igniter"
     }
   },
   "workspaceSettings": {
