@@ -5,7 +5,7 @@
       "name": "SihKumite",
       "type": "block",
       "sortid": 1,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "sih_kumite"
@@ -14,7 +14,7 @@
       "name": "AihKite",
       "type": "block",
       "sortid": 2,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "aih_kite"
@@ -23,7 +23,7 @@
       "name": "MagicLeaves",
       "type": "block",
       "sortid": 4,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_leaves"
@@ -32,7 +32,7 @@
       "name": "MagicGrassBlock",
       "type": "block",
       "sortid": 5,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_grass_block"
@@ -41,7 +41,7 @@
       "name": "MagicForest",
       "type": "biome",
       "sortid": 3,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_forest"
@@ -50,7 +50,7 @@
       "name": "MagicWood",
       "type": "block",
       "sortid": 3,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_wood"
