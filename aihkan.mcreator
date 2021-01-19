@@ -18,14 +18,54 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "aih_kite"
+    },
+    {
+      "name": "MagicWood",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_wood"
+    },
+    {
+      "name": "MagicLeaves",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_leaves"
+    },
+    {
+      "name": "MagicGrassBlock",
+      "type": "block",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_grass_block"
+    },
+    {
+      "name": "MagicForest",
+      "type": "biome",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_forest"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "block.aihkan.magic_wood": "Magic Wood",
+      "biome.aihkan.magic_forest": "Magic Forest",
       "block.aihkan.aih_kite": "Aih Kite",
-      "block.aihkan.sih_kumite": "SihKumite"
+      "block.aihkan.sih_kumite": "SihKumite",
+      "block.aihkan.magic_leaves": "Magic Leaves",
+      "block.aihkan.magic_grass_block": "Magic Grass Block"
     }
   },
   "workspaceSettings": {
