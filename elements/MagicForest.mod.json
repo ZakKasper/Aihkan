@@ -7,14 +7,14 @@
       "value": "CUSTOM:MagicGrassBlock"
     },
     "undergroundBlock": {
-      "value": "Blocks.STONE#0"
+      "value": "CUSTOM:MagicDirt"
     },
     "treeType": 1,
     "vanillaTreeType": "Default",
-    "minHeight": 9,
+    "minHeight": 7,
     "spawnVines": false,
     "treeVines": {
-      "value": "Blocks.AIR"
+      "value": "Blocks.VINE"
     },
     "treeStem": {
       "value": "CUSTOM:MagicWood"
@@ -23,7 +23,7 @@
       "value": "CUSTOM:MagicLeaves"
     },
     "treeFruits": {
-      "value": "Blocks.AIR"
+      "value": "Blocks.SAPLING#0"
     },
     "grassColor": {
       "value": -65345,
@@ -46,9 +46,9 @@
     "rainingPossibility": 0.5,
     "temperature": 0.5,
     "baseHeight": 0.1,
-    "heightVariation": 0.5,
+    "heightVariation": 0.2,
     "spawnBiome": true,
-    "biomeWeight": 15,
+    "biomeWeight": 8,
     "biomeType": "WARM",
     "biomeCategory": "FOREST",
     "parent": {
@@ -73,6 +73,16 @@
       "Ores",
       "BerryBushes"
     ],
-    "spawnEntries": []
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "EntityChicken"
+        },
+        "minGroup": 4,
+        "maxGroup": 4,
+        "weight": 6,
+        "spawnType": "creature"
+      }
+    ]
   }
 }
