@@ -11,14 +11,14 @@ import net.mcreator.aihkan.block.SihkumiteOreBlock;
 import net.mcreator.aihkan.AihkanModElements;
 
 @AihkanModElements.ModElement.Tag
-public class AihkanItemGroup extends AihkanModElements.ModElement {
-	public AihkanItemGroup(AihkanModElements instance) {
-		super(instance, 2);
+public class AihkanItemsItemGroup extends AihkanModElements.ModElement {
+	public AihkanItemsItemGroup(AihkanModElements instance) {
+		super(instance, 6);
 	}
 
 	@Override
 	public void initElements() {
-		tab = new ItemGroup("tabaihkan") {
+		tab = new ItemGroup("tabaihkan_items") {
 			@OnlyIn(Dist.CLIENT)
 			@Override
 			public ItemStack createIcon() {
