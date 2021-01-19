@@ -2,15 +2,6 @@
   "id_map": {},
   "mod_elements": [
     {
-      "name": "SihKumite",
-      "type": "block",
-      "sortid": 1,
-      "compiles": false,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "sih_kumite"
-    },
-    {
       "name": "AihKite",
       "type": "block",
       "sortid": 2,
