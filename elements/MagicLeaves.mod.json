@@ -31,7 +31,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "BUILDING_BLOCKS"
+      "value": "CUSTOM:Aihkan"
     },
     "destroyTool": "Not specified",
     "customDrop": {
@@ -45,7 +45,7 @@
     "canProvidePower": false,
     "lightOpacity": 255,
     "material": {
-      "value": "ROCK"
+      "value": "LEAVES"
     },
     "tickRate": 10,
     "tickRandomly": false,
@@ -63,7 +63,7 @@
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "GROUND"
+      "value": "PLANT"
     },
     "luminance": 0.0,
     "unbreakable": false,
