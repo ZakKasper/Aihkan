@@ -167,7 +167,7 @@ public class MagicForestBiome extends AihkanModElements.ModElement {
 										BlockPos blockpos = new BlockPos(k1, genh, i2);
 										state = world.getBlockState(blockpos);
 										if (state.getBlock().isAir(state, world, blockpos) || state.getMaterial().blocksMovement()
-												|| state.isIn(BlockTags.LEAVES) || state.getBlock() == Blocks.VINE.getDefaultState().getBlock()
+												|| state.isIn(BlockTags.LEAVES) || state.getBlock() == Blocks.AIR.getDefaultState().getBlock()
 												|| state.getBlock() == MagicLeavesBlock.block.getDefaultState().getBlock()) {
 											setTreeBlockState(changedBlocks, world, blockpos, MagicLeavesBlock.block.getDefaultState(), bbox);
 										}
@@ -180,7 +180,7 @@ public class MagicForestBiome extends AihkanModElements.ModElement {
 							state = world.getBlockState(genhPos);
 							setTreeBlockState(changedBlocks, world, genhPos, MagicWoodBlock.block.getDefaultState(), bbox);
 							if (state.getBlock().isAir(state, world, genhPos) || state.getMaterial().blocksMovement() || state.isIn(BlockTags.LEAVES)
-									|| state.getBlock() == Blocks.VINE.getDefaultState().getBlock()
+									|| state.getBlock() == Blocks.AIR.getDefaultState().getBlock()
 									|| state.getBlock() == MagicLeavesBlock.block.getDefaultState().getBlock()) {
 							}
 						}
@@ -190,7 +190,7 @@ public class MagicForestBiome extends AihkanModElements.ModElement {
 									if (rand.nextInt(4 - hlevel) == 0) {
 										Direction dir = Direction.getOpposite();
 										setTreeBlockState(changedBlocks, world, position.add(dir.getXOffset(), height - 5 + hlevel, dir.getZOffset()),
-												Blocks.OAK_SAPLING.getDefaultState(), bbox);
+												Blocks.AIR.getDefaultState(), bbox);
 									}
 								}
 							}
@@ -206,10 +206,10 @@ public class MagicForestBiome extends AihkanModElements.ModElement {
 		}
 
 		private void addVines(IWorld world, BlockPos pos, Set<BlockPos> changedBlocks, MutableBoundingBox bbox) {
-			setTreeBlockState(changedBlocks, world, pos, Blocks.VINE.getDefaultState(), bbox);
+			setTreeBlockState(changedBlocks, world, pos, Blocks.AIR.getDefaultState(), bbox);
 			int i = 5;
 			for (BlockPos blockpos = pos.down(); world.isAirBlock(blockpos) && i > 0; --i) {
-				setTreeBlockState(changedBlocks, world, blockpos, Blocks.VINE.getDefaultState(), bbox);
+				setTreeBlockState(changedBlocks, world, blockpos, Blocks.AIR.getDefaultState(), bbox);
 				blockpos = blockpos.down();
 			}
 		}

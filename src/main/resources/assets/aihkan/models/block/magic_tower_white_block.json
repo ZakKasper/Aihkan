@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "aihkan:blocks/magictowerwhite",
+    "up": "aihkan:blocks/magictowerwhite",
+    "north": "aihkan:blocks/magictowerwhite",
+    "east": "aihkan:blocks/magictowerwhite",
+    "south": "aihkan:blocks/magictowerwhite",
+    "west": "aihkan:blocks/magictowerwhite",
+    "particle": "aihkan:blocks/magictowerwhite"
+  }
+}
