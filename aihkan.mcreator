@@ -20,15 +20,6 @@
       "registry_name": "aih_kite"
     },
     {
-      "name": "MagicWood",
-      "type": "block",
-      "sortid": 3,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "magic_wood"
-    },
-    {
       "name": "MagicLeaves",
       "type": "block",
       "sortid": 4,
@@ -54,19 +45,39 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_forest"
+    },
+    {
+      "name": "MagicWood",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_wood"
+    },
+    {
+      "name": "Aihkan",
+      "type": "tab",
+      "sortid": 2,
+      "compiles": false,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aihkan"
+    },
+    {
+      "name": "SihkumiteOre",
+      "type": "block",
+      "sortid": 1,
+      "compiles": false,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sihkumite_ore"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {
-      "block.aihkan.magic_wood": "Magic Wood",
-      "biome.aihkan.magic_forest": "Magic Forest",
-      "block.aihkan.aih_kite": "Aih Kite",
-      "block.aihkan.sih_kumite": "SihKumite",
-      "block.aihkan.magic_leaves": "Magic Leaves",
-      "block.aihkan.magic_grass_block": "Magic Grass Block"
-    }
+    "en_us": {}
   },
   "workspaceSettings": {
     "modid": "aihkan",
