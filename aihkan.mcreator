@@ -5,7 +5,7 @@
       "name": "Aihkan",
       "type": "tab",
       "sortid": 2,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "aihkan"
@@ -14,7 +14,7 @@
       "name": "SihkumiteOre",
       "type": "block",
       "sortid": 1,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "sihkumite_ore"
@@ -23,7 +23,7 @@
       "name": "AihKite",
       "type": "block",
       "sortid": 2,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "aih_kite"
@@ -32,7 +32,7 @@
       "name": "SihKumite",
       "type": "block",
       "sortid": 1,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "sih_kumite"
