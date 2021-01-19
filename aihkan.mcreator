@@ -5,7 +5,7 @@
       "name": "AihKite",
       "type": "block",
       "sortid": 2,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "aih_kite"
@@ -23,7 +23,7 @@
       "name": "MagicGrassBlock",
       "type": "block",
       "sortid": 5,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_grass_block"
@@ -32,7 +32,7 @@
       "name": "MagicForest",
       "type": "biome",
       "sortid": 3,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_forest"
@@ -41,7 +41,7 @@
       "name": "MagicWood",
       "type": "block",
       "sortid": 3,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_wood"
@@ -77,7 +77,7 @@
       "name": "MagicDirt",
       "type": "block",
       "sortid": 6,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_dirt"
@@ -98,11 +98,14 @@
     "en_us": {
       "biome.aihkan.magic_forest": "Magic Forest",
       "block.aihkan.magic_wood": "Magic Wood",
+      "itemGroup.tabaihkan_items": "Aihkan Items",
       "block.aihkan.aih_kite": "Aih Kite",
       "block.aihkan.magic_leaves": "Magic Leaves",
       "block.aihkan.sihkumite_ore": "Sihkumite Ore",
+      "block.aihkan.magic_dirt": "Magic Dirt",
       "block.aihkan.magic_grass_block": "Magic Grass Block",
-      "item.aihkan.aihkan": "Aihkan Portal Igniter"
+      "item.aihkan.aihkan": "Aihkan Portal Igniter",
+      "block.aihkan.magic_flower": "Magic Flower"
     }
   },
   "workspaceSettings": {
