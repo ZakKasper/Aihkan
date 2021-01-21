@@ -180,6 +180,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "pure_t_crafting"
+    },
+    {
+      "name": "Purifier",
+      "type": "gui",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purifier"
     }
   ],
   "variable_elements": [],
