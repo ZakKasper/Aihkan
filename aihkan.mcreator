@@ -1,10 +1,22 @@
 {
   "id_map": {},
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "BlockTihttrium",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "block_tihttrium"
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "block.aihkan.block_tihttrium": "Block Tihttrium"
+    }
   },
   "workspaceSettings": {
     "modid": "aihkan",
