@@ -23,7 +23,7 @@
       "name": "AihkanItems",
       "type": "tab",
       "sortid": 6,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "aihkan_items"
@@ -59,7 +59,7 @@
       "name": "MagicForest",
       "type": "biome",
       "sortid": 3,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_forest"
@@ -128,15 +128,6 @@
       "registry_name": "block_zihcrium"
     },
     {
-      "name": "DropTihttrium",
-      "type": "item",
-      "sortid": 11,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "drop_tihttrium"
-    },
-    {
       "name": "DropZihcrium",
       "type": "item",
       "sortid": 12,
@@ -144,6 +135,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "drop_zihcrium"
+    },
+    {
+      "name": "DropTihttrium",
+      "type": "item",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "drop_tihttrium"
     }
   ],
   "variable_elements": [],
