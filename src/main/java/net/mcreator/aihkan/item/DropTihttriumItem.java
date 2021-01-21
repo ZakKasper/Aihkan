@@ -2,13 +2,13 @@
 package net.mcreator.aihkan.item;
 
 @AihkanModElements.ModElement.Tag
-public class PureTihttriumItem extends AihkanModElements.ModElement {
+public class DropTihttriumItem extends AihkanModElements.ModElement {
 
-	@ObjectHolder("aihkan:pure_tihttrium")
+	@ObjectHolder("aihkan:drop_tihttrium")
 	public static final Item block = null;
 
-	public PureTihttriumItem(AihkanModElements instance) {
-		super(instance, 14);
+	public DropTihttriumItem(AihkanModElements instance) {
+		super(instance, 11);
 
 	}
 
@@ -20,8 +20,8 @@ public class PureTihttriumItem extends AihkanModElements.ModElement {
 	public static class ItemCustom extends Item {
 
 		public ItemCustom() {
-			super(new Item.Properties().group(AihkanItemsItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON));
-			setRegistryName("pure_tihttrium");
+			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(64).rarity(Rarity.COMMON));
+			setRegistryName("drop_tihttrium");
 		}
 
 		@Override

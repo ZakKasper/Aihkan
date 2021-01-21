@@ -119,6 +119,15 @@
       "registry_name": "block_zihcrium"
     },
     {
+      "name": "SihkumiteSmelt",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sihkumite_smelt"
+    },
+    {
       "name": "AihkanTestPortal",
       "type": "dimension",
       "sortid": 11,
@@ -137,15 +146,6 @@
       "registry_name": "sihkumite_ingot"
     },
     {
-      "name": "SihkumiteSmelt",
-      "type": "recipe",
-      "sortid": 13,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "sihkumite_smelt"
-    },
-    {
       "name": "PureTihttrium",
       "type": "item",
       "sortid": 14,
@@ -153,6 +153,24 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "pure_tihttrium"
+    },
+    {
+      "name": "DropZihcrium",
+      "type": "item",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "drop_zihcrium"
+    },
+    {
+      "name": "DropTihttrium",
+      "type": "item",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "drop_tihttrium"
     }
   ],
   "variable_elements": [],
