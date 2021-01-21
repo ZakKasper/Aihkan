@@ -41,7 +41,7 @@
       "name": "MagicTowerWhiteBlock",
       "type": "block",
       "sortid": 8,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_tower_white_block"
@@ -68,7 +68,7 @@
       "name": "MagicTowerBlueBlock",
       "type": "block",
       "sortid": 9,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_tower_blue_block"
@@ -113,7 +113,7 @@
       "name": "MagicDirt",
       "type": "block",
       "sortid": 6,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_dirt"
@@ -123,8 +123,11 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "block.aihkan.magic_tower_blue_block": "Magic Tower Blue Block",
+      "block.aihkan.magic_dirt": "Magic Dirt",
       "item.aihkan.aihkan": "Aihkan Portal Igniter",
-      "block.aihkan.block_tihttrium": "Block Tihttrium"
+      "block.aihkan.block_tihttrium": "Block Tihttrium",
+      "block.aihkan.magic_tower_white_block": "Magic Tower White Block"
     }
   },
   "workspaceSettings": {
