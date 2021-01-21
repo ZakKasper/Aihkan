@@ -144,6 +144,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "sihkumite_smelt"
+    },
+    {
+      "name": "PureTihttrium",
+      "type": "item",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pure_tihttrium"
     }
   ],
   "variable_elements": [],
@@ -154,6 +163,7 @@
       "block.aihkan.magic_dirt": "Magic Dirt",
       "block.aihkan.magic_grass_block": "Magic Grass Block",
       "block.aihkan.magic_tower_white_block": "Magic Tower White Block",
+      "item.aihkan.pure_tihttrium": "Pure Tihttrium",
       "itemGroup.tabaihkan_items": "Aihkan Items",
       "block.aihkan.magic_tower_blue_block": "Magic Tower Blue Block",
       "biome.aihkan.magic_forest": "Magic Forest",

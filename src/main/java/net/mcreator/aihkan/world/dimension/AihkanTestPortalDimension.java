@@ -674,7 +674,7 @@ public class AihkanTestPortalDimension extends AihkanModElements.ModElement {
 		@Override
 		@OnlyIn(Dist.CLIENT)
 		public Vec3d getFogColor(float cangle, float ticks) {
-			return new Vec3d(0.752941176471, 0.847058823529, 1);
+			return new Vec3d(0.909803921569, 0.411764705882, 0.117647058824);
 		}
 
 		@Override
@@ -698,7 +698,7 @@ public class AihkanTestPortalDimension extends AihkanModElements.ModElement {
 		@OnlyIn(Dist.CLIENT)
 		@Override
 		public boolean doesXZShowFog(int x, int z) {
-			return false;
+			return true;
 		}
 
 		@Override

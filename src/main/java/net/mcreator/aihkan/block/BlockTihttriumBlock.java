@@ -13,6 +13,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.aihkan.itemgroup.AihkanItemsItemGroup;
+import net.mcreator.aihkan.item.PureTihttriumItem;
 import net.mcreator.aihkan.AihkanModElements;
 
 import java.util.List;
@@ -43,7 +44,7 @@ public class BlockTihttriumBlock extends AihkanModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(this, 1));
+			return Collections.singletonList(new ItemStack(PureTihttriumItem.block, (int) (1)));
 		}
 	}
 }
