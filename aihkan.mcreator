@@ -5,7 +5,7 @@
       "name": "BlockTihttrium",
       "type": "block",
       "sortid": 1,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "block_tihttrium"
@@ -23,7 +23,7 @@
       "name": "AihkanItems",
       "type": "tab",
       "sortid": 6,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "aihkan_items"
@@ -59,7 +59,7 @@
       "name": "MagicForest",
       "type": "biome",
       "sortid": 3,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_forest"
@@ -126,6 +126,24 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "block_zihcrium"
+    },
+    {
+      "name": "DropTihttrium",
+      "type": "item",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "drop_tihttrium"
+    },
+    {
+      "name": "DropZihcrium",
+      "type": "item",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "drop_zihcrium"
     }
   ],
   "variable_elements": [],
@@ -133,7 +151,9 @@
   "language_map": {
     "en_us": {
       "block.aihkan.magic_tower_blue_block": "Magic Tower Blue Block",
+      "item.aihkan.drop_tihttrium": "Drop Tihttrium",
       "block.aihkan.magic_dirt": "Magic Dirt",
+      "item.aihkan.drop_zihcrium": "Drop Zihcrium",
       "item.aihkan.aihkan": "Aihkan Portal Igniter",
       "block.aihkan.block_tihttrium": "Block Tihttrium",
       "block.aihkan.magic_tower_white_block": "Magic Tower White Block",
