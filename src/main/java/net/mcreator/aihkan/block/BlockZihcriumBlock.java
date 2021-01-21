@@ -4,13 +4,13 @@ package net.mcreator.aihkan.block;
 import net.minecraft.block.material.Material;
 
 @AihkanModElements.ModElement.Tag
-public class BlockTihttriumBlock extends AihkanModElements.ModElement {
+public class BlockZihcriumBlock extends AihkanModElements.ModElement {
 
-	@ObjectHolder("aihkan:block_tihttrium")
+	@ObjectHolder("aihkan:block_zihcrium")
 	public static final Block block = null;
 
-	public BlockTihttriumBlock(AihkanModElements instance) {
-		super(instance, 1);
+	public BlockZihcriumBlock(AihkanModElements instance) {
+		super(instance, 10);
 
 	}
 
@@ -26,9 +26,9 @@ public class BlockTihttriumBlock extends AihkanModElements.ModElement {
 		public CustomBlock() {
 			super(
 
-					Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(1f, 10f).lightValue(0));
+					Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1f, 10f).lightValue(0));
 
-			setRegistryName("block_tihttrium");
+			setRegistryName("block_zihcrium");
 		}
 
 		@Override
