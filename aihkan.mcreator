@@ -9,13 +9,121 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "block_tihttrium"
+    },
+    {
+      "name": "AihKite",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aih_kite"
+    },
+    {
+      "name": "AihkanItems",
+      "type": "tab",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aihkan_items"
+    },
+    {
+      "name": "MagicLeaves",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_leaves"
+    },
+    {
+      "name": "MagicTowerWhiteBlock",
+      "type": "block",
+      "sortid": 8,
+      "compiles": false,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_tower_white_block"
+    },
+    {
+      "name": "MagicGrassBlock",
+      "type": "block",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_grass_block"
+    },
+    {
+      "name": "MagicForest",
+      "type": "biome",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_forest"
+    },
+    {
+      "name": "MagicTowerBlueBlock",
+      "type": "block",
+      "sortid": 9,
+      "compiles": false,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_tower_blue_block"
+    },
+    {
+      "name": "MagicWood",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_wood"
+    },
+    {
+      "name": "Aihkan",
+      "type": "tab",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aihkan"
+    },
+    {
+      "name": "SihkumiteOre",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sihkumite_ore"
+    },
+    {
+      "name": "MagicFlower",
+      "type": "plant",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_flower"
+    },
+    {
+      "name": "MagicDirt",
+      "type": "block",
+      "sortid": 6,
+      "compiles": false,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_dirt"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.aihkan.block_tihttrium": "Block Tihttrium"
+      "item.aihkan.aihkan": "Aihkan Portal Igniter"
     }
   },
   "workspaceSettings": {

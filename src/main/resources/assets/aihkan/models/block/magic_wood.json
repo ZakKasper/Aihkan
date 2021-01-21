@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "aihkan:blocks/magicwoodtop",
+    "up": "aihkan:blocks/magicwoodtop",
+    "north": "aihkan:blocks/magicwood",
+    "east": "aihkan:blocks/magicwood",
+    "south": "aihkan:blocks/magicwood",
+    "west": "aihkan:blocks/magicwood",
+    "particle": "aihkan:blocks/magicwoodtop"
+  }
+}

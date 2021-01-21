@@ -1,0 +1,88 @@
+{
+  "_fv": 13,
+  "_type": "biome",
+  "definition": {
+    "name": "Magic Forest",
+    "groundBlock": {
+      "value": "CUSTOM:MagicGrassBlock"
+    },
+    "undergroundBlock": {
+      "value": "CUSTOM:MagicDirt"
+    },
+    "treeType": 1,
+    "vanillaTreeType": "Default",
+    "minHeight": 7,
+    "spawnVines": false,
+    "treeVines": {
+      "value": "Blocks.AIR"
+    },
+    "treeStem": {
+      "value": "CUSTOM:MagicWood"
+    },
+    "treeBranch": {
+      "value": "CUSTOM:MagicLeaves"
+    },
+    "treeFruits": {
+      "value": "Blocks.AIR"
+    },
+    "grassColor": {
+      "value": -65345,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -60976,
+      "falpha": 0.0
+    },
+    "treesPerChunk": 5,
+    "grassPerChunk": 4,
+    "seagrassPerChunk": 20,
+    "flowersPerChunk": 4,
+    "mushroomsPerChunk": 2,
+    "bigMushroomsChunk": 1,
+    "sandPathcesPerChunk": 0,
+    "gravelPatchesPerChunk": 0,
+    "reedsPerChunk": 0,
+    "cactiPerChunk": 0,
+    "rainingPossibility": 0.5,
+    "temperature": 0.5,
+    "baseHeight": 0.1,
+    "heightVariation": 0.2,
+    "spawnBiome": true,
+    "biomeWeight": 8,
+    "biomeType": "WARM",
+    "biomeCategory": "FOREST",
+    "parent": {
+      "value": "No parent"
+    },
+    "spawnStronghold": false,
+    "spawnMineshaft": false,
+    "spawnPillagerOutpost": false,
+    "villageType": "none",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": false,
+    "spawnDesertPyramid": false,
+    "spawnIgloo": false,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": false,
+    "oceanRuinType": "NONE",
+    "biomeDictionaryTypes": [],
+    "defaultFeatures": [
+      "Caves",
+      "MonsterRooms",
+      "Structures",
+      "Ores",
+      "BerryBushes"
+    ],
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "EntityChicken"
+        },
+        "minGroup": 4,
+        "maxGroup": 4,
+        "weight": 6,
+        "spawnType": "creature"
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "aihkan:blocks/magicdirt",
+    "up": "aihkan:blocks/magicdirt",
+    "north": "aihkan:blocks/magicdirt",
+    "east": "aihkan:blocks/magicdirt",
+    "south": "aihkan:blocks/magicdirt",
+    "west": "aihkan:blocks/magicdirt",
+    "particle": "aihkan:blocks/magicdirt"
+  }
+}
