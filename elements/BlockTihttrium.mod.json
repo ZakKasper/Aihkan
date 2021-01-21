@@ -31,7 +31,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "MATERIALS"
+      "value": "CUSTOM:AihkanItems"
     },
     "destroyTool": "Not specified",
     "customDrop": {
