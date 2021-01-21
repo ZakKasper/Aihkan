@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "aihkan:blocks/zihcrium_ore",
+    "up": "aihkan:blocks/zihcrium_ore",
+    "north": "aihkan:blocks/zihcrium_ore",
+    "east": "aihkan:blocks/zihcrium_ore",
+    "south": "aihkan:blocks/zihcrium_ore",
+    "west": "aihkan:blocks/zihcrium_ore",
+    "particle": "aihkan:blocks/zihcrium_ore"
+  }
+}

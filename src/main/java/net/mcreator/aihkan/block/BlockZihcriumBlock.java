@@ -4,13 +4,13 @@ package net.mcreator.aihkan.block;
 import net.minecraft.block.material.Material;
 
 @AihkanModElements.ModElement.Tag
-public class MagicDirtBlock extends AihkanModElements.ModElement {
+public class BlockZihcriumBlock extends AihkanModElements.ModElement {
 
-	@ObjectHolder("aihkan:magic_dirt")
+	@ObjectHolder("aihkan:block_zihcrium")
 	public static final Block block = null;
 
-	public MagicDirtBlock(AihkanModElements instance) {
-		super(instance, 6);
+	public BlockZihcriumBlock(AihkanModElements instance) {
+		super(instance, 10);
 
 	}
 
@@ -26,9 +26,9 @@ public class MagicDirtBlock extends AihkanModElements.ModElement {
 		public CustomBlock() {
 			super(
 
-					Block.Properties.create(Material.EARTH).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).lightValue(0));
+					Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1f, 10f).lightValue(0));
 
-			setRegistryName("magic_dirt");
+			setRegistryName("block_zihcrium");
 		}
 
 		@Override
@@ -37,7 +37,7 @@ public class MagicDirtBlock extends AihkanModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(this, 1));
+			return Collections.singletonList(new ItemStack(DropZihcriumItem.block, (int) (4)));
 		}
 
 	}
