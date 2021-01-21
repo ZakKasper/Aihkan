@@ -171,6 +171,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "drop_tihttrium"
+    },
+    {
+      "name": "PureTCrafting",
+      "type": "recipe",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pure_t_crafting"
     }
   ],
   "variable_elements": [],
@@ -178,6 +187,7 @@
   "language_map": {
     "en_us": {
       "block.aihkan.magic_wood": "Magic Wood",
+      "item.aihkan.drop_tihttrium": "Drop Tihttrium",
       "block.aihkan.magic_dirt": "Magic Dirt",
       "block.aihkan.magic_grass_block": "Magic Grass Block",
       "block.aihkan.magic_tower_white_block": "Magic Tower White Block",
@@ -188,6 +198,7 @@
       "block.aihkan.aih_kite": "Aih Kite",
       "block.aihkan.magic_leaves": "Magic Leaves",
       "block.aihkan.sihkumite_ore": "Sihkumite Ore",
+      "item.aihkan.drop_zihcrium": "Drop Zihcrium",
       "item.aihkan.aihkan": "Aihkan Portal Igniter",
       "block.aihkan.block_tihttrium": "Block Tihttrium",
       "item.aihkan.aihkan_test_portal": "Aihkan Test Portal Portal Igniter",
