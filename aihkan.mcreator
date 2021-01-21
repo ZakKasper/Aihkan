@@ -5,7 +5,7 @@
       "name": "BlockTihttrium",
       "type": "block",
       "sortid": 1,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "block_tihttrium"
@@ -14,7 +14,7 @@
       "name": "AihKite",
       "type": "block",
       "sortid": 2,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "aih_kite"
@@ -32,7 +32,7 @@
       "name": "MagicLeaves",
       "type": "block",
       "sortid": 4,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_leaves"
@@ -50,7 +50,7 @@
       "name": "MagicGrassBlock",
       "type": "block",
       "sortid": 5,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_grass_block"
@@ -77,7 +77,7 @@
       "name": "MagicWood",
       "type": "block",
       "sortid": 3,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_wood"
@@ -95,7 +95,7 @@
       "name": "SihkumiteOre",
       "type": "block",
       "sortid": 1,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "sihkumite_ore"
@@ -104,7 +104,7 @@
       "name": "MagicFlower",
       "type": "plant",
       "sortid": 7,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_flower"
@@ -117,6 +117,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_dirt"
+    },
+    {
+      "name": "BlockZihcrium",
+      "type": "block",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "block_zihcrium"
     }
   ],
   "variable_elements": [],
@@ -127,7 +136,8 @@
       "block.aihkan.magic_dirt": "Magic Dirt",
       "item.aihkan.aihkan": "Aihkan Portal Igniter",
       "block.aihkan.block_tihttrium": "Block Tihttrium",
-      "block.aihkan.magic_tower_white_block": "Magic Tower White Block"
+      "block.aihkan.magic_tower_white_block": "Magic Tower White Block",
+      "block.aihkan.block_zihcrium": "Block Zihcrium"
     }
   },
   "workspaceSettings": {
