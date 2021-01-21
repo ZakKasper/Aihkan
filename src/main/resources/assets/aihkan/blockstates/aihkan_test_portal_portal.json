@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "aihkan:block/aihkan_test_portal_portal_ew"
+    },
+    "axis=x": {
+      "model": "aihkan:block/aihkan_test_portal_portal_ns"
+    }
+  }
+}

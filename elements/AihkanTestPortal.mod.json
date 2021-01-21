@@ -12,7 +12,7 @@
     "portalSound": {
       "value": "block.portal.ambient"
     },
-    "igniterName": "Aihkan Portal Igniter",
+    "igniterName": "Aihkan Test Portal Portal Igniter",
     "igniterTab": {
       "value": "CUSTOM:AihkanItems"
     },
@@ -26,7 +26,7 @@
     ],
     "worldGenType": "Normal world gen",
     "mainFillerBlock": {
-      "value": "Blocks.DIRT#0"
+      "value": "Blocks.STONE#0"
     },
     "fluidBlock": {
       "value": "Blocks.FLOWING_WATER"
@@ -45,13 +45,13 @@
       ],
       "falpha": 1.0
     },
-    "canRespawnHere": true,
+    "canRespawnHere": false,
     "hasFog": false,
     "hasWeather": true,
     "isDark": false,
     "doesWaterVaporize": false,
     "sleepResult": "ALLOW",
-    "hasSkyLight": false,
+    "hasSkyLight": true,
     "imitateOverworldBehaviour": true
   }
 }

@@ -47,15 +47,6 @@
       "registry_name": "magic_wood"
     },
     {
-      "name": "Aihkan",
-      "type": "tab",
-      "sortid": 2,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "aihkan"
-    },
-    {
       "name": "SihkumiteOre",
       "type": "block",
       "sortid": 1,
@@ -126,6 +117,33 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "block_zihcrium"
+    },
+    {
+      "name": "AihkanTestPortal",
+      "type": "dimension",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aihkan_test_portal"
+    },
+    {
+      "name": "SihkumiteIngot",
+      "type": "item",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sihkumite_ingot"
+    },
+    {
+      "name": "SihkumiteSmelt",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sihkumite_smelt"
     }
   ],
   "variable_elements": [],
@@ -144,7 +162,10 @@
       "block.aihkan.sihkumite_ore": "Sihkumite Ore",
       "item.aihkan.aihkan": "Aihkan Portal Igniter",
       "block.aihkan.block_tihttrium": "Block Tihttrium",
-      "block.aihkan.magic_flower": "Magic Flower"
+      "item.aihkan.aihkan_test_portal": "Aihkan Test Portal Portal Igniter",
+      "item.aihkan.sihkumite_ingot": "Sihkumite Ingot",
+      "block.aihkan.magic_flower": "Magic Flower",
+      "block.aihkan.block_zihcrium": "Block Zihcrium"
     }
   },
   "workspaceSettings": {
