@@ -4,21 +4,20 @@ package net.mcreator.aihkan.block;
 import net.minecraft.block.material.Material;
 
 @AihkanModElements.ModElement.Tag
-public class MagicTowerBlueBlockBlock extends AihkanModElements.ModElement {
+public class BlockTihttriumBlock extends AihkanModElements.ModElement {
 
-	@ObjectHolder("aihkan:magic_tower_blue_block")
+	@ObjectHolder("aihkan:block_tihttrium")
 	public static final Block block = null;
 
-	public MagicTowerBlueBlockBlock(AihkanModElements instance) {
-		super(instance, 9);
+	public BlockTihttriumBlock(AihkanModElements instance) {
+		super(instance, 1);
 
 	}
 
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
-		elements.items
-				.add(() -> new BlockItem(block, new Item.Properties().group(AihkanItemsItemGroup.tab)).setRegistryName(block.getRegistryName()));
+		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(ItemGroup.MATERIALS)).setRegistryName(block.getRegistryName()));
 	}
 
 	public static class CustomBlock extends Block {
@@ -28,7 +27,7 @@ public class MagicTowerBlueBlockBlock extends AihkanModElements.ModElement {
 
 					Block.Properties.create(Material.ROCK).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).lightValue(0));
 
-			setRegistryName("magic_tower_blue_block");
+			setRegistryName("block_tihttrium");
 		}
 
 		@Override

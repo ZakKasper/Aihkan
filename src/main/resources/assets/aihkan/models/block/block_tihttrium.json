@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "aihkan:blocks/top_tihttrium",
+    "up": "aihkan:blocks/top_tihttrium",
+    "north": "aihkan:blocks/tihttrium",
+    "east": "aihkan:blocks/side_tihttrium",
+    "south": "aihkan:blocks/tihttrium",
+    "west": "aihkan:blocks/side_tihttrium",
+    "particle": "aihkan:blocks/top_tihttrium"
+  }
+}

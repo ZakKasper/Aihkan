@@ -108,24 +108,25 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_tower_blue_block"
+    },
+    {
+      "name": "BlockTihttrium",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "block_tihttrium"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.aihkan.magic_wood": "Magic Wood",
       "block.aihkan.magic_dirt": "Magic Dirt",
-      "block.aihkan.magic_grass_block": "Magic Grass Block",
       "block.aihkan.magic_tower_white_block": "Magic Tower White Block",
-      "biome.aihkan.magic_forest": "Magic Forest",
-      "itemGroup.tabaihkan_items": "Aihkan Items",
       "block.aihkan.magic_tower_blue_block": "Magic Tower Blue Block",
-      "block.aihkan.aih_kite": "Aih Kite",
-      "block.aihkan.magic_leaves": "Magic Leaves",
-      "block.aihkan.sihkumite_ore": "Sihkumite Ore",
-      "item.aihkan.aihkan": "Aihkan Portal Igniter",
-      "block.aihkan.magic_flower": "Magic Flower"
+      "item.aihkan.aihkan": "Aihkan Portal Igniter"
     }
   },
   "workspaceSettings": {
