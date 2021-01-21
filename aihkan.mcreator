@@ -41,7 +41,7 @@
       "name": "MagicTowerWhiteBlock",
       "type": "block",
       "sortid": 8,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_tower_white_block"
@@ -68,7 +68,7 @@
       "name": "MagicTowerBlueBlock",
       "type": "block",
       "sortid": 9,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_tower_blue_block"
