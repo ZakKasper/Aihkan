@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "item_tihttrium",
+    "texture": "sihkumite_ing",
     "customModelName": "Normal",
-    "name": "Drop Tihttrium",
+    "name": "Sihkumite Ingot",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:AihkanItems"

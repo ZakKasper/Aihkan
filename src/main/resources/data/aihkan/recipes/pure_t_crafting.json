@@ -1,0 +1,42 @@
+{
+  "group": "aihkan",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "aihkan:drop_tihttrium"
+    },
+    "1": {
+      "item": "aihkan:drop_tihttrium"
+    },
+    "2": {
+      "item": "aihkan:drop_tihttrium"
+    },
+    "3": {
+      "item": "aihkan:drop_tihttrium"
+    },
+    "4": {
+      "item": "aihkan:drop_tihttrium"
+    },
+    "5": {
+      "item": "aihkan:drop_tihttrium"
+    },
+    "6": {
+      "item": "aihkan:drop_tihttrium"
+    },
+    "7": {
+      "item": "aihkan:drop_tihttrium"
+    },
+    "8": {
+      "item": "aihkan:drop_tihttrium"
+    }
+  },
+  "result": {
+    "item": "aihkan:unknown_element",
+    "count": 1
+  }
+}

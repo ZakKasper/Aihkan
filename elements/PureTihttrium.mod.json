@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "item_tihttrium",
+    "texture": "puretihttrium",
     "customModelName": "Normal",
-    "name": "Drop Tihttrium",
+    "name": "Pure Tihttrium",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:AihkanItems"
