@@ -306,6 +306,33 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "recipe_ca_irone"
+    },
+    {
+      "name": "CyborgArmIron",
+      "type": "tool",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cyborg_arm_iron"
+    },
+    {
+      "name": "CyborgArmDiamond",
+      "type": "tool",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cyborg_arm_diamond"
+    },
+    {
+      "name": "CyborgArmStone",
+      "type": "tool",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cyborg_arm_stone"
     }
   ],
   "variable_elements": [],
