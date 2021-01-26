@@ -8,11 +8,11 @@
     "name": "Cyborg Arm Stone",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:AihkanItems"
     },
     "toolType": "Pickaxe",
     "harvestLevel": 1,
-    "efficiency": 4.0,
+    "efficiency": 8.0,
     "attackSpeed": 1.0,
     "enchantability": 2,
     "damageVsEntity": 4.0,
