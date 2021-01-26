@@ -2,12 +2,12 @@
   "_fv": 13,
   "_type": "block",
   "definition": {
-    "texture": "aihkite",
-    "textureTop": "aihkite",
-    "textureLeft": "aihkite",
-    "textureFront": "aihkite",
-    "textureRight": "aihkite",
-    "textureBack": "aihkite",
+    "texture": "mixeddirt",
+    "textureTop": "mixeddirt",
+    "textureLeft": "mixeddirt",
+    "textureFront": "mixeddirt",
+    "textureRight": "mixeddirt",
+    "textureBack": "mixeddirt",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -24,7 +24,7 @@
     "Mx": 1.0,
     "My": 1.0,
     "Mz": 1.0,
-    "name": "Aih Kite",
+    "name": "Mixed Dirt",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
@@ -35,9 +35,9 @@
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": "CUSTOM:AihkiteGem"
+      "value": ""
     },
-    "dropAmount": 4,
+    "dropAmount": 1,
     "useLootTableForDrops": false,
     "isBeaconBase": false,
     "enchantPowerBonus": 0.0,
@@ -45,7 +45,7 @@
     "canProvidePower": false,
     "lightOpacity": 255,
     "material": {
-      "value": "ROCK"
+      "value": "EARTH"
     },
     "tickRate": 10,
     "tickRandomly": false,
@@ -63,7 +63,7 @@
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "STONE"
+      "value": "GROUND"
     },
     "luminance": 0.0,
     "unbreakable": false,
@@ -92,16 +92,22 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [],
-    "restrictionBiomes": [],
-    "blocksToReplace": [
+    "spawnWorldTypes": [
+      "CUSTOM:AihkanTestPortal"
+    ],
+    "restrictionBiomes": [
       {
-        "value": "Blocks.STONE"
+        "value": "CUSTOM:Wasteland"
       }
     ],
-    "frequencyPerChunks": 10,
-    "frequencyOnChunk": 16,
-    "minGenerateHeight": 0,
-    "maxGenerateHeight": 64
+    "blocksToReplace": [
+      {
+        "value": "CUSTOM:WastelandDirt"
+      }
+    ],
+    "frequencyPerChunks": 5,
+    "frequencyOnChunk": 6,
+    "minGenerateHeight": 90,
+    "maxGenerateHeight": 125
   }
 }

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "aihkan:blocks/mixeddirt",
+    "up": "aihkan:blocks/mixeddirt",
+    "north": "aihkan:blocks/mixeddirt",
+    "east": "aihkan:blocks/mixeddirt",
+    "south": "aihkan:blocks/mixeddirt",
+    "west": "aihkan:blocks/mixeddirt",
+    "particle": "aihkan:blocks/mixeddirt"
+  }
+}
