@@ -189,6 +189,60 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "pure_tihttrium"
+    },
+    {
+      "name": "CyborgArmStone",
+      "type": "tool",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cyborg_arm_stone"
+    },
+    {
+      "name": "CyborgArmIron",
+      "type": "tool",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cyborg_arm_iron"
+    },
+    {
+      "name": "CyborgArmDiamond",
+      "type": "tool",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cyborg_arm_diamond"
+    },
+    {
+      "name": "RecipeCAStone",
+      "type": "recipe",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recipe_ca_stone"
+    },
+    {
+      "name": "RecipeCAIrone",
+      "type": "recipe",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recipe_ca_irone"
+    },
+    {
+      "name": "RecipeCADiamond",
+      "type": "recipe",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recipe_ca_diamond"
     }
   ],
   "variable_elements": [],
@@ -196,10 +250,13 @@
   "language_map": {
     "en_us": {
       "block.aihkan.magic_wood": "Magic Wood",
+      "item.aihkan.cyborg_arm_stone": "Cyborg Arm Stone",
       "item.aihkan.drop_tihttrium": "Drop Tihttrium",
       "block.aihkan.magic_dirt": "Magic Dirt",
       "block.aihkan.magic_grass_block": "Magic Grass Block",
+      "item.aihkan.cyborg_arm_iron": "Cyborg Arm Iron",
       "block.aihkan.magic_tower_white_block": "Magic Tower White Block",
+      "item.aihkan.pure_tihttrium": "Pure Tihttrium",
       "block.aihkan.magic_tower_blue_block": "Magic Tower Blue Block",
       "itemGroup.tabaihkan_items": "Aihkan Items",
       "biome.aihkan.magic_forest": "Magic Forest",
@@ -207,8 +264,11 @@
       "block.aihkan.magic_leaves": "Magic Leaves",
       "block.aihkan.sihkumite_ore": "Sihkumite Ore",
       "item.aihkan.drop_zihcrium": "Drop Zihcrium",
+      "item.aihkan.cyborg_arm_diamond": "Cyborg Arm Diamond",
       "item.aihkan.aihkan": "Aihkan Portal Igniter",
       "block.aihkan.block_tihttrium": "Block Tihttrium",
+      "item.aihkan.aihkan_test_portal": "Aihkan Test Portal Portal Igniter",
+      "item.aihkan.sihkumite_ingot": "Sihkumite Ingot",
       "block.aihkan.block_zihcrium": "Block Zihcrium",
       "block.aihkan.magic_flower": "Magic Flower"
     }

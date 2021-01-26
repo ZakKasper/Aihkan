@@ -1,24 +1,29 @@
 
 package net.mcreator.aihkan.item;
 
+import net.minecraftforge.registries.ObjectHolder;
+
+import net.minecraft.item.Rarity;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Item;
+import net.minecraft.block.BlockState;
+
+import net.mcreator.aihkan.itemgroup.AihkanItemsItemGroup;
+import net.mcreator.aihkan.AihkanModElements;
+
 @AihkanModElements.ModElement.Tag
 public class PureTihttriumItem extends AihkanModElements.ModElement {
-
 	@ObjectHolder("aihkan:pure_tihttrium")
 	public static final Item block = null;
-
 	public PureTihttriumItem(AihkanModElements instance) {
 		super(instance, 14);
-
 	}
 
 	@Override
 	public void initElements() {
 		elements.items.add(() -> new ItemCustom());
 	}
-
 	public static class ItemCustom extends Item {
-
 		public ItemCustom() {
 			super(new Item.Properties().group(AihkanItemsItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON));
 			setRegistryName("pure_tihttrium");
@@ -38,7 +43,5 @@ public class PureTihttriumItem extends AihkanModElements.ModElement {
 		public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
 			return 1F;
 		}
-
 	}
-
 }
