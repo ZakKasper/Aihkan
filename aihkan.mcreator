@@ -266,7 +266,7 @@
       "name": "Wasteland",
       "type": "biome",
       "sortid": 20,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "wasteland"
@@ -311,7 +311,7 @@
       "name": "CyborgArmDiamond",
       "type": "tool",
       "sortid": 19,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "cyborg_arm_diamond"
@@ -351,8 +351,10 @@
       "block.aihkan.sihkumite_ore": "Sihkumite Ore",
       "block.aihkan.dead_grass": "Wasteland Grass",
       "item.aihkan.drop_zihcrium": "Drop Zihcrium",
+      "item.aihkan.cyborg_arm_diamond": "Cyborg Arm Diamond",
       "item.aihkan.aihkan_test_portal": "Aihkan Test Portal Portal Igniter",
       "item.aihkan.aihkan": "Aihkan Portal Igniter",
+      "biome.aihkan.wasteland": "Wasteland",
       "item.aihkan.aih_kite_gem_2": "Aih Kite Gem 2",
       "block.aihkan.mixed_dirt": "Mixed Dirt",
       "block.aihkan.wasteland_dirt": "Wasteland Dirt",
