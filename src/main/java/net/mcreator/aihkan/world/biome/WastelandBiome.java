@@ -1,33 +1,14 @@
 
 package net.mcreator.aihkan.world.biome;
 
-import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.common.BiomeManager;
-import net.minecraftforge.common.BiomeDictionary;
-
-import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
-import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
-import net.minecraft.world.gen.placement.Placement;
-import net.minecraft.world.gen.placement.IPlacementConfig;
-import net.minecraft.world.gen.placement.AtSurfaceWithExtraConfig;
-import net.minecraft.world.gen.feature.SeaGrassConfig;
-import net.minecraft.world.gen.feature.MultipleRandomFeatureConfig;
-import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.GenerationStage;
-import net.minecraft.world.biome.DefaultBiomeFeatures;
-import net.minecraft.world.biome.Biome;
-
-import net.mcreator.aihkan.block.WastelandDirtBlock;
-import net.mcreator.aihkan.block.DeadGrassBlock;
-import net.mcreator.aihkan.AihkanModElements;
-
-import com.google.common.collect.ImmutableList;
+import net.minecraft.block.material.Material;
 
 @AihkanModElements.ModElement.Tag
 public class WastelandBiome extends AihkanModElements.ModElement {
+
 	@ObjectHolder("aihkan:wasteland")
 	public static final CustomBiome biome = null;
+
 	public WastelandBiome(AihkanModElements instance) {
 		super(instance, 20);
 	}
@@ -43,18 +24,24 @@ public class WastelandBiome extends AihkanModElements.ModElement {
 		BiomeManager.addSpawnBiome(biome);
 		BiomeManager.addBiome(BiomeManager.BiomeType.WARM, new BiomeManager.BiomeEntry(biome, 5));
 	}
+
 	static class CustomBiome extends Biome {
+
 		public CustomBiome() {
 			super(new Biome.Builder().downfall(0f).depth(0.1f).scale(0.1f).temperature(1.6f).precipitation(Biome.RainType.NONE)
 					.category(Biome.Category.SAVANNA).waterColor(4159204).waterFogColor(329011).parent("aihkan:magic_forest")
 					.surfaceBuilder(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(DeadGrassBlock.block.getDefaultState(),
 							WastelandDirtBlock.block.getDefaultState(), WastelandDirtBlock.block.getDefaultState())));
+
 			setRegistryName("wasteland");
+
 			DefaultBiomeFeatures.addCarvers(this);
 			DefaultBiomeFeatures.addMonsterRooms(this);
 			DefaultBiomeFeatures.addStructures(this);
+
 			this.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.SEAGRASS.withConfiguration(new SeaGrassConfig(20, 0.3D))
 					.withPlacement(Placement.TOP_SOLID_HEIGHTMAP.configure(IPlacementConfig.NO_PLACEMENT_CONFIG)));
+
 			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
 					Feature.RANDOM_SELECTOR
 							.withConfiguration(new MultipleRandomFeatureConfig(
@@ -62,6 +49,9 @@ public class WastelandBiome extends AihkanModElements.ModElement {
 											Feature.FANCY_TREE.withConfiguration(DefaultBiomeFeatures.field_230131_m_).withChance(0.1F)),
 									Feature.NORMAL_TREE.withConfiguration(DefaultBiomeFeatures.field_230132_o_)))
 							.withPlacement(Placement.COUNT_EXTRA_HEIGHTMAP.configure(new AtSurfaceWithExtraConfig(2, 0.1F, 1))));
+
 		}
+
 	}
+
 }
