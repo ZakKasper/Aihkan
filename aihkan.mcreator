@@ -182,6 +182,15 @@
       "registry_name": "pure_t_crafting"
     },
     {
+      "name": "MagicMushroomPlant",
+      "type": "plant",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_mushroom_plant"
+    },
+    {
       "name": "MagicMushroom",
       "type": "food",
       "sortid": 13,
@@ -191,13 +200,13 @@
       "registry_name": "magic_mushroom"
     },
     {
-      "name": "MagicMushroomPlant",
-      "type": "plant",
+      "name": "Purifier",
+      "type": "gui",
       "sortid": 16,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "magic_mushroom_plant"
+      "registry_name": "purifier"
     }
   ],
   "variable_elements": [],
