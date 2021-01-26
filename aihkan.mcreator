@@ -50,7 +50,7 @@
       "name": "MagicGrassBlock",
       "type": "block",
       "sortid": 5,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_grass_block"
@@ -95,7 +95,7 @@
       "name": "MagicFlower",
       "type": "plant",
       "sortid": 7,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_flower"
@@ -104,7 +104,7 @@
       "name": "MagicDirt",
       "type": "block",
       "sortid": 6,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_dirt"
@@ -248,7 +248,7 @@
       "name": "MagicMushroomPlant",
       "type": "plant",
       "sortid": 16,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_mushroom_plant"
@@ -257,7 +257,7 @@
       "name": "MagicMushroom",
       "type": "food",
       "sortid": 13,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_mushroom"

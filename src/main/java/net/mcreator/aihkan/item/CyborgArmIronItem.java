@@ -1,12 +1,20 @@
 
 package net.mcreator.aihkan.item;
 
+import net.minecraftforge.registries.ObjectHolder;
+
+import net.minecraft.item.crafting.Ingredient;
+import net.minecraft.item.PickaxeItem;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.Item;
+import net.minecraft.item.IItemTier;
+
+import net.mcreator.aihkan.AihkanModElements;
+
 @AihkanModElements.ModElement.Tag
 public class CyborgArmIronItem extends AihkanModElements.ModElement {
-
 	@ObjectHolder("aihkan:cyborg_arm_iron")
 	public static final Item block = null;
-
 	public CyborgArmIronItem(AihkanModElements instance) {
 		super(instance, 18);
 	}
@@ -15,11 +23,11 @@ public class CyborgArmIronItem extends AihkanModElements.ModElement {
 	public void initElements() {
 		elements.items.add(() -> new PickaxeItem(new IItemTier() {
 			public int getMaxUses() {
-				return 100;
+				return 750;
 			}
 
 			public float getEfficiency() {
-				return 4f;
+				return 6f;
 			}
 
 			public float getAttackDamage() {
@@ -38,8 +46,6 @@ public class CyborgArmIronItem extends AihkanModElements.ModElement {
 				return Ingredient.EMPTY;
 			}
 		}, 1, -3f, new Item.Properties().group(ItemGroup.TOOLS)) {
-
 		}.setRegistryName("cyborg_arm_iron"));
 	}
-
 }
