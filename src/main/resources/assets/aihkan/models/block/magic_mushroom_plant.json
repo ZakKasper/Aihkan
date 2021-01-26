@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "aihkan:blocks/magicmushroomsblock",
+    "particle": "aihkan:blocks/magicmushroomsblock"
+  }
+}

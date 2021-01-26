@@ -2,8 +2,12 @@
 package net.mcreator.aihkan.block;
 
 import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.common.IPlantable;
 
 import net.minecraft.world.storage.loot.LootContext;
+import net.minecraft.world.IBlockReader;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.Direction;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
@@ -36,6 +40,11 @@ public class MagicGrassBlockBlock extends AihkanModElements.ModElement {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.ORGANIC).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).lightValue(0));
 			setRegistryName("magic_grass_block");
+		}
+
+		@Override
+		public boolean canSustainPlant(BlockState state, IBlockReader world, BlockPos pos, Direction direction, IPlantable plantable) {
+			return true;
 		}
 
 		@Override

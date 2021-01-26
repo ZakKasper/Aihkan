@@ -46,11 +46,11 @@ import java.util.List;
 import java.util.Collections;
 
 @AihkanModElements.ModElement.Tag
-public class MagicFlowerBlock extends AihkanModElements.ModElement {
-	@ObjectHolder("aihkan:magic_flower")
+public class MagicMushroomPlantBlock extends AihkanModElements.ModElement {
+	@ObjectHolder("aihkan:magic_mushroom_plant")
 	public static final Block block = null;
-	public MagicFlowerBlock(AihkanModElements instance) {
-		super(instance, 7);
+	public MagicMushroomPlantBlock(AihkanModElements instance) {
+		super(instance, 16);
 	}
 
 	@Override
@@ -97,7 +97,7 @@ public class MagicFlowerBlock extends AihkanModElements.ModElement {
 		public BlockCustomFlower() {
 			super(Effects.SATURATION, 0, Block.Properties.create(Material.PLANTS).doesNotBlockMovement().sound(SoundType.PLANT)
 					.hardnessAndResistance(0f, 0f).lightValue(0));
-			setRegistryName("magic_flower");
+			setRegistryName("magic_mushroom_plant");
 		}
 
 		@Override
