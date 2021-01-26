@@ -23,12 +23,10 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Rotation;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.Mirror;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.aihkan.world.dimension.AihkanTestPortalDimension;
 import net.mcreator.aihkan.block.MagicGrassBlockBlock;
-import net.mcreator.aihkan.block.MagicDirtBlock;
 import net.mcreator.aihkan.AihkanModElements;
 
 import java.util.Random;
@@ -52,7 +50,7 @@ public class Magictree1Structure extends AihkanModElements.ModElement {
 					dimensionCriteria = true;
 				if (!dimensionCriteria)
 					return false;
-				if ((random.nextInt(1000000) + 1) <= 10000) {
+				if ((random.nextInt(1000000) + 1) <= 990000) {
 					int count = random.nextInt(1) + 3;
 					for (int a = 0; a < count; a++) {
 						int i = ci + random.nextInt(16);
@@ -62,14 +60,6 @@ public class Magictree1Structure extends AihkanModElements.ModElement {
 						BlockState blockAt = world.getBlockState(new BlockPos(i, j, k));
 						boolean blockCriteria = false;
 						if (blockAt.getBlock() == MagicGrassBlockBlock.block.getDefaultState().getBlock())
-							blockCriteria = true;
-						if (blockAt.getBlock() == MagicDirtBlock.block.getDefaultState().getBlock())
-							blockCriteria = true;
-						if (blockAt.getBlock() == Blocks.GRASS_BLOCK.getDefaultState().getBlock())
-							blockCriteria = true;
-						if (blockAt.getBlock() == Blocks.DIRT.getDefaultState().getBlock())
-							blockCriteria = true;
-						if (blockAt.getBlock() == Blocks.STONE.getDefaultState().getBlock())
 							blockCriteria = true;
 						if (!blockCriteria)
 							continue;
