@@ -1,0 +1,42 @@
+{
+  "_fv": 13,
+  "_type": "structure",
+  "definition": {
+    "structure": "magictree1",
+    "randomlyRotateStructure": true,
+    "surfaceDetectionType": "First motion blocking block",
+    "spawnProbability": 10000,
+    "minCountPerChunk": 3,
+    "maxCountPerChunk": 3,
+    "spawnLocation": "Ground",
+    "spawnHeightOffset": 0,
+    "spawnXOffset": 0,
+    "spawnZOffset": 0,
+    "spawnWorldTypes": [
+      "CUSTOM:AihkanTestPortal"
+    ],
+    "restrictionBlocks": [
+      {
+        "value": "CUSTOM:MagicGrassBlock"
+      },
+      {
+        "value": "CUSTOM:MagicDirt"
+      },
+      {
+        "value": "Blocks.GRASS"
+      },
+      {
+        "value": "Blocks.DIRT#0"
+      },
+      {
+        "value": "Blocks.STONE#0"
+      }
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:MagicForest"
+      }
+    ],
+    "ignoreBlocks": "STRUCTURE_BLOCK"
+  }
+}
