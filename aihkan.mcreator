@@ -191,13 +191,22 @@
       "registry_name": "pure_tihttrium"
     },
     {
-      "name": "CyborgArmStone",
-      "type": "tool",
-      "sortid": 17,
+      "name": "RecipeCAStone",
+      "type": "recipe",
+      "sortid": 20,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "cyborg_arm_stone"
+      "registry_name": "recipe_ca_stone"
+    },
+    {
+      "name": "RecipeCADiamond",
+      "type": "recipe",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recipe_ca_diamond"
     },
     {
       "name": "CyborgArmIron",
@@ -218,13 +227,13 @@
       "registry_name": "cyborg_arm_diamond"
     },
     {
-      "name": "RecipeCAStone",
-      "type": "recipe",
-      "sortid": 20,
+      "name": "CyborgArmStone",
+      "type": "tool",
+      "sortid": 17,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "recipe_ca_stone"
+      "registry_name": "cyborg_arm_stone"
     },
     {
       "name": "RecipeCAIrone",
@@ -236,13 +245,22 @@
       "registry_name": "recipe_ca_irone"
     },
     {
-      "name": "RecipeCADiamond",
-      "type": "recipe",
-      "sortid": 22,
+      "name": "MagicMushroomPlant",
+      "type": "plant",
+      "sortid": 16,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "recipe_ca_diamond"
+      "registry_name": "magic_mushroom_plant"
+    },
+    {
+      "name": "MagicMushroom",
+      "type": "food",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_mushroom"
     }
   ],
   "variable_elements": [],
