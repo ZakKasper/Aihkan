@@ -35,7 +35,7 @@ public class CyborgArmDiamondItem extends AihkanModElements.ModElement {
 			}
 
 			public int getHarvestLevel() {
-				return 1;
+				return 3;
 			}
 
 			public int getEnchantability() {

@@ -11,6 +11,7 @@ import net.minecraftforge.fml.network.NetworkEvent;
 import net.minecraftforge.fml.network.IContainerFactory;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.DeferredWorkQueue;
+import net.minecraftforge.fluids.capability.CapabilityFluidHandler;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.api.distmarker.OnlyIn;
@@ -39,6 +40,7 @@ import net.mcreator.aihkan.AihkanModElements;
 import net.mcreator.aihkan.AihkanMod;
 
 import java.util.function.Supplier;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.Map;
 import java.util.HashMap;
 
@@ -356,6 +358,16 @@ public class PurifierGui extends AihkanModElements.ModElement {
 		@Override
 		protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY) {
 			this.font.drawString("Purifier", 6, 7, -12829636);
+			this.font.drawString("" + (new Object() {
+				public int getFluidTankLevel(BlockPos pos, int tank) {
+					AtomicInteger _retval = new AtomicInteger(0);
+					TileEntity _ent = world.getTileEntity(pos);
+					if (_ent != null)
+						_ent.getCapability(CapabilityFluidHandler.FLUID_HANDLER_CAPABILITY, null)
+								.ifPresent(capability -> _retval.set(capability.getFluidInTank(tank).getAmount()));
+					return _retval.get();
+				}
+			}.getFluidTankLevel(new BlockPos((int) x, (int) y, (int) z), 1)) + "", 26, 65, -12829636);
 		}
 
 		@Override
