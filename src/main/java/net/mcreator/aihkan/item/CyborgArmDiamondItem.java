@@ -23,7 +23,7 @@ public class CyborgArmDiamondItem extends AihkanModElements.ModElement {
 	public void initElements() {
 		elements.items.add(() -> new PickaxeItem(new IItemTier() {
 			public int getMaxUses() {
-				return 3000;
+				return 3500;
 			}
 
 			public float getEfficiency() {
