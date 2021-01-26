@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "aihkan:blocks/wateland_grass_bottom",
+    "up": "aihkan:blocks/wasteland_grass_top",
+    "north": "aihkan:blocks/wasteland_grass_side",
+    "east": "aihkan:blocks/wasteland_grass_side",
+    "south": "aihkan:blocks/wasteland_grass_side",
+    "west": "aihkan:blocks/wasteland_grass_side",
+    "particle": "aihkan:blocks/wateland_grass_bottom"
+  }
+}

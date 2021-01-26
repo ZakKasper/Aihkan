@@ -22,6 +22,9 @@
     "biomesInDimension": [
       {
         "value": "CUSTOM:MagicForest"
+      },
+      {
+        "value": "CUSTOM:Wasteland"
       }
     ],
     "worldGenType": "Normal world gen",

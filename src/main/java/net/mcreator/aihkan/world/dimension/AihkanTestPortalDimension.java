@@ -122,7 +122,8 @@ public class AihkanTestPortalDimension extends AihkanModElements.ModElement {
 
 	@Override
 	public void init(FMLCommonSetupEvent event) {
-		dimensionBiomes = new Biome[]{ForgeRegistries.BIOMES.getValue(new ResourceLocation("aihkan:magic_forest")),};
+		dimensionBiomes = new Biome[]{ForgeRegistries.BIOMES.getValue(new ResourceLocation("aihkan:magic_forest")),
+				ForgeRegistries.BIOMES.getValue(new ResourceLocation("aihkan:wasteland")),};
 	}
 
 	@Override
