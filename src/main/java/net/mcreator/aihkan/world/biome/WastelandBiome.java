@@ -8,21 +8,12 @@ import net.minecraftforge.common.BiomeDictionary;
 
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
-import net.minecraft.world.gen.placement.Placement;
-import net.minecraft.world.gen.placement.IPlacementConfig;
-import net.minecraft.world.gen.placement.AtSurfaceWithExtraConfig;
-import net.minecraft.world.gen.feature.SeaGrassConfig;
-import net.minecraft.world.gen.feature.MultipleRandomFeatureConfig;
-import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.biome.DefaultBiomeFeatures;
 import net.minecraft.world.biome.Biome;
 
 import net.mcreator.aihkan.block.WastelandDirtBlock;
 import net.mcreator.aihkan.block.DeadGrassBlock;
 import net.mcreator.aihkan.AihkanModElements;
-
-import com.google.common.collect.ImmutableList;
 
 @AihkanModElements.ModElement.Tag
 public class WastelandBiome extends AihkanModElements.ModElement {
@@ -53,15 +44,6 @@ public class WastelandBiome extends AihkanModElements.ModElement {
 			DefaultBiomeFeatures.addCarvers(this);
 			DefaultBiomeFeatures.addMonsterRooms(this);
 			DefaultBiomeFeatures.addStructures(this);
-			this.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.SEAGRASS.withConfiguration(new SeaGrassConfig(20, 0.3D))
-					.withPlacement(Placement.TOP_SOLID_HEIGHTMAP.configure(IPlacementConfig.NO_PLACEMENT_CONFIG)));
-			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
-					Feature.RANDOM_SELECTOR
-							.withConfiguration(new MultipleRandomFeatureConfig(
-									ImmutableList.of(Feature.NORMAL_TREE.withConfiguration(DefaultBiomeFeatures.field_230129_h_).withChance(0.2F),
-											Feature.FANCY_TREE.withConfiguration(DefaultBiomeFeatures.field_230131_m_).withChance(0.1F)),
-									Feature.NORMAL_TREE.withConfiguration(DefaultBiomeFeatures.field_230132_o_)))
-							.withPlacement(Placement.COUNT_EXTRA_HEIGHTMAP.configure(new AtSurfaceWithExtraConfig(2, 0.1F, 1))));
 		}
 	}
 }

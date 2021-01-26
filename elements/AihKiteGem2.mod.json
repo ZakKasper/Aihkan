@@ -5,10 +5,10 @@
     "renderType": 0,
     "texture": "aihkitegem2",
     "customModelName": "Normal",
-    "name": "Aih Kite Gem 2",
+    "name": "Aihkite Gem Omega",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:AihkanItems"
     },
     "stackSize": 64,
     "enchantability": 0,

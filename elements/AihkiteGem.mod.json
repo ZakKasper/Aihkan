@@ -5,10 +5,10 @@
     "renderType": 0,
     "texture": "aihkitegem",
     "customModelName": "Normal",
-    "name": "Aihkite Gem",
+    "name": "Aihkite Gem Zeta",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:AihkanItems"
     },
     "stackSize": 64,
     "enchantability": 0,

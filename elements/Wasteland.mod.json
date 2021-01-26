@@ -11,7 +11,7 @@
     },
     "treeType": 0,
     "vanillaTreeType": "Default",
-    "minHeight": 1,
+    "minHeight": 0,
     "spawnVines": false,
     "treeVines": {
       "value": ""
@@ -25,9 +25,9 @@
     "treeFruits": {
       "value": ""
     },
-    "treesPerChunk": 2,
+    "treesPerChunk": 0,
     "grassPerChunk": 0,
-    "seagrassPerChunk": 20,
+    "seagrassPerChunk": 0,
     "flowersPerChunk": 0,
     "mushroomsPerChunk": 0,
     "bigMushroomsChunk": 0,

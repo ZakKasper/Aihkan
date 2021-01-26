@@ -65,6 +65,19 @@
           "x": 231,
           "y": 71
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<fluidlevel>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<fluidlevel>",
+          "x": 152,
+          "y": 102
+        }
       }
     ]
   }
