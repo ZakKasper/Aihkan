@@ -5,7 +5,7 @@
       "name": "AihKite",
       "type": "block",
       "sortid": 2,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "aih_kite"
@@ -23,7 +23,7 @@
       "name": "MagicGrassBlock",
       "type": "block",
       "sortid": 5,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_grass_block"
@@ -68,7 +68,7 @@
       "name": "MagicDirt",
       "type": "block",
       "sortid": 6,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_dirt"
@@ -212,7 +212,7 @@
       "name": "FireFlowerPlant",
       "type": "plant",
       "sortid": 17,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "fire_flower_plant"
@@ -221,7 +221,7 @@
       "name": "AihKiteGem2",
       "type": "item",
       "sortid": 19,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "aih_kite_gem_2"
@@ -239,7 +239,7 @@
       "name": "AihkiteGem",
       "type": "item",
       "sortid": 18,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "aihkite_gem"
@@ -248,7 +248,7 @@
       "name": "WastelandDirt",
       "type": "block",
       "sortid": 19,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "wasteland_dirt"
@@ -257,7 +257,7 @@
       "name": "DeadGrass",
       "type": "block",
       "sortid": 18,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "dead_grass"
@@ -293,7 +293,7 @@
       "name": "MixedDirt",
       "type": "block",
       "sortid": 17,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "mixed_dirt"

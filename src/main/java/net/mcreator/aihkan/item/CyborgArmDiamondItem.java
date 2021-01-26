@@ -15,11 +15,11 @@ public class CyborgArmDiamondItem extends AihkanModElements.ModElement {
 	public void initElements() {
 		elements.items.add(() -> new PickaxeItem(new IItemTier() {
 			public int getMaxUses() {
-				return 3000;
+				return 3500;
 			}
 
 			public float getEfficiency() {
-				return 10f;
+				return 18f;
 			}
 
 			public float getAttackDamage() {
@@ -37,7 +37,7 @@ public class CyborgArmDiamondItem extends AihkanModElements.ModElement {
 			public Ingredient getRepairMaterial() {
 				return Ingredient.EMPTY;
 			}
-		}, 1, -3f, new Item.Properties().group(ItemGroup.TOOLS)) {
+		}, 1, -3f, new Item.Properties().group(AihkanItemsItemGroup.tab)) {
 
 		}.setRegistryName("cyborg_arm_diamond"));
 	}
