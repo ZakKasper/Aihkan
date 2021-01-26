@@ -8,15 +8,15 @@
     "name": "Cyborg Arm Diamond",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:AihkanItems"
     },
     "toolType": "Pickaxe",
     "harvestLevel": 1,
-    "efficiency": 10.0,
+    "efficiency": 18.0,
     "attackSpeed": 1.0,
     "enchantability": 2,
     "damageVsEntity": 4.0,
-    "usageCount": 3000,
+    "usageCount": 3500,
     "blocksAffected": [],
     "hasGlow": false,
     "repairItems": [],
