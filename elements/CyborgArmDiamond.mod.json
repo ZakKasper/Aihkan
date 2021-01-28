@@ -11,7 +11,7 @@
       "value": "CUSTOM:AihkanItems"
     },
     "toolType": "Pickaxe",
-    "harvestLevel": 1,
+    "harvestLevel": 3,
     "efficiency": 18.0,
     "attackSpeed": 1.0,
     "enchantability": 2,

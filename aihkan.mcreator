@@ -333,6 +333,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "recipe_ca_irone"
+    },
+    {
+      "name": "Magictree1",
+      "type": "structure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magictree_1"
     }
   ],
   "variable_elements": [],
