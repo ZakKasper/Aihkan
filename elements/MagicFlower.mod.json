@@ -44,7 +44,7 @@
     "fireSpreadSpeed": 60,
     "frequencyOnChunks": 5,
     "spawnWorldTypes": [
-      "Surface"
+      "CUSTOM:AihkanTestPortal"
     ],
     "restrictionBiomes": []
   }

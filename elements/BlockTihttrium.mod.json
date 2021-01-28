@@ -37,7 +37,7 @@
     "customDrop": {
       "value": "CUSTOM:DropTihttrium"
     },
-    "dropAmount": 3,
+    "dropAmount": 1,
     "useLootTableForDrops": false,
     "isBeaconBase": false,
     "enchantPowerBonus": 0.0,
@@ -99,9 +99,9 @@
         "value": "Blocks.STONE"
       }
     ],
-    "frequencyPerChunks": 10,
-    "frequencyOnChunk": 16,
+    "frequencyPerChunks": 2,
+    "frequencyOnChunk": 3,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 64
+    "maxGenerateHeight": 9
   }
 }
