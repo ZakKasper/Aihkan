@@ -1,10 +1,15 @@
 {
-  "block.aihkan.magic_tower_blue_block": "Magic Tower Blue Block",
+  "item.aihkan.cyborg_arm_stone": "Cyborg Arm Stone",
   "item.aihkan.drop_tihttrium": "Drop Tihttrium",
+  "item.aihkan.fused_aihkite": "Fused Aihkite",
   "block.aihkan.magic_dirt": "Magic Dirt",
-  "item.aihkan.drop_zihcrium": "Drop Zihcrium",
-  "item.aihkan.aihkan": "Aihkan Portal Igniter",
-  "block.aihkan.block_tihttrium": "Block Tihttrium",
+  "block.aihkan.magic_grass_block": "Magic Grass Block",
+  "item.aihkan.cyborg_arm_iron": "Cyborg Arm Iron",
   "block.aihkan.magic_tower_white_block": "Magic Tower White Block",
+  "block.aihkan.magic_tower_blue_block": "Magic Tower Blue Block",
+  "item.aihkan.drop_zihcrium": "Drop Zihcrium",
+  "block.aihkan.block_tihttrium": "Block Tihttrium",
+  "item.aihkan.aihkan": "Aihkan Portal Igniter",
+  "item.aihkan.aihkan_test_portal": "Aihkan Test Portal Portal Igniter",
   "block.aihkan.block_zihcrium": "Block Zihcrium"
 }
