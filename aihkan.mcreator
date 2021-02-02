@@ -14,7 +14,7 @@
       "name": "AihKite",
       "type": "block",
       "sortid": 2,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "aih_kite"
@@ -32,7 +32,7 @@
       "name": "MagicLeaves",
       "type": "block",
       "sortid": 4,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_leaves"
@@ -68,7 +68,7 @@
       "name": "MagicTowerBlueBlock",
       "type": "block",
       "sortid": 9,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_tower_blue_block"
@@ -95,7 +95,7 @@
       "name": "MagicFlower",
       "type": "plant",
       "sortid": 7,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_flower"
@@ -347,7 +347,7 @@
       "name": "IronGauntlet",
       "type": "item",
       "sortid": 25,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "iron_gauntlet"
@@ -356,7 +356,7 @@
       "name": "DiamondGauntlet",
       "type": "item",
       "sortid": 27,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "diamond_gauntlet"
@@ -365,7 +365,7 @@
       "name": "GoldGauntlet",
       "type": "item",
       "sortid": 26,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "gold_gauntlet"
@@ -374,7 +374,7 @@
       "name": "LeatherGauntlet",
       "type": "item",
       "sortid": 24,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "leather_gauntlet"
