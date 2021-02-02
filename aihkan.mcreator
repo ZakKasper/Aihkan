@@ -2,28 +2,55 @@
   "id_map": {},
   "mod_elements": [
     {
+      "name": "BlockTihttrium",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "block_tihttrium"
+    },
+    {
       "name": "AihKite",
       "type": "block",
       "sortid": 2,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "aih_kite"
     },
     {
+      "name": "AihkanItems",
+      "type": "tab",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aihkan_items"
+    },
+    {
       "name": "MagicLeaves",
       "type": "block",
       "sortid": 4,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_leaves"
     },
     {
+      "name": "MagicTowerWhiteBlock",
+      "type": "block",
+      "sortid": 8,
+      "compiles": false,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_tower_white_block"
+    },
+    {
       "name": "MagicGrassBlock",
       "type": "block",
       "sortid": 5,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_grass_block"
@@ -38,10 +65,19 @@
       "registry_name": "magic_forest"
     },
     {
+      "name": "MagicTowerBlueBlock",
+      "type": "block",
+      "sortid": 9,
+      "compiles": false,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_tower_blue_block"
+    },
+    {
       "name": "MagicWood",
       "type": "block",
       "sortid": 3,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_wood"
@@ -50,7 +86,7 @@
       "name": "SihkumiteOre",
       "type": "block",
       "sortid": 1,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "sihkumite_ore"
@@ -59,7 +95,7 @@
       "name": "MagicFlower",
       "type": "plant",
       "sortid": 7,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_flower"
@@ -68,46 +104,10 @@
       "name": "MagicDirt",
       "type": "block",
       "sortid": 6,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_dirt"
-    },
-    {
-      "name": "AihkanItems",
-      "type": "tab",
-      "sortid": 6,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "aihkan_items"
-    },
-    {
-      "name": "MagicTowerWhiteBlock",
-      "type": "block",
-      "sortid": 8,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "magic_tower_white_block"
-    },
-    {
-      "name": "MagicTowerBlueBlock",
-      "type": "block",
-      "sortid": 9,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "magic_tower_blue_block"
-    },
-    {
-      "name": "BlockTihttrium",
-      "type": "block",
-      "sortid": 1,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "block_tihttrium"
     },
     {
       "name": "BlockZihcrium",
@@ -117,42 +117,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "block_zihcrium"
-    },
-    {
-      "name": "SihkumiteSmelt",
-      "type": "recipe",
-      "sortid": 13,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "sihkumite_smelt"
-    },
-    {
-      "name": "AihkanTestPortal",
-      "type": "dimension",
-      "sortid": 11,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "aihkan_test_portal"
-    },
-    {
-      "name": "SihkumiteIngot",
-      "type": "item",
-      "sortid": 12,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "sihkumite_ingot"
-    },
-    {
-      "name": "PureTihttrium",
-      "type": "item",
-      "sortid": 14,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "pure_tihttrium"
     },
     {
       "name": "DropZihcrium",
@@ -173,42 +137,6 @@
       "registry_name": "drop_tihttrium"
     },
     {
-      "name": "PureTCrafting",
-      "type": "recipe",
-      "sortid": 15,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "pure_t_crafting"
-    },
-    {
-      "name": "MagicMushroomPlant",
-      "type": "plant",
-      "sortid": 16,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "magic_mushroom_plant"
-    },
-    {
-      "name": "MagicMushroom",
-      "type": "food",
-      "sortid": 13,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "magic_mushroom"
-    },
-    {
-      "name": "Purifier",
-      "type": "gui",
-      "sortid": 16,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "purifier"
-    },
-    {
       "name": "FireFlowerPlant",
       "type": "plant",
       "sortid": 17,
@@ -216,33 +144,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "fire_flower_plant"
-    },
-    {
-      "name": "AihKiteGem2",
-      "type": "item",
-      "sortid": 19,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "aih_kite_gem_2"
-    },
-    {
-      "name": "FusedAihkite",
-      "type": "item",
-      "sortid": 20,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "fused_aihkite"
-    },
-    {
-      "name": "AihkiteGem",
-      "type": "item",
-      "sortid": 18,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "aihkite_gem"
     },
     {
       "name": "WastelandDirt",
@@ -254,22 +155,22 @@
       "registry_name": "wasteland_dirt"
     },
     {
-      "name": "DeadGrass",
-      "type": "block",
-      "sortid": 18,
+      "name": "MagicMushroomPlant",
+      "type": "plant",
+      "sortid": 16,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "dead_grass"
+      "registry_name": "magic_mushroom_plant"
     },
     {
-      "name": "Wasteland",
-      "type": "biome",
-      "sortid": 20,
+      "name": "SihkumiteSmelt",
+      "type": "recipe",
+      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "wasteland"
+      "registry_name": "sihkumite_smelt"
     },
     {
       "name": "RecipeCAStone",
@@ -290,6 +191,96 @@
       "registry_name": "recipe_ca_diamond"
     },
     {
+      "name": "SihkumiteIngot",
+      "type": "item",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sihkumite_ingot"
+    },
+    {
+      "name": "CyborgArmDiamond",
+      "type": "tool",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cyborg_arm_diamond"
+    },
+    {
+      "name": "PureTCrafting",
+      "type": "recipe",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pure_t_crafting"
+    },
+    {
+      "name": "AihkiteGem",
+      "type": "item",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aihkite_gem"
+    },
+    {
+      "name": "DeadGrass",
+      "type": "block",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dead_grass"
+    },
+    {
+      "name": "Wasteland",
+      "type": "biome",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wasteland"
+    },
+    {
+      "name": "Magictree1",
+      "type": "structure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magictree_1"
+    },
+    {
+      "name": "AihkanTestPortal",
+      "type": "dimension",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aihkan_test_portal"
+    },
+    {
+      "name": "AihKiteGem2",
+      "type": "item",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aih_kite_gem_2"
+    },
+    {
+      "name": "FusedAihkite",
+      "type": "item",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fused_aihkite"
+    },
+    {
       "name": "MixedDirt",
       "type": "block",
       "sortid": 17,
@@ -308,13 +299,22 @@
       "registry_name": "cyborg_arm_iron"
     },
     {
-      "name": "CyborgArmDiamond",
-      "type": "tool",
-      "sortid": 19,
+      "name": "MagicMushroom",
+      "type": "food",
+      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "cyborg_arm_diamond"
+      "registry_name": "magic_mushroom"
+    },
+    {
+      "name": "Purifier",
+      "type": "gui",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purifier"
     },
     {
       "name": "CyborgArmStone",
@@ -335,48 +335,67 @@
       "registry_name": "recipe_ca_irone"
     },
     {
-      "name": "Magictree1",
-      "type": "structure",
-      "sortid": 23,
+      "name": "PureTihttrium",
+      "type": "item",
+      "sortid": 14,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "magictree_1"
+      "registry_name": "pure_tihttrium"
+    },
+    {
+      "name": "IronGauntlet",
+      "type": "item",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "iron_gauntlet"
+    },
+    {
+      "name": "DiamondGauntlet",
+      "type": "item",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diamond_gauntlet"
+    },
+    {
+      "name": "GoldGauntlet",
+      "type": "item",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gold_gauntlet"
+    },
+    {
+      "name": "LeatherGauntlet",
+      "type": "item",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "leather_gauntlet"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.aihkan.magic_wood": "Magic Wood",
+      "item.aihkan.cyborg_arm_stone": "Cyborg Arm Stone",
       "item.aihkan.drop_tihttrium": "Drop Tihttrium",
       "item.aihkan.fused_aihkite": "Fused Aihkite",
+      "block.aihkan.magic_dirt": "Magic Dirt",
       "block.aihkan.magic_grass_block": "Magic Grass Block",
       "item.aihkan.cyborg_arm_iron": "Cyborg Arm Iron",
-      "block.aihkan.fire_flower_plant": "Fire Flower Plant",
-      "item.aihkan.aihkite_gem": "Aihkite Gem",
-      "biome.aihkan.magic_forest": "Magic Forest",
-      "block.aihkan.magic_leaves": "Magic Leaves",
-      "block.aihkan.sihkumite_ore": "Sihkumite Ore",
-      "block.aihkan.dead_grass": "Wasteland Grass",
-      "item.aihkan.drop_zihcrium": "Drop Zihcrium",
-      "item.aihkan.cyborg_arm_diamond": "Cyborg Arm Diamond",
-      "item.aihkan.aihkan_test_portal": "Aihkan Test Portal Portal Igniter",
-      "item.aihkan.aihkan": "Aihkan Portal Igniter",
-      "biome.aihkan.wasteland": "Wasteland",
-      "item.aihkan.aih_kite_gem_2": "Aih Kite Gem 2",
-      "block.aihkan.mixed_dirt": "Mixed Dirt",
-      "block.aihkan.wasteland_dirt": "Wasteland Dirt",
-      "item.aihkan.cyborg_arm_stone": "Cyborg Arm Stone",
-      "block.aihkan.magic_dirt": "Magic Dirt",
       "block.aihkan.magic_tower_white_block": "Magic Tower White Block",
-      "item.aihkan.pure_tihttrium": "Pure Tihttrium",
       "block.aihkan.magic_tower_blue_block": "Magic Tower Blue Block",
-      "itemGroup.tabaihkan_items": "Aihkan Items",
-      "block.aihkan.aih_kite": "Aih Kite",
+      "item.aihkan.drop_zihcrium": "Drop Zihcrium",
       "block.aihkan.block_tihttrium": "Block Tihttrium",
-      "item.aihkan.sihkumite_ingot": "Sihkumite Ingot",
-      "block.aihkan.magic_flower": "Magic Flower",
+      "item.aihkan.aihkan": "Aihkan Portal Igniter",
+      "item.aihkan.aihkan_test_portal": "Aihkan Test Portal Portal Igniter",
       "block.aihkan.block_zihcrium": "Block Zihcrium"
     }
   },

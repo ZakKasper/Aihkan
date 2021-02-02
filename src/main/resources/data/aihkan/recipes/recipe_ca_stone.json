@@ -20,7 +20,7 @@
       "item": "minecraft:smooth_stone"
     },
     "4": {
-      "item": "aihkan:pure_tihttrium"
+      "item": "aihkan:unknown_element"
     },
     "5": {
       "item": "minecraft:iron_block"
@@ -36,7 +36,7 @@
     }
   },
   "result": {
-    "item": "aihkan:cyborg_arm_stone",
+    "item": "aihkan:unknown_element",
     "count": 1
   }
 }
