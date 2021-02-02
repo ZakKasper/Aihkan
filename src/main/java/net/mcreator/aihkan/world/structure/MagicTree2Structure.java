@@ -30,9 +30,9 @@ import net.mcreator.aihkan.AihkanModElements;
 import java.util.Random;
 
 @AihkanModElements.ModElement.Tag
-public class Magictree1Structure extends AihkanModElements.ModElement {
-	public Magictree1Structure(AihkanModElements instance) {
-		super(instance, 23);
+public class MagicTree2Structure extends AihkanModElements.ModElement {
+	public MagicTree2Structure(AihkanModElements instance) {
+		super(instance, 28);
 	}
 
 	@Override
@@ -49,7 +49,7 @@ public class Magictree1Structure extends AihkanModElements.ModElement {
 				if (!dimensionCriteria)
 					return false;
 				if ((random.nextInt(1000000) + 1) <= 990000) {
-					int count = random.nextInt(1) + 3;
+					int count = random.nextInt(1) + 1;
 					for (int a = 0; a < count; a++) {
 						int i = ci + random.nextInt(16);
 						int k = ck + random.nextInt(16);
@@ -62,7 +62,7 @@ public class Magictree1Structure extends AihkanModElements.ModElement {
 						int y = spawnTo.getY();
 						int z = spawnTo.getZ();
 						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-								.getTemplateDefaulted(new ResourceLocation("aihkan", "magictree1"));
+								.getTemplateDefaulted(new ResourceLocation("aihkan", "magictree2"));
 						if (template == null)
 							return false;
 						template.addBlocksToWorld(world, spawnTo, new PlacementSettings().setRotation(rotation).setRandom(random).setMirror(mirror)
