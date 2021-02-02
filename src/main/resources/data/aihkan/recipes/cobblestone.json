@@ -1,0 +1,26 @@
+{
+  "group": "aihkan",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "aihkan:rubble"
+    },
+    "1": {
+      "item": "aihkan:rubble"
+    },
+    "2": {
+      "item": "aihkan:rubble"
+    },
+    "3": {
+      "item": "aihkan:rubble"
+    }
+  },
+  "result": {
+    "item": "minecraft:cobblestone",
+    "count": 1
+  }
+}
