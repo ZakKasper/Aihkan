@@ -432,6 +432,24 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "cobblestone"
+    },
+    {
+      "name": "MagicTowerTrim1",
+      "type": "block",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_tower_trim_1"
+    },
+    {
+      "name": "MagicTowerTrim2",
+      "type": "block",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_tower_trim_2"
     }
   ],
   "variable_elements": [],
@@ -439,6 +457,8 @@
   "language_map": {
     "en_us": {
       "item.aihkan.cyborg_arm_stone": "Cyborg Arm Stone",
+      "block.aihkan.magic_tower_trim_1": "Magic Tower Trim 1",
+      "block.aihkan.magic_tower_trim_2": "Magic Tower Trim 2",
       "item.aihkan.drop_tihttrium": "Drop Tihttrium",
       "item.aihkan.fused_aihkite": "Fused Aihkite",
       "item.aihkan.rubble": "Rubble",
