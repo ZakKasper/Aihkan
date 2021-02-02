@@ -4,13 +4,13 @@ package net.mcreator.aihkan.block;
 import net.minecraft.block.material.Material;
 
 @AihkanModElements.ModElement.Tag
-public class AihKiteBlock extends AihkanModElements.ModElement {
+public class MagicTowerTrim1Block extends AihkanModElements.ModElement {
 
-	@ObjectHolder("aihkan:aih_kite")
+	@ObjectHolder("aihkan:magic_tower_trim_1")
 	public static final Block block = null;
 
-	public AihKiteBlock(AihkanModElements instance) {
-		super(instance, 2);
+	public MagicTowerTrim1Block(AihkanModElements instance) {
+		super(instance, 34);
 
 	}
 
@@ -26,9 +26,10 @@ public class AihKiteBlock extends AihkanModElements.ModElement {
 		public CustomBlock() {
 			super(
 
-					Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1f, 10f).lightValue(0));
+					Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1.5f, 16f).lightValue(0).harvestLevel(4)
+							.harvestTool(ToolType.PICKAXE));
 
-			setRegistryName("aih_kite");
+			setRegistryName("magic_tower_trim_1");
 		}
 
 		@Override
@@ -37,7 +38,7 @@ public class AihKiteBlock extends AihkanModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(AihkiteGemItem.block, (int) (4)));
+			return Collections.singletonList(new ItemStack(this, 1));
 		}
 
 	}

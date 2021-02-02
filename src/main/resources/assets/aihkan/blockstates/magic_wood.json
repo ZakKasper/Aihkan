@@ -1,7 +1,28 @@
 {
   "variants": {
-    "": {
+    "facing=south": {
       "model": "aihkan:block/magic_wood"
+    },
+    "facing=north": {
+      "model": "aihkan:block/magic_wood"
+    },
+    "facing=east": {
+      "model": "aihkan:block/magic_wood",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "aihkan:block/magic_wood",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "aihkan:block/magic_wood",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "aihkan:block/magic_wood",
+      "x": 90,
+      "y": 90
     }
   }
 }

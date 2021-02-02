@@ -77,7 +77,7 @@
       "name": "MagicWood",
       "type": "block",
       "sortid": 3,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_wood"
@@ -378,20 +378,118 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "leather_gauntlet"
+    },
+    {
+      "name": "MagicTreeSapling",
+      "type": "plant",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_tree_sapling"
+    },
+    {
+      "name": "MagicTree2",
+      "type": "structure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_tree_2"
+    },
+    {
+      "name": "Rubble",
+      "type": "item",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rubble"
+    },
+    {
+      "name": "Goldgauntletrecipe",
+      "type": "recipe",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "goldgauntletrecipe"
+    },
+    {
+      "name": "MagicTowerTrim1",
+      "type": "block",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_tower_trim_1"
+    },
+    {
+      "name": "Irongauntletrecipe",
+      "type": "recipe",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "irongauntletrecipe"
+    },
+    {
+      "name": "MagicTowerTrim2",
+      "type": "block",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_tower_trim_2"
+    },
+    {
+      "name": "Diamondgauntletrecipe",
+      "type": "recipe",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diamondgauntletrecipe"
+    },
+    {
+      "name": "Leathergauntletrecipe",
+      "type": "recipe",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "leathergauntletrecipe"
+    },
+    {
+      "name": "Cobblestone",
+      "type": "recipe",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cobblestone"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "block.aihkan.magic_wood": "Magic Wood",
       "item.aihkan.cyborg_arm_stone": "Cyborg Arm Stone",
       "item.aihkan.drop_tihttrium": "Drop Tihttrium",
       "item.aihkan.fused_aihkite": "Fused Aihkite",
       "block.aihkan.magic_dirt": "Magic Dirt",
       "block.aihkan.magic_grass_block": "Magic Grass Block",
       "item.aihkan.cyborg_arm_iron": "Cyborg Arm Iron",
+      "item.aihkan.leather_gauntlet": "Leather Gauntlet",
       "block.aihkan.magic_tower_white_block": "Magic Tower White Block",
+      "item.aihkan.diamond_gauntlet": "Diamond Gauntlet",
+      "block.aihkan.magic_tree_sapling": "Magic Tree Sapling",
+      "item.aihkan.iron_gauntlet": "Iron Gauntlet",
+      "item.aihkan.gold_gauntlet": "Gold Gauntlet",
       "block.aihkan.magic_tower_blue_block": "Magic Tower Blue Block",
+      "block.aihkan.magic_leaves": "Magic Leaves",
+      "block.aihkan.sihkumite_ore": "Sihkumite Ore",
       "item.aihkan.drop_zihcrium": "Drop Zihcrium",
       "block.aihkan.block_tihttrium": "Block Tihttrium",
       "item.aihkan.aihkan": "Aihkan Portal Igniter",

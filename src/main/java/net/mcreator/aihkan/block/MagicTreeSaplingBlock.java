@@ -4,21 +4,20 @@ package net.mcreator.aihkan.block;
 import net.minecraft.block.material.Material;
 
 @AihkanModElements.ModElement.Tag
-public class MagicFlowerBlock extends AihkanModElements.ModElement {
+public class MagicTreeSaplingBlock extends AihkanModElements.ModElement {
 
-	@ObjectHolder("aihkan:magic_flower")
+	@ObjectHolder("aihkan:magic_tree_sapling")
 	public static final Block block = null;
 
-	public MagicFlowerBlock(AihkanModElements instance) {
-		super(instance, 7);
+	public MagicTreeSaplingBlock(AihkanModElements instance) {
+		super(instance, 29);
 
 	}
 
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new BlockCustomFlower());
-		elements.items
-				.add(() -> new BlockItem(block, new Item.Properties().group(AihkanItemsItemGroup.tab)).setRegistryName(block.getRegistryName()));
+		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(block.getRegistryName()));
 	}
 
 	@Override
@@ -40,7 +39,7 @@ public class MagicFlowerBlock extends AihkanModElements.ModElement {
 				DimensionType dimensionType = world.getDimension().getType();
 				boolean dimensionCriteria = false;
 
-				if (dimensionType == AihkanTestPortalDimension.type)
+				if (dimensionType == DimensionType.OVERWORLD)
 					dimensionCriteria = true;
 
 				if (!dimensionCriteria)
@@ -65,7 +64,7 @@ public class MagicFlowerBlock extends AihkanModElements.ModElement {
 		public BlockCustomFlower() {
 			super(Effects.SATURATION, 0, Block.Properties.create(Material.PLANTS).doesNotBlockMovement().sound(SoundType.PLANT)
 					.hardnessAndResistance(0f, 0f).lightValue(0));
-			setRegistryName("magic_flower");
+			setRegistryName("magic_tree_sapling");
 		}
 
 		@Override
