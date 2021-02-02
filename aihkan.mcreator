@@ -23,7 +23,7 @@
       "name": "MagicGrassBlock",
       "type": "block",
       "sortid": 5,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_grass_block"
@@ -41,7 +41,7 @@
       "name": "MagicWood",
       "type": "block",
       "sortid": 3,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_wood"
@@ -50,7 +50,7 @@
       "name": "SihkumiteOre",
       "type": "block",
       "sortid": 1,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "sihkumite_ore"
@@ -68,7 +68,7 @@
       "name": "MagicDirt",
       "type": "block",
       "sortid": 6,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_dirt"
@@ -86,7 +86,7 @@
       "name": "MagicTowerWhiteBlock",
       "type": "block",
       "sortid": 8,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_tower_white_block"
@@ -347,7 +347,7 @@
       "name": "IronGauntlet",
       "type": "item",
       "sortid": 25,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "iron_gauntlet"
@@ -356,7 +356,7 @@
       "name": "DiamondGauntlet",
       "type": "item",
       "sortid": 27,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "diamond_gauntlet"
@@ -365,7 +365,7 @@
       "name": "GoldGauntlet",
       "type": "item",
       "sortid": 26,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "gold_gauntlet"
@@ -374,29 +374,84 @@
       "name": "LeatherGauntlet",
       "type": "item",
       "sortid": 24,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "leather_gauntlet"
+    },
+    {
+      "name": "Leathergauntletrecipe",
+      "type": "recipe",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "leathergauntletrecipe"
+    },
+    {
+      "name": "Goldgauntletrecipe",
+      "type": "recipe",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "goldgauntletrecipe"
+    },
+    {
+      "name": "Irongauntletrecipe",
+      "type": "recipe",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "irongauntletrecipe"
+    },
+    {
+      "name": "Diamondgauntletrecipe",
+      "type": "recipe",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diamondgauntletrecipe"
+    },
+    {
+      "name": "Rubble",
+      "type": "item",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rubble"
+    },
+    {
+      "name": "Cobblestone",
+      "type": "recipe",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cobblestone"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.aihkan.cyborg_arm_stone": "Cyborg Arm Stone",
       "item.aihkan.drop_tihttrium": "Drop Tihttrium",
       "item.aihkan.fused_aihkite": "Fused Aihkite",
+      "item.aihkan.rubble": "Rubble",
+      "block.aihkan.magic_dirt": "Magic Dirt",
       "block.aihkan.magic_grass_block": "Magic Grass Block",
       "item.aihkan.cyborg_arm_iron": "Cyborg Arm Iron",
+      "block.aihkan.magic_tower_white_block": "Magic Tower White Block",
+      "block.aihkan.magic_tower_blue_block": "Magic Tower Blue Block",
       "item.aihkan.drop_zihcrium": "Drop Zihcrium",
       "item.aihkan.aihkan_test_portal": "Aihkan Test Portal Portal Igniter",
       "item.aihkan.aihkan": "Aihkan Portal Igniter",
-      "biome.aihkan.wasteland": "Wasteland",
-      "item.aihkan.cyborg_arm_stone": "Cyborg Arm Stone",
-      "block.aihkan.magic_dirt": "Magic Dirt",
-      "block.aihkan.magic_tower_white_block": "Magic Tower White Block",
-      "block.aihkan.magic_tower_blue_block": "Magic Tower Blue Block",
       "block.aihkan.block_tihttrium": "Block Tihttrium",
+      "biome.aihkan.wasteland": "Wasteland",
       "block.aihkan.block_zihcrium": "Block Zihcrium"
     }
   },
