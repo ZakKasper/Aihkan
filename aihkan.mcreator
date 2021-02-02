@@ -380,13 +380,13 @@
       "registry_name": "leather_gauntlet"
     },
     {
-      "name": "Leathergauntletrecipe",
-      "type": "recipe",
-      "sortid": 28,
+      "name": "Rubble",
+      "type": "item",
+      "sortid": 32,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "leathergauntletrecipe"
+      "registry_name": "rubble"
     },
     {
       "name": "Goldgauntletrecipe",
@@ -416,13 +416,13 @@
       "registry_name": "diamondgauntletrecipe"
     },
     {
-      "name": "Rubble",
-      "type": "item",
-      "sortid": 32,
+      "name": "Leathergauntletrecipe",
+      "type": "recipe",
+      "sortid": 28,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "rubble"
+      "registry_name": "leathergauntletrecipe"
     },
     {
       "name": "Cobblestone",
