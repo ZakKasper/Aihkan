@@ -2,12 +2,12 @@
   "_fv": 13,
   "_type": "block",
   "definition": {
-    "texture": "magicleaves",
-    "textureTop": "magicleaves",
-    "textureLeft": "magicleaves",
-    "textureFront": "magicleaves",
-    "textureRight": "magicleaves",
-    "textureBack": "magicleaves",
+    "texture": "magic_tower_trim_top",
+    "textureTop": "magic_tower_trim_top",
+    "textureLeft": "magic_tower_trim_top",
+    "textureFront": "magic_tower_trim2",
+    "textureRight": "magic_tower_trim_top",
+    "textureBack": "magic_tower_trim2",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -15,7 +15,7 @@
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
-    "hasTransparency": true,
+    "hasTransparency": false,
     "connectedSides": false,
     "transparencyType": "SOLID",
     "mx": 0.0,
@@ -24,16 +24,16 @@
     "Mx": 1.0,
     "My": 1.0,
     "Mz": 1.0,
-    "name": "Magic Leaves",
+    "name": "Magic Tower Trim 2",
     "specialInfo": [],
-    "hardness": 1.0,
+    "hardness": 1.5,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
       "value": "CUSTOM:AihkanItems"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "pickaxe",
     "customDrop": {
       "value": ""
     },
@@ -45,7 +45,7 @@
     "canProvidePower": false,
     "lightOpacity": 255,
     "material": {
-      "value": "LEAVES"
+      "value": "ROCK"
     },
     "tickRate": 10,
     "tickRandomly": false,
@@ -63,11 +63,11 @@
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "PLANT"
+      "value": "GROUND"
     },
     "luminance": 0.0,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "breakHarvestLevel": 4,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"
@@ -94,11 +94,7 @@
     "fluidRestrictions": [],
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
-    "blocksToReplace": [
-      {
-        "value": "Blocks.STONE"
-      }
-    ],
+    "blocksToReplace": [],
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
