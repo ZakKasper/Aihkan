@@ -15,7 +15,7 @@
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
-    "hasTransparency": false,
+    "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "SOLID",
     "mx": 0.0,
