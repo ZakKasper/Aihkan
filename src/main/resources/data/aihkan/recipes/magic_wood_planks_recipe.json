@@ -1,0 +1,13 @@
+{
+  "group": "aihkan",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "aihkan:magic_wood"
+    }
+  ],
+  "result": {
+    "item": "aihkan:magic_wood_planks",
+    "count": 4
+  }
+}

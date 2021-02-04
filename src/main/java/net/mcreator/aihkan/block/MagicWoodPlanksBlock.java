@@ -2,7 +2,6 @@
 package net.mcreator.aihkan.block;
 
 import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.common.ToolType;
 
 import net.minecraft.world.storage.loot.LootContext;
 import net.minecraft.item.ItemStack;
@@ -20,11 +19,11 @@ import java.util.List;
 import java.util.Collections;
 
 @AihkanModElements.ModElement.Tag
-public class MagicTowerTrim1Block extends AihkanModElements.ModElement {
-	@ObjectHolder("aihkan:magic_tower_trim_1")
+public class MagicWoodPlanksBlock extends AihkanModElements.ModElement {
+	@ObjectHolder("aihkan:magic_wood_planks")
 	public static final Block block = null;
-	public MagicTowerTrim1Block(AihkanModElements instance) {
-		super(instance, 34);
+	public MagicWoodPlanksBlock(AihkanModElements instance) {
+		super(instance, 36);
 	}
 
 	@Override
@@ -35,9 +34,8 @@ public class MagicTowerTrim1Block extends AihkanModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1.5f, 16f).lightValue(0).harvestLevel(4)
-					.harvestTool(ToolType.PICKAXE));
-			setRegistryName("magic_tower_trim_1");
+			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(1f, 10f).lightValue(0));
+			setRegistryName("magic_wood_planks");
 		}
 
 		@Override
