@@ -5,9 +5,9 @@
     "structure": "magictree1",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 990000,
+    "spawnProbability": 770000,
     "minCountPerChunk": 3,
-    "maxCountPerChunk": 3,
+    "maxCountPerChunk": 1,
     "spawnLocation": "Ground",
     "spawnHeightOffset": 0,
     "spawnXOffset": 0,
@@ -21,6 +21,6 @@
         "value": "CUSTOM:MagicForest"
       }
     ],
-    "ignoreBlocks": "STRUCTURE_BLOCK"
+    "ignoreBlocks": "AIR_AND_STRUCTURE_BLOCK"
   }
 }

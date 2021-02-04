@@ -4,13 +4,13 @@ package net.mcreator.aihkan.block;
 import net.minecraft.block.material.Material;
 
 @AihkanModElements.ModElement.Tag
-public class MagicGrassBlockBlock extends AihkanModElements.ModElement {
+public class MagicTreeSaplingBlockBlock extends AihkanModElements.ModElement {
 
-	@ObjectHolder("aihkan:magic_grass_block")
+	@ObjectHolder("aihkan:magic_tree_sapling_block")
 	public static final Block block = null;
 
-	public MagicGrassBlockBlock(AihkanModElements instance) {
-		super(instance, 5);
+	public MagicTreeSaplingBlockBlock(AihkanModElements instance) {
+		super(instance, 38);
 
 	}
 
@@ -21,18 +21,30 @@ public class MagicGrassBlockBlock extends AihkanModElements.ModElement {
 				.add(() -> new BlockItem(block, new Item.Properties().group(AihkanItemsItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
 
+	@Override
+	@OnlyIn(Dist.CLIENT)
+	public void clientLoad(FMLClientSetupEvent event) {
+		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
+	}
+
 	public static class CustomBlock extends Block {
 
 		public CustomBlock() {
 			super(
 
-					Block.Properties.create(Material.ORGANIC).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).lightValue(0));
+					Block.Properties.create(Material.PLANTS).sound(SoundType.PLANT).hardnessAndResistance(0f, 0f).lightValue(0).doesNotBlockMovement()
+							.notSolid());
 
-			setRegistryName("magic_grass_block");
+			setRegistryName("magic_tree_sapling_block");
 		}
 
 		@Override
-		public boolean canSustainPlant(BlockState state, IBlockReader world, BlockPos pos, Direction direction, IPlantable plantable) {
+		public boolean isNormalCube(BlockState state, IBlockReader worldIn, BlockPos pos) {
+			return false;
+		}
+
+		@Override
+		public boolean propagatesSkylightDown(BlockState state, IBlockReader reader, BlockPos pos) {
 			return true;
 		}
 

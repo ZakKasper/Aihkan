@@ -495,6 +495,33 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_tower_trim_1b"
+    },
+    {
+      "name": "MagicTreeSaplingBlock",
+      "type": "block",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_tree_sapling_block"
+    },
+    {
+      "name": "MagicWoodPlanks",
+      "type": "block",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_wood_planks"
+    },
+    {
+      "name": "MagicWoodPlanksRecipe",
+      "type": "recipe",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_wood_planks_recipe"
     }
   ],
   "variable_elements": [],
@@ -502,9 +529,9 @@
   "language_map": {
     "en_us": {
       "block.aihkan.magic_wood": "Magic Wood",
-      "block.aihkan.magic_tower_trim_2b": "Magic Tower Trim 2b",
       "item.aihkan.drop_tihttrium": "Drop Tihttrium",
       "item.aihkan.fused_aihkite": "Fused Aihkite",
+      "item.aihkan.rubble": "Rubble",
       "block.aihkan.magic_grass_block": "Magic Grass Block",
       "item.aihkan.cyborg_arm_iron": "Cyborg Arm Iron",
       "block.aihkan.magic_tree_sapling": "Magic Tree Sapling",
@@ -515,12 +542,12 @@
       "block.aihkan.purifier_block": "Purifier Block",
       "block.aihkan.sihkumite_ore": "Sihkumite Ore",
       "item.aihkan.drop_zihcrium": "Drop Zihcrium",
+      "item.aihkan.cyborg_arm_diamond": "Cyborg Arm Diamond",
       "item.aihkan.aihkan_test_portal": "Aihkan Test Portal Portal Igniter",
       "item.aihkan.aihkan": "Aihkan Portal Igniter",
       "item.aihkan.cyborg_arm_stone": "Cyborg Arm Stone",
       "block.aihkan.magic_tower_trim_1": "Magic Tower Trim 1",
       "block.aihkan.magic_tower_trim_2": "Magic Tower Trim 2",
-      "block.aihkan.magic_tower_trim_1b": "Magic Tower Trim 1b",
       "block.aihkan.magic_dirt": "Magic Dirt",
       "item.aihkan.leather_gauntlet": "Leather Gauntlet",
       "block.aihkan.magic_tower_white_block": "Magic Tower White Block",
