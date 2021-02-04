@@ -5,9 +5,9 @@
     "texture": "magic_tower_trim_top",
     "textureTop": "magic_tower_trim_top",
     "textureLeft": "magic_tower_trim_top",
-    "textureFront": "magic_tower_trim2",
+    "textureFront": "magic_tower_trim1b",
     "textureRight": "magic_tower_trim_top",
-    "textureBack": "magic_tower_trim2b",
+    "textureBack": "magic_tower_trim1b",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -24,16 +24,16 @@
     "Mx": 1.0,
     "My": 1.0,
     "Mz": 1.0,
-    "name": "Magic Tower Trim 2",
+    "name": "Magic Tower Trim 1b",
     "specialInfo": [],
-    "hardness": 1.5,
+    "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
       "value": "CUSTOM:AihkanItems"
     },
-    "destroyTool": "pickaxe",
+    "destroyTool": "Not specified",
     "customDrop": {
       "value": ""
     },
@@ -67,7 +67,7 @@
     },
     "luminance": 0.0,
     "unbreakable": false,
-    "breakHarvestLevel": 4,
+    "breakHarvestLevel": 1,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"
@@ -94,7 +94,11 @@
     "fluidRestrictions": [],
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
-    "blocksToReplace": [],
+    "blocksToReplace": [
+      {
+        "value": "Blocks.STONE"
+      }
+    ],
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,

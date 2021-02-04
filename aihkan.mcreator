@@ -470,6 +470,33 @@
       "registry_name": "cobblestone"
     },
     {
+      "name": "PurifierBlock",
+      "type": "block",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purifier_block"
+    },
+    {
+      "name": "MagicTowerTrim2b",
+      "type": "block",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_tower_trim_2b"
+    },
+    {
+      "name": "MagicTowerTrim1b",
+      "type": "block",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_tower_trim_1b"
+    },
+    {
       "name": "MagicTreeSaplingBlock",
       "type": "block",
       "sortid": 38,
@@ -495,15 +522,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_wood_planks_recipe"
-    },
-    {
-      "name": "PurifierBlock",
-      "type": "block",
-      "sortid": 36,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "purifier_block"
     }
   ],
   "variable_elements": [],
@@ -525,9 +543,8 @@
       "block.aihkan.sihkumite_ore": "Sihkumite Ore",
       "item.aihkan.drop_zihcrium": "Drop Zihcrium",
       "item.aihkan.cyborg_arm_diamond": "Cyborg Arm Diamond",
-      "item.aihkan.aihkan": "Aihkan Portal Igniter",
       "item.aihkan.aihkan_test_portal": "Aihkan Test Portal Portal Igniter",
-      "block.aihkan.magic_wood_planks": "Magic Wood Planks",
+      "item.aihkan.aihkan": "Aihkan Portal Igniter",
       "item.aihkan.cyborg_arm_stone": "Cyborg Arm Stone",
       "block.aihkan.magic_tower_trim_1": "Magic Tower Trim 1",
       "block.aihkan.magic_tower_trim_2": "Magic Tower Trim 2",
@@ -536,7 +553,6 @@
       "block.aihkan.magic_tower_white_block": "Magic Tower White Block",
       "block.aihkan.magic_tower_blue_block": "Magic Tower Blue Block",
       "block.aihkan.aih_kite": "Aih Kite",
-      "block.aihkan.magic_tree_sapling_block": "Magic Tree Sapling Block",
       "block.aihkan.block_tihttrium": "Block Tihttrium",
       "block.aihkan.block_zihcrium": "Block Zihcrium",
       "block.aihkan.magic_flower": "Magic Flower"
