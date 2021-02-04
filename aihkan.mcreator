@@ -41,7 +41,7 @@
       "name": "MagicTowerWhiteBlock",
       "type": "block",
       "sortid": 8,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_tower_white_block"
@@ -50,7 +50,7 @@
       "name": "MagicGrassBlock",
       "type": "block",
       "sortid": 5,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_grass_block"
@@ -86,7 +86,7 @@
       "name": "SihkumiteOre",
       "type": "block",
       "sortid": 1,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "sihkumite_ore"
@@ -104,7 +104,7 @@
       "name": "MagicDirt",
       "type": "block",
       "sortid": 6,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_dirt"
@@ -347,7 +347,7 @@
       "name": "IronGauntlet",
       "type": "item",
       "sortid": 25,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "iron_gauntlet"
@@ -356,7 +356,7 @@
       "name": "DiamondGauntlet",
       "type": "item",
       "sortid": 27,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "diamond_gauntlet"
@@ -365,7 +365,7 @@
       "name": "GoldGauntlet",
       "type": "item",
       "sortid": 26,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "gold_gauntlet"
@@ -374,7 +374,7 @@
       "name": "LeatherGauntlet",
       "type": "item",
       "sortid": 24,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "leather_gauntlet"
@@ -470,6 +470,15 @@
       "registry_name": "cobblestone"
     },
     {
+      "name": "MagicTreeSaplingBlock",
+      "type": "block",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_tree_sapling_block"
+    },
+    {
       "name": "MagicWoodPlanks",
       "type": "block",
       "sortid": 36,
@@ -488,13 +497,13 @@
       "registry_name": "magic_wood_planks_recipe"
     },
     {
-      "name": "MagicTreeSaplingBlock",
+      "name": "PurifierBlock",
       "type": "block",
-      "sortid": 38,
+      "sortid": 36,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "magic_tree_sapling_block"
+      "registry_name": "purifier_block"
     }
   ],
   "variable_elements": [],

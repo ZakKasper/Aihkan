@@ -4,13 +4,13 @@ package net.mcreator.aihkan.block;
 import net.minecraft.block.material.Material;
 
 @AihkanModElements.ModElement.Tag
-public class MagicGrassBlockBlock extends AihkanModElements.ModElement {
+public class PurifierBlockBlock extends AihkanModElements.ModElement {
 
-	@ObjectHolder("aihkan:magic_grass_block")
+	@ObjectHolder("aihkan:purifier_block")
 	public static final Block block = null;
 
-	public MagicGrassBlockBlock(AihkanModElements instance) {
-		super(instance, 5);
+	public PurifierBlockBlock(AihkanModElements instance) {
+		super(instance, 36);
 
 	}
 
@@ -26,14 +26,9 @@ public class MagicGrassBlockBlock extends AihkanModElements.ModElement {
 		public CustomBlock() {
 			super(
 
-					Block.Properties.create(Material.ORGANIC).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).lightValue(0));
+					Block.Properties.create(Material.ROCK).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).lightValue(0));
 
-			setRegistryName("magic_grass_block");
-		}
-
-		@Override
-		public boolean canSustainPlant(BlockState state, IBlockReader world, BlockPos pos, Direction direction, IPlantable plantable) {
-			return true;
+			setRegistryName("purifier_block");
 		}
 
 		@Override
