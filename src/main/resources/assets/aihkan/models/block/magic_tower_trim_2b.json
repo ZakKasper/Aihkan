@@ -3,9 +3,9 @@
   "textures": {
     "down": "aihkan:blocks/magic_tower_trim_top",
     "up": "aihkan:blocks/magic_tower_trim_top",
-    "north": "aihkan:blocks/magic_tower_trim2",
+    "north": "aihkan:blocks/magic_tower_trim2b",
     "east": "aihkan:blocks/magic_tower_trim_top",
-    "south": "aihkan:blocks/magic_tower_trim2b",
+    "south": "aihkan:blocks/magic_tower_trim2",
     "west": "aihkan:blocks/magic_tower_trim_top",
     "particle": "aihkan:blocks/magic_tower_trim_top"
   }
