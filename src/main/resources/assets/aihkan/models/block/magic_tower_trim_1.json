@@ -4,9 +4,9 @@
     "down": "aihkan:blocks/magic_tower_trim_top",
     "up": "aihkan:blocks/magic_tower_trim_top",
     "north": "aihkan:blocks/magic_tower_trim1",
-    "east": "aihkan:blocks/magic_tower_trim_top",
+    "east": "aihkan:blocks/magic_tower_trim1",
     "south": "aihkan:blocks/magic_tower_trim1",
-    "west": "aihkan:blocks/magic_tower_trim_top",
+    "west": "aihkan:blocks/magic_tower_trim1",
     "particle": "aihkan:blocks/magic_tower_trim_top"
   }
 }
