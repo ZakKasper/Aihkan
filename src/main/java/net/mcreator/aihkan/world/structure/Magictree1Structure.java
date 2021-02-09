@@ -48,7 +48,7 @@ public class Magictree1Structure extends AihkanModElements.ModElement {
 					dimensionCriteria = true;
 				if (!dimensionCriteria)
 					return false;
-				if ((random.nextInt(1000000) + 1) <= 770000) {
+				if ((random.nextInt(1000000) + 1) <= 500000) {
 					int count = random.nextInt(-1) + 3;
 					for (int a = 0; a < count; a++) {
 						int i = ci + random.nextInt(16);
