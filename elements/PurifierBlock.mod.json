@@ -2,12 +2,12 @@
   "_fv": 13,
   "_type": "block",
   "definition": {
-    "texture": "magicleaves",
-    "textureTop": "magicleaves",
-    "textureLeft": "magicleaves",
-    "textureFront": "magicleaves",
-    "textureRight": "magicleaves",
-    "textureBack": "magicleaves",
+    "texture": "purifier_bottom_top",
+    "textureTop": "purifier_bottom_top",
+    "textureLeft": "purifier_side_lr",
+    "textureFront": "purifier_front_back",
+    "textureRight": "purifier_side_lr",
+    "textureBack": "purifier_front_back",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -16,7 +16,7 @@
     "itemTexture": "",
     "particleTexture": "",
     "hasTransparency": true,
-    "connectedSides": false,
+    "connectedSides": true,
     "transparencyType": "SOLID",
     "mx": 0.0,
     "my": 0.0,
@@ -24,7 +24,7 @@
     "Mx": 1.0,
     "My": 1.0,
     "Mz": 1.0,
-    "name": "Magic Leaves",
+    "name": "Purifier Block",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
@@ -45,7 +45,7 @@
     "canProvidePower": false,
     "lightOpacity": 255,
     "material": {
-      "value": "LEAVES"
+      "value": "ROCK"
     },
     "tickRate": 10,
     "tickRandomly": false,
@@ -57,13 +57,13 @@
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
     "flammability": 0,
-    "fireSpreadSpeed": 3,
+    "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "PLANT"
+      "value": "GROUND"
     },
     "luminance": 0.0,
     "unbreakable": false,

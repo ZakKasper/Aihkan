@@ -41,7 +41,7 @@
       "name": "MagicTowerWhiteBlock",
       "type": "block",
       "sortid": 8,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_tower_white_block"
@@ -50,7 +50,7 @@
       "name": "MagicGrassBlock",
       "type": "block",
       "sortid": 5,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_grass_block"
@@ -86,7 +86,7 @@
       "name": "SihkumiteOre",
       "type": "block",
       "sortid": 1,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "sihkumite_ore"
@@ -104,7 +104,7 @@
       "name": "MagicDirt",
       "type": "block",
       "sortid": 6,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_dirt"
@@ -347,7 +347,7 @@
       "name": "IronGauntlet",
       "type": "item",
       "sortid": 25,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "iron_gauntlet"
@@ -356,7 +356,7 @@
       "name": "DiamondGauntlet",
       "type": "item",
       "sortid": 27,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "diamond_gauntlet"
@@ -365,7 +365,7 @@
       "name": "GoldGauntlet",
       "type": "item",
       "sortid": 26,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "gold_gauntlet"
@@ -374,7 +374,7 @@
       "name": "LeatherGauntlet",
       "type": "item",
       "sortid": 24,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "leather_gauntlet"
@@ -473,10 +473,64 @@
       "name": "DroidPassive",
       "type": "mob",
       "sortid": 36,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "droid_passive"
+    },
+    {
+      "name": "MagicTowerTrim2b",
+      "type": "block",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_tower_trim_2b"
+    },
+    {
+      "name": "MagicTowerTrim1b",
+      "type": "block",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_tower_trim_1b"
+    },
+    {
+      "name": "PurifierBlock",
+      "type": "block",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purifier_block"
+    },
+    {
+      "name": "MagicTreeSaplingBlock",
+      "type": "block",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_tree_sapling_block"
+    },
+    {
+      "name": "MagicWoodPlanks",
+      "type": "block",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_wood_planks"
+    },
+    {
+      "name": "MagicWoodPlanksRecipe",
+      "type": "recipe",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_wood_planks_recipe"
     }
   ],
   "variable_elements": [],
@@ -484,28 +538,33 @@
   "language_map": {
     "en_us": {
       "block.aihkan.magic_wood": "Magic Wood",
-      "item.aihkan.cyborg_arm_stone": "Cyborg Arm Stone",
       "item.aihkan.drop_tihttrium": "Drop Tihttrium",
       "item.aihkan.fused_aihkite": "Fused Aihkite",
-      "block.aihkan.magic_dirt": "Magic Dirt",
+      "item.aihkan.rubble": "Rubble",
       "block.aihkan.magic_grass_block": "Magic Grass Block",
       "item.aihkan.cyborg_arm_iron": "Cyborg Arm Iron",
-      "item.aihkan.leather_gauntlet": "Leather Gauntlet",
-      "block.aihkan.magic_tower_white_block": "Magic Tower White Block",
-      "item.aihkan.diamond_gauntlet": "Diamond Gauntlet",
       "block.aihkan.magic_tree_sapling": "Magic Tree Sapling",
-      "item.aihkan.droid_passive_spawn_egg": "Droid Passive Spawn Egg",
+      "item.aihkan.diamond_gauntlet": "Diamond Gauntlet",
       "item.aihkan.iron_gauntlet": "Iron Gauntlet",
       "item.aihkan.gold_gauntlet": "Gold Gauntlet",
-      "entity.aihkan.droid_passive": "Droid Passive",
-      "block.aihkan.magic_tower_blue_block": "Magic Tower Blue Block",
+      "biome.aihkan.magic_forest": "Magic Forest",
       "block.aihkan.magic_leaves": "Magic Leaves",
       "block.aihkan.sihkumite_ore": "Sihkumite Ore",
       "item.aihkan.drop_zihcrium": "Drop Zihcrium",
-      "block.aihkan.block_tihttrium": "Block Tihttrium",
+      "item.aihkan.cyborg_arm_diamond": "Cyborg Arm Diamond",
       "item.aihkan.aihkan": "Aihkan Portal Igniter",
       "item.aihkan.aihkan_test_portal": "Aihkan Test Portal Portal Igniter",
-      "block.aihkan.block_zihcrium": "Block Zihcrium"
+      "item.aihkan.cyborg_arm_stone": "Cyborg Arm Stone",
+      "block.aihkan.magic_tower_trim_1": "Magic Tower Trim 1",
+      "block.aihkan.magic_tower_trim_2": "Magic Tower Trim 2",
+      "block.aihkan.magic_dirt": "Magic Dirt",
+      "item.aihkan.leather_gauntlet": "Leather Gauntlet",
+      "block.aihkan.magic_tower_white_block": "Magic Tower White Block",
+      "block.aihkan.magic_tower_blue_block": "Magic Tower Blue Block",
+      "block.aihkan.aih_kite": "Aih Kite",
+      "block.aihkan.block_tihttrium": "Block Tihttrium",
+      "block.aihkan.block_zihcrium": "Block Zihcrium",
+      "block.aihkan.magic_flower": "Magic Flower"
     }
   },
   "workspaceSettings": {
