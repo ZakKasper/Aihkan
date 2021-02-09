@@ -470,13 +470,13 @@
       "registry_name": "cobblestone"
     },
     {
-      "name": "PurifierBlock",
-      "type": "block",
+      "name": "DroidPassive",
+      "type": "mob",
       "sortid": 36,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "purifier_block"
+      "registry_name": "droid_passive"
     },
     {
       "name": "MagicTowerTrim2b",
@@ -495,6 +495,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_tower_trim_1b"
+    },
+    {
+      "name": "PurifierBlock",
+      "type": "block",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purifier_block"
     },
     {
       "name": "MagicTreeSaplingBlock",
@@ -545,8 +554,8 @@
       "block.aihkan.sihkumite_ore": "Sihkumite Ore",
       "item.aihkan.drop_zihcrium": "Drop Zihcrium",
       "item.aihkan.cyborg_arm_diamond": "Cyborg Arm Diamond",
-      "item.aihkan.aihkan_test_portal": "Aihkan Test Portal Portal Igniter",
       "item.aihkan.aihkan": "Aihkan Portal Igniter",
+      "item.aihkan.aihkan_test_portal": "Aihkan Test Portal Portal Igniter",
       "block.aihkan.magic_wood_planks": "Magic Wood Planks",
       "item.aihkan.cyborg_arm_stone": "Cyborg Arm Stone",
       "block.aihkan.magic_tower_trim_1": "Magic Tower Trim 1",
@@ -555,6 +564,8 @@
       "block.aihkan.magic_dirt": "Magic Dirt",
       "item.aihkan.leather_gauntlet": "Leather Gauntlet",
       "block.aihkan.magic_tower_white_block": "Magic Tower White Block",
+      "item.aihkan.droid_passive_spawn_egg": "Droid Passive Spawn Egg",
+      "entity.aihkan.droid_passive": "Droid Passive",
       "block.aihkan.magic_tower_blue_block": "Magic Tower Blue Block",
       "block.aihkan.aih_kite": "Aih Kite",
       "block.aihkan.magic_tree_sapling_block": "Magic Tree Sapling Block",
