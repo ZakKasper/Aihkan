@@ -1,7 +1,27 @@
 {
   "variants": {
-    "": {
+    "facing=north": {
       "model": "aihkan:block/magic_tower_trim_2b"
+    },
+    "facing=east": {
+      "model": "aihkan:block/magic_tower_trim_2b",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "aihkan:block/magic_tower_trim_2b",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "aihkan:block/magic_tower_trim_2b",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "aihkan:block/magic_tower_trim_2b",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "aihkan:block/magic_tower_trim_2b",
+      "x": 90
     }
   }
 }

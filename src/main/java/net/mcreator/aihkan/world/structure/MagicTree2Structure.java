@@ -66,7 +66,7 @@ public class MagicTree2Structure extends AihkanModElements.ModElement {
 						if (template == null)
 							return false;
 						template.addBlocksToWorld(world, spawnTo, new PlacementSettings().setRotation(rotation).setRandom(random).setMirror(mirror)
-								.addProcessor(BlockIgnoreStructureProcessor.AIR_AND_STRUCTURE_BLOCK).setChunk(null).setIgnoreEntities(false));
+								.addProcessor(BlockIgnoreStructureProcessor.AIR).setChunk(null).setIgnoreEntities(false));
 					}
 				}
 				return true;

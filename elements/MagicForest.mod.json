@@ -9,7 +9,7 @@
     "undergroundBlock": {
       "value": "CUSTOM:MagicDirt"
     },
-    "treeType": 1,
+    "treeType": 0,
     "vanillaTreeType": "Default",
     "minHeight": 7,
     "spawnVines": false,
@@ -33,7 +33,7 @@
       "value": -60976,
       "falpha": 0.0
     },
-    "treesPerChunk": 5,
+    "treesPerChunk": 0,
     "grassPerChunk": 4,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 0,

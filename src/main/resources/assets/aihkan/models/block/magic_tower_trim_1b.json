@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "aihkan:blocks/magic_tower_trim_top",
-    "up": "aihkan:blocks/magic_tower_trim_top",
+    "down": "aihkan:blocks/magic_tower_trim1b",
+    "up": "aihkan:blocks/magic_tower_trim1b",
     "north": "aihkan:blocks/magic_tower_trim1b",
     "east": "aihkan:blocks/magic_tower_trim_top",
     "south": "aihkan:blocks/magic_tower_trim1b",
     "west": "aihkan:blocks/magic_tower_trim_top",
-    "particle": "aihkan:blocks/magic_tower_trim_top"
+    "particle": "aihkan:blocks/magic_tower_trim1b"
   }
 }
