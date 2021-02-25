@@ -380,15 +380,6 @@
       "registry_name": "leather_gauntlet"
     },
     {
-      "name": "MagicTreeSapling",
-      "type": "plant",
-      "sortid": 29,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "magic_tree_sapling"
-    },
-    {
       "name": "MagicTree2",
       "type": "structure",
       "sortid": 28,
@@ -522,6 +513,35 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_wood_planks_recipe"
+    },
+    {
+      "name": "MagicTreeSaplingBlockUpdateTick",
+      "type": "procedure",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_tree_sapling_block_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -529,12 +549,12 @@
   "language_map": {
     "en_us": {
       "block.aihkan.magic_wood": "Magic Wood",
+      "block.aihkan.magic_tower_trim_2b": "Magic Tower Trim 2b",
       "item.aihkan.drop_tihttrium": "Drop Tihttrium",
       "item.aihkan.fused_aihkite": "Fused Aihkite",
       "item.aihkan.rubble": "Rubble",
       "block.aihkan.magic_grass_block": "Magic Grass Block",
       "item.aihkan.cyborg_arm_iron": "Cyborg Arm Iron",
-      "block.aihkan.magic_tree_sapling": "Magic Tree Sapling",
       "item.aihkan.diamond_gauntlet": "Diamond Gauntlet",
       "item.aihkan.iron_gauntlet": "Iron Gauntlet",
       "item.aihkan.gold_gauntlet": "Gold Gauntlet",
@@ -548,6 +568,7 @@
       "item.aihkan.cyborg_arm_stone": "Cyborg Arm Stone",
       "block.aihkan.magic_tower_trim_1": "Magic Tower Trim 1",
       "block.aihkan.magic_tower_trim_2": "Magic Tower Trim 2",
+      "block.aihkan.magic_tower_trim_1b": "Magic Tower Trim 1b",
       "block.aihkan.magic_dirt": "Magic Dirt",
       "item.aihkan.leather_gauntlet": "Leather Gauntlet",
       "block.aihkan.magic_tower_white_block": "Magic Tower White Block",

@@ -1,7 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "aihkan:blocks/magic_tree_sapling",
-    "particle": "aihkan:blocks/magic_tree_sapling"
-  }
-}
