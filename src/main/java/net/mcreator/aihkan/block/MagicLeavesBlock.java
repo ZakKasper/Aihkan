@@ -6,11 +6,9 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.world.storage.loot.LootContext;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Direction;
-import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.client.renderer.RenderTypeLookup;
@@ -22,9 +20,6 @@ import net.minecraft.block.Block;
 
 import net.mcreator.aihkan.itemgroup.AihkanItemsItemGroup;
 import net.mcreator.aihkan.AihkanModElements;
-
-import java.util.List;
-import java.util.Collections;
 
 @AihkanModElements.ModElement.Tag
 public class MagicLeavesBlock extends AihkanModElements.ModElement {
@@ -60,14 +55,6 @@ public class MagicLeavesBlock extends AihkanModElements.ModElement {
 		@Override
 		public int getFireSpreadSpeed(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
 			return 3;
-		}
-
-		@Override
-		public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
-			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
-			if (!dropsOriginal.isEmpty())
-				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(this, 1));
 		}
 	}
 }

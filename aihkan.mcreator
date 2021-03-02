@@ -380,15 +380,6 @@
       "registry_name": "leather_gauntlet"
     },
     {
-      "name": "MagicTreeSapling",
-      "type": "plant",
-      "sortid": 29,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "magic_tree_sapling"
-    },
-    {
       "name": "MagicTree2",
       "type": "structure",
       "sortid": 28,
@@ -540,6 +531,35 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "adam_00"
+    },
+    {
+      "name": "MagicTreeSaplingBlockUpdateTick",
+      "type": "procedure",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_tree_sapling_block_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
