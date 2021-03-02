@@ -2,12 +2,12 @@
 // Exported for Minecraft version 1.15
 // Paste this class into your mod and generate all required imports
 
-public static class Modelcustom_model extends EntityModel<Entity> {
+public static class ModeldroidPassive extends EntityModel<Entity> {
 	private final ModelRenderer Wheel;
 	private final ModelRenderer cube_r10_r1;
 	private final ModelRenderer bb_main;
 
-	public Modelcustom_model() {
+	public ModeldroidPassive() {
 		textureWidth = 16;
 		textureHeight = 16;
 
@@ -34,12 +34,6 @@ public static class Modelcustom_model extends EntityModel<Entity> {
 	}
 
 	@Override
-	public void setRotationAngles(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks,
-			float netHeadYaw, float headPitch) {
-		// previously the render function, render code was moved to a method below
-	}
-
-	@Override
 	public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red,
 			float green, float blue, float alpha) {
 		Wheel.render(matrixStack, buffer, packedLight, packedOverlay);
@@ -50,5 +44,9 @@ public static class Modelcustom_model extends EntityModel<Entity> {
 		modelRenderer.rotateAngleX = x;
 		modelRenderer.rotateAngleY = y;
 		modelRenderer.rotateAngleZ = z;
+	}
+
+	public void setRotationAngles(float f, float f1, float f2, float f3, float f4, float f5, Entity e) {
+		super.setRotationAngles(f, f1, f2, f3, f4, f5, e);
 	}
 }

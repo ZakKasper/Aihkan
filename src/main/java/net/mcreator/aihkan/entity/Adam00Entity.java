@@ -8,6 +8,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.common.DungeonHooks;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
@@ -15,23 +16,23 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.gen.Heightmap;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.World;
-import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.network.IPacket;
-import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.SpawnEggItem;
-import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
-import net.minecraft.entity.projectile.PotionEntity;
-import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.WaterAvoidingRandomWalkingGoal;
-import net.minecraft.entity.ai.goal.TemptGoal;
+import net.minecraft.entity.ai.goal.RandomWalkingGoal;
 import net.minecraft.entity.ai.goal.PanicGoal;
+import net.minecraft.entity.ai.goal.OpenDoorGoal;
 import net.minecraft.entity.ai.goal.MoveTowardsVillageGoal;
+import net.minecraft.entity.ai.goal.LookRandomlyGoal;
 import net.minecraft.entity.ai.goal.FollowMobGoal;
+import net.minecraft.entity.ai.goal.BreakDoorGoal;
+import net.minecraft.entity.ai.goal.BreakBlockGoal;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
@@ -47,51 +48,55 @@ import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.client.renderer.entity.IEntityRenderer;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.IRenderTypeBuffer;
-import net.minecraft.block.BlockState;
+import net.minecraft.block.material.Material;
+import net.minecraft.block.Blocks;
 
+import net.mcreator.aihkan.item.RubbleItem;
 import net.mcreator.aihkan.AihkanModElements;
 
 import com.mojang.blaze3d.vertex.IVertexBuilder;
 import com.mojang.blaze3d.matrix.MatrixStack;
 
 @AihkanModElements.ModElement.Tag
-public class DroidPassiveEntity extends AihkanModElements.ModElement {
+public class Adam00Entity extends AihkanModElements.ModElement {
 	public static EntityType entity = null;
-	public DroidPassiveEntity(AihkanModElements instance) {
-		super(instance, 36);
+	public Adam00Entity(AihkanModElements instance) {
+		super(instance, 39);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
 	@Override
 	public void initElements() {
-		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER).setShouldReceiveVelocityUpdates(true)
-				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(1.3f, 2.5f)).build("droid_passive")
-						.setRegistryName("droid_passive");
+		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.CREATURE).setShouldReceiveVelocityUpdates(true)
+				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(1f, 2.2f)).build("adam_00")
+						.setRegistryName("adam_00");
 		elements.entities.add(() -> entity);
-		elements.items.add(() -> new SpawnEggItem(entity, -10027009, -10027162, new Item.Properties().group(ItemGroup.MISC))
-				.setRegistryName("droid_passive_spawn_egg"));
+		elements.items.add(
+				() -> new SpawnEggItem(entity, -29638, -13750738, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("adam_00_spawn_egg"));
 	}
 
 	@Override
 	public void init(FMLCommonSetupEvent event) {
 		for (Biome biome : ForgeRegistries.BIOMES.getValues()) {
-			biome.getSpawns(EntityClassification.MONSTER).add(new Biome.SpawnListEntry(entity, 13, 2, 7));
+			biome.getSpawns(EntityClassification.CREATURE).add(new Biome.SpawnListEntry(entity, 8, 4, 4));
 		}
 		EntitySpawnPlacementRegistry.register(entity, EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES,
-				MonsterEntity::canMonsterSpawn);
+				(entityType, world, reason, pos,
+						random) -> (world.getBlockState(pos.down()).getMaterial() == Material.ORGANIC && world.getLightSubtracted(pos, 0) > 8));
+		DungeonHooks.addDungeonMob(entity, 180);
 	}
 
 	@SubscribeEvent
 	@OnlyIn(Dist.CLIENT)
 	public void registerModels(ModelRegistryEvent event) {
 		RenderingRegistry.registerEntityRenderingHandler(entity, renderManager -> {
-			return new MobRenderer(renderManager, new ModeldroidPassive(), 0.1f) {
+			return new MobRenderer(renderManager, new Modeladam(), 0.2f) {
 				{
 					this.addLayer(new GlowingLayer<>(this));
 				}
 				@Override
 				public ResourceLocation getEntityTexture(Entity entity) {
-					return new ResourceLocation("aihkan:textures/.png");
+					return new ResourceLocation("aihkan:textures/adamtexture.png");
 				}
 			};
 		});
@@ -115,11 +120,16 @@ public class DroidPassiveEntity extends AihkanModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.goalSelector.addGoal(1, new WaterAvoidingRandomWalkingGoal(this, 1.5));
-			this.goalSelector.addGoal(4, new PanicGoal(this, 2));
-			this.goalSelector.addGoal(5, new TemptGoal(this, 1.2, Ingredient.fromItems(new ItemStack(Items.COAL, (int) (1)).getItem()), false));
-			this.goalSelector.addGoal(6, new FollowMobGoal(this, (float) 1.2, 10, 5));
-			this.goalSelector.addGoal(7, new MoveTowardsVillageGoal(this, 0.5));
+			this.goalSelector.addGoal(1, new RandomWalkingGoal(this, 1));
+			this.goalSelector.addGoal(2, new WaterAvoidingRandomWalkingGoal(this, 0.8));
+			this.goalSelector.addGoal(3, new LookRandomlyGoal(this));
+			this.goalSelector.addGoal(4, new MoveTowardsVillageGoal(this, 0.5));
+			this.goalSelector.addGoal(5, new OpenDoorGoal(this, true));
+			this.goalSelector.addGoal(6, new OpenDoorGoal(this, false));
+			this.goalSelector.addGoal(7, new BreakDoorGoal(this, e -> true));
+			this.goalSelector.addGoal(8, new FollowMobGoal(this, (float) 1, 10, 5));
+			this.goalSelector.addGoal(9, new BreakBlockGoal(Blocks.STONE.getDefaultState().getBlock(), this, 1, (int) 3));
+			this.goalSelector.addGoal(10, new PanicGoal(this, 1.2));
 		}
 
 		@Override
@@ -129,13 +139,7 @@ public class DroidPassiveEntity extends AihkanModElements.ModElement {
 
 		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
 			super.dropSpecialItems(source, looting, recentlyHitIn);
-			this.entityDropItem(new ItemStack(Items.FLINT, (int) (1)));
-		}
-
-		@Override
-		public void playStepSound(BlockPos pos, BlockState blockIn) {
-			this.playSound((net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.iron_golem.step")),
-					0.15f, 1);
+			this.entityDropItem(new ItemStack(RubbleItem.block, (int) (1)));
 		}
 
 		@Override
@@ -145,15 +149,11 @@ public class DroidPassiveEntity extends AihkanModElements.ModElement {
 
 		@Override
 		public net.minecraft.util.SoundEvent getDeathSound() {
-			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.explode"));
+			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
 		}
 
 		@Override
 		public boolean attackEntityFrom(DamageSource source, float amount) {
-			if (source.getImmediateSource() instanceof PotionEntity)
-				return false;
-			if (source == DamageSource.FALL)
-				return false;
 			if (source == DamageSource.CACTUS)
 				return false;
 			return super.attackEntityFrom(source, amount);
@@ -165,15 +165,12 @@ public class DroidPassiveEntity extends AihkanModElements.ModElement {
 			if (this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED) != null)
 				this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.3);
 			if (this.getAttribute(SharedMonsterAttributes.MAX_HEALTH) != null)
-				this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(6);
+				this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(10);
 			if (this.getAttribute(SharedMonsterAttributes.ARMOR) != null)
-				this.getAttribute(SharedMonsterAttributes.ARMOR).setBaseValue(1);
+				this.getAttribute(SharedMonsterAttributes.ARMOR).setBaseValue(0);
 			if (this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE) == null)
 				this.getAttributes().registerAttribute(SharedMonsterAttributes.ATTACK_DAMAGE);
-			this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(2);
-			if (this.getAttribute(SharedMonsterAttributes.ATTACK_KNOCKBACK) == null)
-				this.getAttributes().registerAttribute(SharedMonsterAttributes.ATTACK_KNOCKBACK);
-			this.getAttribute(SharedMonsterAttributes.ATTACK_KNOCKBACK).setBaseValue(1D);
+			this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(3);
 		}
 	}
 
@@ -185,7 +182,7 @@ public class DroidPassiveEntity extends AihkanModElements.ModElement {
 
 		public void render(MatrixStack matrixStackIn, IRenderTypeBuffer bufferIn, int packedLightIn, T entitylivingbaseIn, float limbSwing,
 				float limbSwingAmount, float partialTicks, float ageInTicks, float netHeadYaw, float headPitch) {
-			IVertexBuilder ivertexbuilder = bufferIn.getBuffer(RenderType.getEyes(new ResourceLocation("aihkan:textures/.png")));
+			IVertexBuilder ivertexbuilder = bufferIn.getBuffer(RenderType.getEyes(new ResourceLocation("aihkan:textures/adamtexture.png")));
 			this.getEntityModel().render(matrixStackIn, ivertexbuilder, 15728640, OverlayTexture.NO_OVERLAY, 1, 1, 1, 1);
 		}
 	}
@@ -193,38 +190,60 @@ public class DroidPassiveEntity extends AihkanModElements.ModElement {
 	// Made with Blockbench 3.7.5
 	// Exported for Minecraft version 1.15
 	// Paste this class into your mod and generate all required imports
-	public static class ModeldroidPassive extends EntityModel<Entity> {
-		private final ModelRenderer Wheel;
-		private final ModelRenderer cube_r10_r1;
-		private final ModelRenderer bb_main;
-		public ModeldroidPassive() {
-			textureWidth = 16;
-			textureHeight = 16;
-			Wheel = new ModelRenderer(this);
-			Wheel.setRotationPoint(1.5F, 23.0F, 2.0F);
-			setRotationAngle(Wheel, 0.0F, 3.1416F, 0.0F);
-			Wheel.setTextureOffset(0, 0).addBox(0.0F, -0.5F, 0.5F, 1.0F, 1.0F, 1.0F, 0.0F, false);
-			Wheel.setTextureOffset(0, 0).addBox(0.0F, -0.5F, 2.5F, 1.0F, 1.0F, 1.0F, 0.0F, false);
-			cube_r10_r1 = new ModelRenderer(this);
-			cube_r10_r1.setRotationPoint(2.5F, 0.0F, 3.0F);
-			Wheel.addChild(cube_r10_r1);
-			setRotationAngle(cube_r10_r1, 0.0F, 3.1416F, 0.0F);
-			cube_r10_r1.setTextureOffset(0, 0).addBox(-0.5F, -0.5F, 1.5F, 1.0F, 1.0F, 1.0F, 0.0F, false);
-			cube_r10_r1.setTextureOffset(0, 0).addBox(-0.5F, -0.5F, -0.5F, 1.0F, 1.0F, 1.0F, 0.0F, false);
-			bb_main = new ModelRenderer(this);
-			bb_main.setRotationPoint(0.0F, 24.0F, 0.0F);
-			bb_main.setTextureOffset(2, 8).addBox(-1.0F, -3.0F, -2.0F, 2.0F, 2.0F, 4.0F, 0.0F, false);
-			bb_main.setTextureOffset(8, 0).addBox(-0.5F, -2.5F, 1.2F, 1.0F, 1.0F, 1.0F, 0.0F, false);
-			bb_main.setTextureOffset(8, 0).addBox(0.2F, -2.7F, -0.7F, 1.0F, 1.0F, 1.0F, 0.0F, false);
-			bb_main.setTextureOffset(8, 0).addBox(-1.2F, -2.7F, -0.7F, 1.0F, 1.0F, 1.0F, 0.0F, false);
-			bb_main.setTextureOffset(0, 3).addBox(-0.5F, -3.2F, -1.5F, 1.0F, 1.0F, 2.0F, 0.0F, false);
+	public static class Modeladam extends EntityModel<Entity> {
+		private final ModelRenderer head;
+		private final ModelRenderer armR;
+		private final ModelRenderer legL;
+		private final ModelRenderer legR;
+		private final ModelRenderer neck;
+		private final ModelRenderer armL;
+		private final ModelRenderer torso;
+		private final ModelRenderer chest;
+		private final ModelRenderer hips;
+		public Modeladam() {
+			textureWidth = 32;
+			textureHeight = 32;
+			head = new ModelRenderer(this);
+			head.setRotationPoint(0.0F, 24.0F, 0.0F);
+			head.setTextureOffset(20, 26).addBox(-1.0F, -15.0F, -0.5F, 3.0F, 3.0F, 3.0F, 0.0F, false);
+			armR = new ModelRenderer(this);
+			armR.setRotationPoint(0.0F, 0.0F, 0.0F);
+			head.addChild(armR);
+			armR.setTextureOffset(28, 18).addBox(-2.5F, -10.0F, 0.5F, 1.0F, 4.0F, 1.0F, 0.0F, false);
+			legL = new ModelRenderer(this);
+			legL.setRotationPoint(0.0F, 0.0F, 0.0F);
+			head.addChild(legL);
+			legL.setTextureOffset(24, 18).addBox(1.0F, -4.0F, 0.5F, 1.0F, 4.0F, 1.0F, 0.0F, false);
+			legR = new ModelRenderer(this);
+			legR.setRotationPoint(0.0F, 0.0F, 0.0F);
+			head.addChild(legR);
+			legR.setTextureOffset(20, 18).addBox(-1.0F, -4.0F, 0.5F, 1.0F, 4.0F, 1.0F, 0.0F, false);
+			neck = new ModelRenderer(this);
+			neck.setRotationPoint(0.0F, 0.0F, 0.0F);
+			head.addChild(neck);
+			neck.setTextureOffset(28, 23).addBox(0.0F, -12.0F, 0.5F, 1.0F, 2.0F, 1.0F, 0.0F, false);
+			armL = new ModelRenderer(this);
+			armL.setRotationPoint(0.0F, 0.0F, 0.0F);
+			head.addChild(armL);
+			armL.setTextureOffset(28, 18).addBox(2.5F, -10.0F, 0.5F, 1.0F, 4.0F, 1.0F, 0.0F, false);
+			torso = new ModelRenderer(this);
+			torso.setRotationPoint(0.0F, 24.0F, 0.0F);
+			torso.setTextureOffset(0, 27).addBox(-1.0F, -9.0F, 0.5F, 3.0F, 4.0F, 1.0F, 0.0F, false);
+			chest = new ModelRenderer(this);
+			chest.setRotationPoint(0.0F, 24.0F, 0.0F);
+			chest.setTextureOffset(8, 29).addBox(-1.5F, -10.0F, 0.0F, 4.0F, 1.0F, 2.0F, 0.0F, false);
+			hips = new ModelRenderer(this);
+			hips.setRotationPoint(0.0F, 24.0F, 0.0F);
+			hips.setTextureOffset(0, 24).addBox(-1.5F, -5.0F, 0.0F, 4.0F, 1.0F, 2.0F, 0.0F, false);
 		}
 
 		@Override
 		public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue,
 				float alpha) {
-			Wheel.render(matrixStack, buffer, packedLight, packedOverlay);
-			bb_main.render(matrixStack, buffer, packedLight, packedOverlay);
+			head.render(matrixStack, buffer, packedLight, packedOverlay);
+			torso.render(matrixStack, buffer, packedLight, packedOverlay);
+			chest.render(matrixStack, buffer, packedLight, packedOverlay);
+			hips.render(matrixStack, buffer, packedLight, packedOverlay);
 		}
 
 		public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
@@ -234,6 +253,12 @@ public class DroidPassiveEntity extends AihkanModElements.ModElement {
 		}
 
 		public void setRotationAngles(Entity e, float f, float f1, float f2, float f3, float f4) {
+			this.head.rotateAngleY = f3 / (180F / (float) Math.PI);
+			this.head.rotateAngleX = f4 / (180F / (float) Math.PI);
+			this.legR.rotateAngleX = MathHelper.cos(f * 1.0F) * 1.0F * f1;
+			this.armR.rotateAngleX = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
+			this.legL.rotateAngleX = MathHelper.cos(f * 1.0F) * -1.0F * f1;
+			this.armL.rotateAngleX = MathHelper.cos(f * 0.6662F) * f1;
 		}
 	}
 }
