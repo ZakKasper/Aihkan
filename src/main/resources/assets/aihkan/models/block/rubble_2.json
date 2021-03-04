@@ -1,0 +1,8 @@
+{
+  "parent": "aihkan:custom/rubble_block_akws",
+  "textures": {
+    "all": "aihkan:blocks/rubble_texture_akws",
+    "particle": "aihkan:blocks/rubble_texture_akws",
+    "0": "aihkan:blocks/rubble_texture_akws"
+  }
+}

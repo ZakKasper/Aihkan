@@ -1,0 +1,42 @@
+{
+  "group": "aihkan",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "aihkan:fused_aihkite"
+    },
+    "1": {
+      "item": "minecraft:redstone_lamp"
+    },
+    "2": {
+      "item": "aihkan:fused_aihkite"
+    },
+    "3": {
+      "item": "minecraft:redstone_lamp"
+    },
+    "4": {
+      "item": "aihkan:pure_tihttrium"
+    },
+    "5": {
+      "item": "minecraft:redstone_lamp"
+    },
+    "6": {
+      "item": "aihkan:fused_aihkite"
+    },
+    "7": {
+      "item": "minecraft:redstone_lamp"
+    },
+    "8": {
+      "item": "aihkan:fused_aihkite"
+    }
+  },
+  "result": {
+    "item": "aihkan:unknown_element",
+    "count": 1
+  }
+}
