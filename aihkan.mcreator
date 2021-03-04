@@ -594,8 +594,8 @@
   "language_map": {
     "en_us": {
       "block.aihkan.magic_wood": "Magic Wood",
-      "block.aihkan.magic_tower_trim_2b": "Magic Tower Trim 2b",
       "item.aihkan.bronze_giant_spawn_egg": "Bronze Giant Spawn Egg",
+      "block.aihkan.magic_tower_trim_2b": "Magic Tower Trim 2b",
       "item.aihkan.drop_tihttrium": "Drop Tihttrium",
       "item.aihkan.fused_aihkite": "Fused Aihkite",
       "item.aihkan.rubble": "Rubble",
