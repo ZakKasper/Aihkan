@@ -531,6 +531,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_wood_planks_recipe"
+    },
+    {
+      "name": "OvergrownCourtyard",
+      "type": "structure",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "overgrown_courtyard"
     }
   ],
   "variable_elements": [],
