@@ -569,6 +569,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "sci_tower"
+    },
+    {
+      "name": "BronzeGiant",
+      "type": "mob",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bronze_giant"
     }
   ],
   "variable_elements": [],
