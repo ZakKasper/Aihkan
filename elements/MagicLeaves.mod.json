@@ -38,7 +38,7 @@
       "value": ""
     },
     "dropAmount": 1,
-    "useLootTableForDrops": false,
+    "useLootTableForDrops": true,
     "isBeaconBase": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
@@ -57,7 +57,7 @@
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
     "flammability": 0,
-    "fireSpreadSpeed": 0,
+    "fireSpreadSpeed": 3,
     "isLadder": false,
     "slipperiness": 0.6,
     "reactionToPushing": "NORMAL",
