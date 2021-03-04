@@ -3,10 +3,10 @@
   "_type": "dimension",
   "definition": {
     "portalFrame": {
-      "value": "CUSTOM:AihKite"
+      "value": "CUSTOM:AIhPortal"
     },
     "portalParticles": {
-      "value": "EXPLOSION_NORMAL"
+      "value": "PORTAL"
     },
     "portalLuminance": 0.0,
     "portalSound": {
@@ -18,7 +18,7 @@
     },
     "texture": "tempportaligniter",
     "portalTexture": "tempportalblock",
-    "enablePortal": false,
+    "enablePortal": true,
     "biomesInDimension": [
       {
         "value": "CUSTOM:MagicForest"
