@@ -560,6 +560,15 @@
           }
         ]
       }
+    },
+    {
+      "name": "BronzeGiant",
+      "type": "mob",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bronze_giant"
     }
   ],
   "variable_elements": [],
@@ -568,6 +577,7 @@
     "en_us": {
       "block.aihkan.magic_wood": "Magic Wood",
       "block.aihkan.magic_tower_trim_2b": "Magic Tower Trim 2b",
+      "item.aihkan.bronze_giant_spawn_egg": "Bronze Giant Spawn Egg",
       "item.aihkan.drop_tihttrium": "Drop Tihttrium",
       "item.aihkan.fused_aihkite": "Fused Aihkite",
       "item.aihkan.rubble": "Rubble",
@@ -602,7 +612,8 @@
       "item.aihkan.adam_00_spawn_egg": "Adam 0 0 Spawn Egg",
       "block.aihkan.block_tihttrium": "Block Tihttrium",
       "block.aihkan.block_zihcrium": "Block Zihcrium",
-      "block.aihkan.magic_flower": "Magic Flower"
+      "block.aihkan.magic_flower": "Magic Flower",
+      "entity.aihkan.bronze_giant": "Bronze Giant"
     }
   },
   "workspaceSettings": {
