@@ -65,7 +65,7 @@ public class DroidPassiveEntity extends AihkanModElements.ModElement {
 	@Override
 	public void initElements() {
 		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER).setShouldReceiveVelocityUpdates(true)
-				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1.8f)).build("droid_passive")
+				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(1.3f, 2.5f)).build("droid_passive")
 						.setRegistryName("droid_passive");
 		elements.entities.add(() -> entity);
 		elements.items.add(() -> new SpawnEggItem(entity, -10027009, -10027162, new Item.Properties().group(ItemGroup.MISC))
@@ -85,7 +85,7 @@ public class DroidPassiveEntity extends AihkanModElements.ModElement {
 	@OnlyIn(Dist.CLIENT)
 	public void registerModels(ModelRegistryEvent event) {
 		RenderingRegistry.registerEntityRenderingHandler(entity, renderManager -> {
-			return new MobRenderer(renderManager, new Modelcustom_model(), 0.5f) {
+			return new MobRenderer(renderManager, new ModeldroidPassive(), 0.1f) {
 				{
 					this.addLayer(new GlowingLayer<>(this));
 				}
@@ -193,11 +193,11 @@ public class DroidPassiveEntity extends AihkanModElements.ModElement {
 	// Made with Blockbench 3.7.5
 	// Exported for Minecraft version 1.15
 	// Paste this class into your mod and generate all required imports
-	public static class Modelcustom_model extends EntityModel<Entity> {
+	public static class ModeldroidPassive extends EntityModel<Entity> {
 		private final ModelRenderer Wheel;
 		private final ModelRenderer cube_r10_r1;
 		private final ModelRenderer bb_main;
-		public Modelcustom_model() {
+		public ModeldroidPassive() {
 			textureWidth = 16;
 			textureHeight = 16;
 			Wheel = new ModelRenderer(this);
@@ -221,11 +221,6 @@ public class DroidPassiveEntity extends AihkanModElements.ModElement {
 		}
 
 		@Override
-		public void setRotationAngles(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
-			// previously the render function, render code was moved to a method below
-		}
-
-		@Override
 		public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue,
 				float alpha) {
 			Wheel.render(matrixStack, buffer, packedLight, packedOverlay);
@@ -236,6 +231,9 @@ public class DroidPassiveEntity extends AihkanModElements.ModElement {
 			modelRenderer.rotateAngleX = x;
 			modelRenderer.rotateAngleY = y;
 			modelRenderer.rotateAngleZ = z;
+		}
+
+		public void setRotationAngles(Entity e, float f, float f1, float f2, float f3, float f4) {
 		}
 	}
 }
