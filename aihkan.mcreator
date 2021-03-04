@@ -524,42 +524,6 @@
       "registry_name": "magic_wood_planks_recipe"
     },
     {
-      "name": "OvergrownCourtyard",
-      "type": "structure",
-      "sortid": 39,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "overgrown_courtyard"
-    },
-    {
-      "name": "Adam00",
-      "type": "mob",
-      "sortid": 39,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "adam_00"
-    },
-    {
-      "name": "BronzeGiant",
-      "type": "mob",
-      "sortid": 40,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "bronze_giant"
-    },
-    {
-      "name": "SciTower",
-      "type": "structure",
-      "sortid": 40,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "sci_tower"
-    },
-    {
       "name": "MagicTreeSaplingBlockUpdateTick",
       "type": "procedure",
       "sortid": 39,
@@ -589,6 +553,15 @@
       }
     },
     {
+      "name": "Skizard",
+      "type": "mob",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "skizard"
+    },
+    {
       "name": "JourneysBeginning",
       "type": "achievement",
       "sortid": 42,
@@ -596,6 +569,33 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "journeys_beginning"
+    },
+    {
+      "name": "Adam00",
+      "type": "mob",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "adam_00"
+    },
+    {
+      "name": "BronzeGiant",
+      "type": "mob",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bronze_giant"
+    },
+    {
+      "name": "OvergrownCourtyard",
+      "type": "structure",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "overgrown_courtyard"
     },
     {
       "name": "AIhPortalWarp",
@@ -608,6 +608,33 @@
       "metadata": {
         "dependencies": []
       }
+    },
+    {
+      "name": "SciTower",
+      "type": "structure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sci_tower"
+    },
+    {
+      "name": "AihPRecipie",
+      "type": "recipe",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aih_p_recipie"
+    },
+    {
+      "name": "MurderBot",
+      "type": "mob",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "murder_bot"
     },
     {
       "name": "AIhPortal",
@@ -626,15 +653,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "rubble_2"
-    },
-    {
-      "name": "AihPRecipie",
-      "type": "recipe",
-      "sortid": 43,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "aih_p_recipie"
     }
   ],
   "variable_elements": [],
@@ -643,7 +661,6 @@
     "en_us": {
       "block.aihkan.magic_wood": "Magic Wood",
       "block.aihkan.magic_tower_trim_2b": "Magic Tower Trim 2b",
-      "item.aihkan.bronze_giant_spawn_egg": "Bronze Giant Spawn Egg",
       "item.aihkan.drop_tihttrium": "Drop Tihttrium",
       "item.aihkan.fused_aihkite": "Fused Aihkite",
       "block.aihkan.magic_grass_block": "Magic Grass Block",
@@ -659,7 +676,6 @@
       "item.aihkan.aihkan": "Aihkan Portal Igniter",
       "item.aihkan.aihkan_test_portal": "Aihkan Test Portal Portal Igniter",
       "block.aihkan.magic_wood_planks": "Magic Wood Planks",
-      "block.aihkan.rubble_2": "Rubble 2",
       "item.aihkan.cyborg_arm_stone": "Cyborg Arm Stone",
       "block.aihkan.magic_tower_trim_1": "Magic Tower Trim 1",
       "block.aihkan.magic_tower_trim_2": "Magic Tower Trim 2",
@@ -669,16 +685,12 @@
       "block.aihkan.magic_tower_white_block": "Magic Tower White Block",
       "item.aihkan.droid_passive_spawn_egg": "Droid Passive Spawn Egg",
       "entity.aihkan.droid_passive": "Droid Passive",
-      "entity.aihkan.adam_00": "Adam 0 0",
       "block.aihkan.magic_tower_blue_block": "Magic Tower Blue Block",
       "block.aihkan.aih_kite": "Aih Kite",
       "block.aihkan.magic_tree_sapling_block": "Magic Tree Sapling Block",
-      "block.aihkan.a_ih_portal": "AIh Portal",
-      "item.aihkan.adam_00_spawn_egg": "Adam 0 0 Spawn Egg",
       "block.aihkan.block_tihttrium": "Block Tihttrium",
       "block.aihkan.block_zihcrium": "Block Zihcrium",
-      "block.aihkan.magic_flower": "Magic Flower",
-      "entity.aihkan.bronze_giant": "Bronze Giant"
+      "block.aihkan.magic_flower": "Magic Flower"
     }
   },
   "workspaceSettings": {

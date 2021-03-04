@@ -1,67 +1,16 @@
 
 package net.mcreator.aihkan.entity;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fml.network.NetworkHooks;
-import net.minecraftforge.fml.network.FMLPlayMessages;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.client.registry.RenderingRegistry;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.common.DungeonHooks;
-import net.minecraftforge.client.event.ModelRegistryEvent;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
-import net.minecraft.world.gen.Heightmap;
-import net.minecraft.world.biome.Biome;
-import net.minecraft.world.World;
-import net.minecraft.util.math.MathHelper;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.DamageSource;
-import net.minecraft.network.IPacket;
-import net.minecraft.item.SpawnEggItem;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.Item;
-import net.minecraft.entity.ai.goal.WaterAvoidingRandomWalkingGoal;
-import net.minecraft.entity.ai.goal.RandomWalkingGoal;
-import net.minecraft.entity.ai.goal.PanicGoal;
-import net.minecraft.entity.ai.goal.OpenDoorGoal;
-import net.minecraft.entity.ai.goal.MoveTowardsVillageGoal;
-import net.minecraft.entity.ai.goal.LookRandomlyGoal;
-import net.minecraft.entity.ai.goal.FollowMobGoal;
-import net.minecraft.entity.ai.goal.BreakDoorGoal;
-import net.minecraft.entity.ai.goal.BreakBlockGoal;
-import net.minecraft.entity.SharedMonsterAttributes;
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.EntitySpawnPlacementRegistry;
-import net.minecraft.entity.EntityClassification;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.CreatureEntity;
-import net.minecraft.entity.CreatureAttribute;
-import net.minecraft.client.renderer.texture.OverlayTexture;
-import net.minecraft.client.renderer.model.ModelRenderer;
-import net.minecraft.client.renderer.entity.model.EntityModel;
-import net.minecraft.client.renderer.entity.layers.LayerRenderer;
-import net.minecraft.client.renderer.entity.MobRenderer;
-import net.minecraft.client.renderer.entity.IEntityRenderer;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.IRenderTypeBuffer;
 import net.minecraft.block.material.Material;
-import net.minecraft.block.Blocks;
-
-import net.mcreator.aihkan.item.RubbleItem;
-import net.mcreator.aihkan.AihkanModElements;
-
-import com.mojang.blaze3d.vertex.IVertexBuilder;
-import com.mojang.blaze3d.matrix.MatrixStack;
 
 @AihkanModElements.ModElement.Tag
 public class Adam00Entity extends AihkanModElements.ModElement {
+
 	public static EntityType entity = null;
+
 	public Adam00Entity(AihkanModElements instance) {
 		super(instance, 39);
+
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -70,19 +19,25 @@ public class Adam00Entity extends AihkanModElements.ModElement {
 		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.CREATURE).setShouldReceiveVelocityUpdates(true)
 				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1.8f)).build("adam_00")
 						.setRegistryName("adam_00");
+
 		elements.entities.add(() -> entity);
+
 		elements.items.add(
 				() -> new SpawnEggItem(entity, -29638, -13750738, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("adam_00_spawn_egg"));
+
 	}
 
 	@Override
 	public void init(FMLCommonSetupEvent event) {
 		for (Biome biome : ForgeRegistries.BIOMES.getValues()) {
+
 			biome.getSpawns(EntityClassification.CREATURE).add(new Biome.SpawnListEntry(entity, 8, 4, 4));
 		}
+
 		EntitySpawnPlacementRegistry.register(entity, EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES,
 				(entityType, world, reason, pos,
 						random) -> (world.getBlockState(pos.down()).getMaterial() == Material.ORGANIC && world.getLightSubtracted(pos, 0) > 8));
+
 		DungeonHooks.addDungeonMob(entity, 180);
 	}
 
@@ -100,8 +55,11 @@ public class Adam00Entity extends AihkanModElements.ModElement {
 				}
 			};
 		});
+
 	}
+
 	public static class CustomEntity extends CreatureEntity {
+
 		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
 			this(entity, world);
 		}
@@ -110,6 +68,7 @@ public class Adam00Entity extends AihkanModElements.ModElement {
 			super(type, world);
 			experienceValue = 0;
 			setNoAI(false);
+
 		}
 
 		@Override
@@ -120,6 +79,7 @@ public class Adam00Entity extends AihkanModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
+
 			this.goalSelector.addGoal(1, new RandomWalkingGoal(this, 1));
 			this.goalSelector.addGoal(2, new WaterAvoidingRandomWalkingGoal(this, 0.8));
 			this.goalSelector.addGoal(3, new LookRandomlyGoal(this));
@@ -130,6 +90,7 @@ public class Adam00Entity extends AihkanModElements.ModElement {
 			this.goalSelector.addGoal(8, new FollowMobGoal(this, (float) 1, 10, 5));
 			this.goalSelector.addGoal(9, new BreakBlockGoal(Blocks.STONE.getDefaultState().getBlock(), this, 1, (int) 3));
 			this.goalSelector.addGoal(10, new PanicGoal(this, 1.2));
+
 		}
 
 		@Override
@@ -162,20 +123,27 @@ public class Adam00Entity extends AihkanModElements.ModElement {
 		@Override
 		protected void registerAttributes() {
 			super.registerAttributes();
+
 			if (this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED) != null)
 				this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.3);
+
 			if (this.getAttribute(SharedMonsterAttributes.MAX_HEALTH) != null)
 				this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(10);
+
 			if (this.getAttribute(SharedMonsterAttributes.ARMOR) != null)
 				this.getAttribute(SharedMonsterAttributes.ARMOR).setBaseValue(0);
+
 			if (this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE) == null)
 				this.getAttributes().registerAttribute(SharedMonsterAttributes.ATTACK_DAMAGE);
 			this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(3);
+
 		}
+
 	}
 
 	@OnlyIn(Dist.CLIENT)
 	private static class GlowingLayer<T extends Entity, M extends EntityModel<T>> extends LayerRenderer<T, M> {
+
 		public GlowingLayer(IEntityRenderer<T, M> er) {
 			super(er);
 		}
@@ -185,11 +153,13 @@ public class Adam00Entity extends AihkanModElements.ModElement {
 			IVertexBuilder ivertexbuilder = bufferIn.getBuffer(RenderType.getEyes(new ResourceLocation("aihkan:textures/adam00.png")));
 			this.getEntityModel().render(matrixStackIn, ivertexbuilder, 15728640, OverlayTexture.NO_OVERLAY, 1, 1, 1, 1);
 		}
+
 	}
 
 	// Made with Blockbench 3.7.5
 	// Exported for Minecraft version 1.15
 	// Paste this class into your mod and generate all required imports
+
 	public static class Modeladam extends EntityModel<Entity> {
 		private final ModelRenderer head;
 		private final ModelRenderer neck;
@@ -200,33 +170,43 @@ public class Adam00Entity extends AihkanModElements.ModElement {
 		private final ModelRenderer hips;
 		private final ModelRenderer legR;
 		private final ModelRenderer legL;
+
 		public Modeladam() {
 			textureWidth = 64;
 			textureHeight = 64;
+
 			head = new ModelRenderer(this);
 			head.setRotationPoint(0.0F, 0.0F, 0.5F);
 			head.setTextureOffset(0, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 0.0F, false);
+
 			neck = new ModelRenderer(this);
 			neck.setRotationPoint(0.0F, 2.0F, 0.5F);
 			neck.setTextureOffset(0, 16).addBox(-1.0F, -2.0F, -1.0F, 2.0F, 4.0F, 2.0F, 0.0F, false);
+
 			armR = new ModelRenderer(this);
 			armR.setRotationPoint(-4.0F, 5.0F, 0.5F);
 			armR.setTextureOffset(0, 23).addBox(-2.0F, -1.0F, -1.0F, 2.0F, 8.0F, 2.0F, 0.0F, false);
+
 			armL = new ModelRenderer(this);
 			armL.setRotationPoint(4.0F, 5.0F, 0.5F);
 			armL.setTextureOffset(8, 23).addBox(0.0F, -1.0F, -1.0F, 2.0F, 8.0F, 2.0F, 0.0F, false);
+
 			torso = new ModelRenderer(this);
 			torso.setRotationPoint(0.0F, 10.0F, 0.5F);
 			torso.setTextureOffset(40, 14).addBox(-3.0F, -4.0F, -1.0F, 6.0F, 8.0F, 2.0F, 0.0F, false);
+
 			chest = new ModelRenderer(this);
 			chest.setRotationPoint(0.0F, 5.0F, 0.5F);
 			chest.setTextureOffset(32, 0).addBox(-4.0F, -1.0F, -2.0F, 8.0F, 2.0F, 4.0F, 0.0F, false);
+
 			hips = new ModelRenderer(this);
 			hips.setRotationPoint(0.0F, 15.0F, 0.5F);
 			hips.setTextureOffset(32, 7).addBox(-4.0F, -1.0F, -2.0F, 8.0F, 2.0F, 4.0F, 0.0F, false);
+
 			legR = new ModelRenderer(this);
 			legR.setRotationPoint(-2.0F, 16.0F, 0.5F);
 			legR.setTextureOffset(8, 33).addBox(-1.0F, 0.0F, -1.0F, 2.0F, 8.0F, 2.0F, 0.0F, false);
+
 			legL = new ModelRenderer(this);
 			legL.setRotationPoint(2.0F, 16.0F, 0.5F);
 			legL.setTextureOffset(0, 33).addBox(-1.0F, 0.0F, -1.0F, 2.0F, 8.0F, 2.0F, 0.0F, false);
@@ -253,6 +233,7 @@ public class Adam00Entity extends AihkanModElements.ModElement {
 		}
 
 		public void setRotationAngles(Entity e, float f, float f1, float f2, float f3, float f4) {
+
 			this.head.rotateAngleY = f3 / (180F / (float) Math.PI);
 			this.head.rotateAngleX = f4 / (180F / (float) Math.PI);
 			this.legR.rotateAngleX = MathHelper.cos(f * 1.0F) * 1.0F * f1;
@@ -261,4 +242,5 @@ public class Adam00Entity extends AihkanModElements.ModElement {
 			this.armL.rotateAngleX = MathHelper.cos(f * 0.6662F) * f1;
 		}
 	}
+
 }
