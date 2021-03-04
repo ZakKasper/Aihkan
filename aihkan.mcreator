@@ -589,15 +589,6 @@
       }
     },
     {
-      "name": "AIhPortal",
-      "type": "block",
-      "sortid": 41,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "a_ih_portal"
-    },
-    {
       "name": "JourneysBeginning",
       "type": "achievement",
       "sortid": 42,
@@ -638,6 +629,24 @@
           }
         ]
       }
+    },
+    {
+      "name": "AIhPortal",
+      "type": "block",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "a_ih_portal"
+    },
+    {
+      "name": "Rubble2",
+      "type": "block",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rubble_2"
     }
   ],
   "variable_elements": [],
@@ -649,19 +658,16 @@
       "item.aihkan.bronze_giant_spawn_egg": "Bronze Giant Spawn Egg",
       "item.aihkan.drop_tihttrium": "Drop Tihttrium",
       "item.aihkan.fused_aihkite": "Fused Aihkite",
-      "item.aihkan.rubble": "Rubble",
       "block.aihkan.magic_grass_block": "Magic Grass Block",
       "item.aihkan.cyborg_arm_iron": "Cyborg Arm Iron",
       "item.aihkan.diamond_gauntlet": "Diamond Gauntlet",
       "block.aihkan.magic_tree_sapling": "Magic Tree Sapling",
       "item.aihkan.iron_gauntlet": "Iron Gauntlet",
       "item.aihkan.gold_gauntlet": "Gold Gauntlet",
-      "biome.aihkan.magic_forest": "Magic Forest",
       "block.aihkan.magic_leaves": "Magic Leaves",
       "block.aihkan.purifier_block": "Purifier Block",
       "block.aihkan.sihkumite_ore": "Sihkumite Ore",
       "item.aihkan.drop_zihcrium": "Drop Zihcrium",
-      "item.aihkan.cyborg_arm_diamond": "Cyborg Arm Diamond",
       "item.aihkan.aihkan": "Aihkan Portal Igniter",
       "item.aihkan.aihkan_test_portal": "Aihkan Test Portal Portal Igniter",
       "block.aihkan.magic_wood_planks": "Magic Wood Planks",
@@ -678,11 +684,8 @@
       "block.aihkan.magic_tower_blue_block": "Magic Tower Blue Block",
       "block.aihkan.aih_kite": "Aih Kite",
       "block.aihkan.magic_tree_sapling_block": "Magic Tree Sapling Block",
-      "block.aihkan.a_ih_portal": "AIh Portal",
       "item.aihkan.adam_00_spawn_egg": "Adam 0 0 Spawn Egg",
       "block.aihkan.block_tihttrium": "Block Tihttrium",
-      "advancements.journeys_beginning.descr": "Made it to Aihkan",
-      "advancements.journeys_beginning.title": "Journey\u0027s Beginning",
       "block.aihkan.block_zihcrium": "Block Zihcrium",
       "block.aihkan.magic_flower": "Magic Flower",
       "entity.aihkan.bronze_giant": "Bronze Giant"
