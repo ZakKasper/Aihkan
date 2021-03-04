@@ -21,7 +21,6 @@ import net.minecraft.util.DamageSource;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -47,6 +46,7 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.IRenderTypeBuffer;
 import net.minecraft.block.BlockState;
 
+import net.mcreator.aihkan.itemgroup.AihkanItemsItemGroup;
 import net.mcreator.aihkan.item.PureTihttriumItem;
 import net.mcreator.aihkan.AihkanModElements;
 
@@ -67,7 +67,7 @@ public class BronzeGiantEntity extends AihkanModElements.ModElement {
 				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1.8f)).build("bronze_giant")
 						.setRegistryName("bronze_giant");
 		elements.entities.add(() -> entity);
-		elements.items.add(() -> new SpawnEggItem(entity, -7459072, -1933568, new Item.Properties().group(ItemGroup.MISC))
+		elements.items.add(() -> new SpawnEggItem(entity, -7459072, -1933568, new Item.Properties().group(AihkanItemsItemGroup.tab))
 				.setRegistryName("bronze_giant_spawn_egg"));
 	}
 
