@@ -560,6 +560,15 @@
           }
         ]
       }
+    },
+    {
+      "name": "SciTower",
+      "type": "structure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sci_tower"
     }
   ],
   "variable_elements": [],
