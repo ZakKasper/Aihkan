@@ -551,6 +551,15 @@
           }
         ]
       }
+    },
+    {
+      "name": "Skizard",
+      "type": "mob",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "skizard"
     }
   ],
   "variable_elements": [],
@@ -582,6 +591,7 @@
       "block.aihkan.magic_tower_trim_2": "Magic Tower Trim 2",
       "block.aihkan.magic_tower_trim_1b": "Magic Tower Trim 1b",
       "block.aihkan.magic_dirt": "Magic Dirt",
+      "item.aihkan.skizard_spawn_egg": "Skizard Spawn Egg",
       "item.aihkan.leather_gauntlet": "Leather Gauntlet",
       "block.aihkan.magic_tower_white_block": "Magic Tower White Block",
       "item.aihkan.droid_passive_spawn_egg": "Droid Passive Spawn Egg",
@@ -590,6 +600,7 @@
       "block.aihkan.aih_kite": "Aih Kite",
       "block.aihkan.magic_tree_sapling_block": "Magic Tree Sapling Block",
       "block.aihkan.block_tihttrium": "Block Tihttrium",
+      "entity.aihkan.skizard": "Skizard",
       "block.aihkan.block_zihcrium": "Block Zihcrium",
       "block.aihkan.magic_flower": "Magic Flower"
     }
