@@ -4,7 +4,7 @@
   "definition": {
     "mobName": "Skizard",
     "mobLabel": "",
-    "mobModelName": "Modelcustom_model",
+    "mobModelName": "Biped",
     "mobModelTexture": "lizard.png",
     "mobModelGlowTexture": "lizard.png",
     "modelWidth": 0.6,
@@ -78,7 +78,7 @@
       "value": ""
     },
     "hurtSound": {
-      "value": "entity.generic.hurt"
+      "value": ""
     },
     "deathSound": {
       "value": "entity.generic.death"
