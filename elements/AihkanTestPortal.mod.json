@@ -18,7 +18,7 @@
     },
     "texture": "tempportaligniter",
     "portalTexture": "tempportalblock",
-    "enablePortal": true,
+    "enablePortal": false,
     "biomesInDimension": [
       {
         "value": "CUSTOM:MagicForest"

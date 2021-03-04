@@ -1,0 +1,29 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "aihkan:a_ih_portal"
+    },
+    "title": {
+      "translate": "advancements.journeys_beginning.title"
+    },
+    "description": {
+      "translate": "advancements.journeys_beginning.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "journeys_beginning": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "aihkan:aihkan_test_portal"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  }
+}

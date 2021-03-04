@@ -1,7 +1,7 @@
 {
   "block.aihkan.magic_wood": "Magic Wood",
-  "item.aihkan.bronze_giant_spawn_egg": "Bronze Giant Spawn Egg",
   "block.aihkan.magic_tower_trim_2b": "Magic Tower Trim 2b",
+  "item.aihkan.bronze_giant_spawn_egg": "Bronze Giant Spawn Egg",
   "item.aihkan.drop_tihttrium": "Drop Tihttrium",
   "item.aihkan.fused_aihkite": "Fused Aihkite",
   "item.aihkan.rubble": "Rubble",
@@ -33,8 +33,11 @@
   "block.aihkan.magic_tower_blue_block": "Magic Tower Blue Block",
   "block.aihkan.aih_kite": "Aih Kite",
   "block.aihkan.magic_tree_sapling_block": "Magic Tree Sapling Block",
+  "block.aihkan.a_ih_portal": "AIh Portal",
   "item.aihkan.adam_00_spawn_egg": "Adam 0 0 Spawn Egg",
   "block.aihkan.block_tihttrium": "Block Tihttrium",
+  "advancements.journeys_beginning.descr": "Made it to Aihkan",
+  "advancements.journeys_beginning.title": "Journey\u0027s Beginning",
   "block.aihkan.block_zihcrium": "Block Zihcrium",
   "block.aihkan.magic_flower": "Magic Flower",
   "entity.aihkan.bronze_giant": "Bronze Giant"
