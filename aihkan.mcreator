@@ -606,28 +606,7 @@
       "ids": {},
       "registry_name": "a_ih_portal_warp",
       "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       }
     },
     {
@@ -674,6 +653,24 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "rubble_2"
+    },
+    {
+      "name": "AihkiteBlock",
+      "type": "recipe",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aihkite_block"
+    },
+    {
+      "name": "Ruins1",
+      "type": "structure",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruins_1"
     }
   ],
   "variable_elements": [],

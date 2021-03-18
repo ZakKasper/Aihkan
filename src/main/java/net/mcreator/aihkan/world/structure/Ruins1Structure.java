@@ -30,9 +30,9 @@ import net.mcreator.aihkan.AihkanModElements;
 import java.util.Random;
 
 @AihkanModElements.ModElement.Tag
-public class OvergrownCourtyardStructure extends AihkanModElements.ModElement {
-	public OvergrownCourtyardStructure(AihkanModElements instance) {
-		super(instance, 39);
+public class Ruins1Structure extends AihkanModElements.ModElement {
+	public Ruins1Structure(AihkanModElements instance) {
+		super(instance, 45);
 	}
 
 	@Override
@@ -44,11 +44,13 @@ public class OvergrownCourtyardStructure extends AihkanModElements.ModElement {
 				int ck = (pos.getZ() >> 4) << 4;
 				DimensionType dimensionType = world.getDimension().getType();
 				boolean dimensionCriteria = false;
+				if (dimensionType == DimensionType.OVERWORLD)
+					dimensionCriteria = true;
 				if (dimensionType == AihkanTestPortalDimension.type)
 					dimensionCriteria = true;
 				if (!dimensionCriteria)
 					return false;
-				if ((random.nextInt(1000000) + 1) <= 1000) {
+				if ((random.nextInt(1000000) + 1) <= 10000) {
 					int count = random.nextInt(1) + 1;
 					for (int a = 0; a < count; a++) {
 						int i = ci + random.nextInt(16);
@@ -62,7 +64,7 @@ public class OvergrownCourtyardStructure extends AihkanModElements.ModElement {
 						int y = spawnTo.getY();
 						int z = spawnTo.getZ();
 						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-								.getTemplateDefaulted(new ResourceLocation("aihkan", "overgrown_courtyard"));
+								.getTemplateDefaulted(new ResourceLocation("aihkan", "ruins1"));
 						if (template == null)
 							return false;
 						template.addBlocksToWorld(world, spawnTo, new PlacementSettings().setRotation(rotation).setRandom(random).setMirror(mirror)
@@ -74,7 +76,21 @@ public class OvergrownCourtyardStructure extends AihkanModElements.ModElement {
 		};
 		for (Biome biome : ForgeRegistries.BIOMES.getValues()) {
 			boolean biomeCriteria = false;
-			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("aihkan:magic_forest")))
+			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("mountains")))
+				biomeCriteria = true;
+			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("aihkan:wasteland")))
+				biomeCriteria = true;
+			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("forest")))
+				biomeCriteria = true;
+			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("desert")))
+				biomeCriteria = true;
+			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("taiga")))
+				biomeCriteria = true;
+			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("plains")))
+				biomeCriteria = true;
+			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("savanna")))
+				biomeCriteria = true;
+			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("badlands")))
 				biomeCriteria = true;
 			if (!biomeCriteria)
 				continue;
