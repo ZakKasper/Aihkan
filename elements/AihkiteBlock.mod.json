@@ -38,7 +38,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:MagicWood"
+      "value": "CUSTOM:FullAihKiteBlock"
     },
     "name": "aihkite_block",
     "namespace": "mod"
