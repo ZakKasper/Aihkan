@@ -11,6 +11,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.common.ObfuscationReflectionHelper;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.world.RegisterDimensionsEvent;
+import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.common.util.ITeleporter;
 import net.minecraftforge.common.ModDimension;
@@ -69,6 +70,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import net.mcreator.aihkan.procedures.AihkanAriveProcedure;
 import net.mcreator.aihkan.item.AihkanTestPortalItem;
 import net.mcreator.aihkan.block.AIhPortalBlock;
 import net.mcreator.aihkan.AihkanModElements;
@@ -82,8 +84,10 @@ import java.util.function.BiFunction;
 import java.util.Set;
 import java.util.Random;
 import java.util.Optional;
+import java.util.Map;
 import java.util.List;
 import java.util.HashSet;
+import java.util.HashMap;
 import java.util.Comparator;
 import java.util.Arrays;
 
@@ -732,7 +736,25 @@ public class AihkanTestPortalDimension extends AihkanModElements.ModElement {
 			return (float) (d0 * 2.0D + d1) / 3.0F;
 		}
 	}
-
+	@SubscribeEvent
+	public void onPlayerChangedDimensionEvent(PlayerEvent.PlayerChangedDimensionEvent event) {
+		Entity entity = event.getPlayer();
+		World world = entity.world;
+		double x = entity.getPosX();
+		double y = entity.getPosY();
+		double z = entity.getPosZ();
+		if (event.getTo() == type) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				AihkanAriveProcedure.executeProcedure($_dependencies);
+			}
+		}
+	}
 	public static class ChunkProviderModded extends OverworldChunkGenerator {
 		public ChunkProviderModded(IWorld world, BiomeProvider provider) {
 			super(world, provider, new OverworldGenSettings() {

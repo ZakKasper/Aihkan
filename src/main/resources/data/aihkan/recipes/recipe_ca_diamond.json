@@ -20,7 +20,7 @@
       "item": "minecraft:diamond"
     },
     "4": {
-      "item": "aihkan:unknown_element"
+      "item": "aihkan:pure_tihttrium"
     },
     "5": {
       "item": "minecraft:iron_block"
@@ -36,7 +36,7 @@
     }
   },
   "result": {
-    "item": "aihkan:unknown_element",
+    "item": "aihkan:cyborg_arm_diamond",
     "count": 1
   }
 }
