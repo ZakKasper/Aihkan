@@ -1,33 +1,11 @@
 package net.mcreator.aihkan.procedures;
 
-import net.minecraftforge.fml.common.ObfuscationReflectionHelper;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.entity.player.PlayerInteractEvent;
-import net.minecraftforge.common.MinecraftForge;
-
-import net.minecraft.world.server.ServerWorld;
-import net.minecraft.world.dimension.DimensionType;
-import net.minecraft.world.World;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.potion.EffectInstance;
-import net.minecraft.network.play.server.SPlayerAbilitiesPacket;
-import net.minecraft.network.play.server.SPlaySoundEventPacket;
-import net.minecraft.network.play.server.SPlayEntityEffectPacket;
-import net.minecraft.network.play.server.SChangeGameStatePacket;
-import net.minecraft.entity.player.ServerPlayerEntity;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.Entity;
-
-import net.mcreator.aihkan.world.dimension.AihkanTestPortalDimension;
-import net.mcreator.aihkan.AihkanModElements;
-
-import java.util.Map;
-import java.util.HashMap;
-
 @AihkanModElements.ModElement.Tag
 public class AIhPortalWarpProcedure extends AihkanModElements.ModElement {
+
 	public AIhPortalWarpProcedure(AihkanModElements instance) {
 		super(instance, 42);
+
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 
@@ -37,7 +15,9 @@ public class AIhPortalWarpProcedure extends AihkanModElements.ModElement {
 				System.err.println("Failed to load dependency entity for procedure AIhPortalWarp!");
 			return;
 		}
+
 		Entity entity = (Entity) dependencies.get("entity");
+
 		double fireHeight = 0;
 		if (true) {
 			if ((entity instanceof PlayerEntity)) {
@@ -45,11 +25,16 @@ public class AIhPortalWarpProcedure extends AihkanModElements.ModElement {
 					Entity _ent = entity;
 					if (!_ent.world.isRemote && _ent instanceof ServerPlayerEntity) {
 						DimensionType destinationType = DimensionType.OVERWORLD;
+
 						ObfuscationReflectionHelper.setPrivateValue(ServerPlayerEntity.class, (ServerPlayerEntity) _ent, true, "field_184851_cj");
+
 						ServerWorld nextWorld = _ent.getServer().getWorld(destinationType);
+
 						((ServerPlayerEntity) _ent).connection.sendPacket(new SChangeGameStatePacket(4, 0));
+
 						((ServerPlayerEntity) _ent).teleport(nextWorld, nextWorld.getSpawnPoint().getX(), nextWorld.getSpawnPoint().getY() + 1,
 								nextWorld.getSpawnPoint().getZ(), _ent.rotationYaw, _ent.rotationPitch);
+
 						((ServerPlayerEntity) _ent).connection.sendPacket(new SPlayerAbilitiesPacket(((ServerPlayerEntity) _ent).abilities));
 						for (EffectInstance effectinstance : ((ServerPlayerEntity) _ent).getActivePotionEffects()) {
 							((ServerPlayerEntity) _ent).connection.sendPacket(new SPlayEntityEffectPacket(_ent.getEntityId(), effectinstance));
@@ -63,11 +48,16 @@ public class AIhPortalWarpProcedure extends AihkanModElements.ModElement {
 				Entity _ent = entity;
 				if (!_ent.world.isRemote && _ent instanceof ServerPlayerEntity) {
 					DimensionType destinationType = AihkanTestPortalDimension.type;
+
 					ObfuscationReflectionHelper.setPrivateValue(ServerPlayerEntity.class, (ServerPlayerEntity) _ent, true, "field_184851_cj");
+
 					ServerWorld nextWorld = _ent.getServer().getWorld(destinationType);
+
 					((ServerPlayerEntity) _ent).connection.sendPacket(new SChangeGameStatePacket(4, 0));
+
 					((ServerPlayerEntity) _ent).teleport(nextWorld, nextWorld.getSpawnPoint().getX(), nextWorld.getSpawnPoint().getY() + 1,
 							nextWorld.getSpawnPoint().getZ(), _ent.rotationYaw, _ent.rotationPitch);
+
 					((ServerPlayerEntity) _ent).connection.sendPacket(new SPlayerAbilitiesPacket(((ServerPlayerEntity) _ent).abilities));
 					for (EffectInstance effectinstance : ((ServerPlayerEntity) _ent).getActivePotionEffects()) {
 						((ServerPlayerEntity) _ent).connection.sendPacket(new SPlayEntityEffectPacket(_ent.getEntityId(), effectinstance));
@@ -76,13 +66,16 @@ public class AIhPortalWarpProcedure extends AihkanModElements.ModElement {
 				}
 			}
 		}
+
 	}
 
 	@SubscribeEvent
 	public void onRightClickBlock(PlayerInteractEvent.RightClickBlock event) {
 		PlayerEntity entity = event.getPlayer();
+
 		if (event.getHand() != entity.getActiveHand())
 			return;
+
 		int i = event.getPos().getX();
 		int j = event.getPos().getY();
 		int k = event.getPos().getZ();
@@ -96,4 +89,5 @@ public class AIhPortalWarpProcedure extends AihkanModElements.ModElement {
 		dependencies.put("event", event);
 		this.executeProcedure(dependencies);
 	}
+
 }

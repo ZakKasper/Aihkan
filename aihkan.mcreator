@@ -691,6 +691,33 @@
           }
         ]
       }
+    },
+    {
+      "name": "FullAihKiteBlock",
+      "type": "block",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "full_aih_kite_block"
+    },
+    {
+      "name": "Ruins1",
+      "type": "structure",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruins_1"
+    },
+    {
+      "name": "AihkiteBlock",
+      "type": "recipe",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aihkite_block"
     }
   ],
   "variable_elements": [],
