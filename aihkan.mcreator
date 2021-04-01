@@ -718,6 +718,33 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "aihkite_block"
+    },
+    {
+      "name": "Vent",
+      "type": "block",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "vent"
+    },
+    {
+      "name": "PoisonLeaves",
+      "type": "block",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "poison_leaves"
+    },
+    {
+      "name": "PoisonPatch",
+      "type": "structure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "poison_patch"
     }
   ],
   "variable_elements": [],
@@ -744,12 +771,15 @@
       "item.aihkan.aihkan_test_portal": "Aihkan Test Portal Portal Igniter",
       "block.aihkan.magic_wood_planks": "Magic Wood Planks",
       "block.aihkan.rubble_2": "Rubble 2",
+      "block.aihkan.vent": "Vent",
       "item.aihkan.cyborg_arm_stone": "Cyborg Arm Stone",
       "block.aihkan.magic_tower_trim_1": "Magic Tower Trim 1",
       "block.aihkan.magic_tower_trim_2": "Magic Tower Trim 2",
       "block.aihkan.magic_tower_trim_1b": "Magic Tower Trim 1b",
       "entity.aihkan.murder_bot": "Murder Bot",
+      "block.aihkan.full_aih_kite_block": "Full Aih Kite Block",
       "block.aihkan.magic_dirt": "Magic Dirt",
+      "block.aihkan.poison_leaves": "Poison Leaves",
       "item.aihkan.skizard_spawn_egg": "Skizard Spawn Egg",
       "item.aihkan.leather_gauntlet": "Leather Gauntlet",
       "block.aihkan.magic_tower_white_block": "Magic Tower White Block",

@@ -2,11 +2,8 @@
 package net.mcreator.aihkan.block;
 
 import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.common.ToolType;
 
 import net.minecraft.world.storage.loot.LootContext;
-import net.minecraft.world.IWorldReader;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
@@ -22,11 +19,11 @@ import java.util.List;
 import java.util.Collections;
 
 @AihkanModElements.ModElement.Tag
-public class FullAihKiteBlockBlock extends AihkanModElements.ModElement {
-	@ObjectHolder("aihkan:full_aih_kite_block")
+public class PoisonLeavesBlock extends AihkanModElements.ModElement {
+	@ObjectHolder("aihkan:poison_leaves")
 	public static final Block block = null;
-	public FullAihKiteBlockBlock(AihkanModElements instance) {
-		super(instance, 46);
+	public PoisonLeavesBlock(AihkanModElements instance) {
+		super(instance, 48);
 	}
 
 	@Override
@@ -37,14 +34,8 @@ public class FullAihKiteBlockBlock extends AihkanModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.IRON).sound(SoundType.STONE).hardnessAndResistance(1f, 10f).lightValue(0).harvestLevel(3)
-					.harvestTool(ToolType.PICKAXE));
-			setRegistryName("full_aih_kite_block");
-		}
-
-		@Override
-		public boolean isBeaconBase(BlockState state, IWorldReader world, BlockPos pos, BlockPos beacon) {
-			return true;
+			super(Block.Properties.create(Material.LEAVES).sound(SoundType.PLANT).hardnessAndResistance(1f, 10f).lightValue(0));
+			setRegistryName("poison_leaves");
 		}
 
 		@Override

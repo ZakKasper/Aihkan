@@ -1,11 +1,22 @@
 package net.mcreator.aihkan.procedures;
 
+import net.minecraft.world.server.ServerWorld;
+import net.minecraft.world.IWorld;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.server.MinecraftServer;
+import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.entity.Entity;
+
+import net.mcreator.aihkan.block.AIhPortalBlock;
+import net.mcreator.aihkan.AihkanModElements;
+
+import java.util.Map;
+
 @AihkanModElements.ModElement.Tag
 public class AihkanAriveProcedure extends AihkanModElements.ModElement {
-
 	public AihkanAriveProcedure(AihkanModElements instance) {
 		super(instance, 44);
-
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -34,13 +45,11 @@ public class AihkanAriveProcedure extends AihkanModElements.ModElement {
 				System.err.println("Failed to load dependency world for procedure AihkanArive!");
 			return;
 		}
-
 		Entity entity = (Entity) dependencies.get("entity");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-
 		if ((((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
 				? ((ServerPlayerEntity) entity).getAdvancements()
 						.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
@@ -49,7 +58,5 @@ public class AihkanAriveProcedure extends AihkanModElements.ModElement {
 				: false)) {
 			world.setBlockState(new BlockPos((int) x, (int) y, (int) z), AIhPortalBlock.block.getDefaultState(), 3);
 		}
-
 	}
-
 }

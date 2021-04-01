@@ -24,15 +24,14 @@ import net.minecraft.util.Rotation;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.Mirror;
 
-import net.mcreator.aihkan.world.dimension.AihkanTestPortalDimension;
 import net.mcreator.aihkan.AihkanModElements;
 
 import java.util.Random;
 
 @AihkanModElements.ModElement.Tag
-public class Ruins1Structure extends AihkanModElements.ModElement {
-	public Ruins1Structure(AihkanModElements instance) {
-		super(instance, 45);
+public class PoisonPatchStructure extends AihkanModElements.ModElement {
+	public PoisonPatchStructure(AihkanModElements instance) {
+		super(instance, 49);
 	}
 
 	@Override
@@ -45,8 +44,6 @@ public class Ruins1Structure extends AihkanModElements.ModElement {
 				DimensionType dimensionType = world.getDimension().getType();
 				boolean dimensionCriteria = false;
 				if (dimensionType == DimensionType.OVERWORLD)
-					dimensionCriteria = true;
-				if (dimensionType == AihkanTestPortalDimension.type)
 					dimensionCriteria = true;
 				if (!dimensionCriteria)
 					return false;
@@ -64,7 +61,7 @@ public class Ruins1Structure extends AihkanModElements.ModElement {
 						int y = spawnTo.getY();
 						int z = spawnTo.getZ();
 						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-								.getTemplateDefaulted(new ResourceLocation("aihkan", "ruins1"));
+								.getTemplateDefaulted(new ResourceLocation("aihkan", "magictree1"));
 						if (template == null)
 							return false;
 						template.addBlocksToWorld(world, spawnTo, new PlacementSettings().setRotation(rotation).setRandom(random).setMirror(mirror)
@@ -75,25 +72,6 @@ public class Ruins1Structure extends AihkanModElements.ModElement {
 			}
 		};
 		for (Biome biome : ForgeRegistries.BIOMES.getValues()) {
-			boolean biomeCriteria = false;
-			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("mountains")))
-				biomeCriteria = true;
-			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("aihkan:wasteland")))
-				biomeCriteria = true;
-			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("forest")))
-				biomeCriteria = true;
-			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("desert")))
-				biomeCriteria = true;
-			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("taiga")))
-				biomeCriteria = true;
-			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("plains")))
-				biomeCriteria = true;
-			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("savanna")))
-				biomeCriteria = true;
-			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("badlands")))
-				biomeCriteria = true;
-			if (!biomeCriteria)
-				continue;
 			biome.addFeature(GenerationStage.Decoration.SURFACE_STRUCTURES, feature.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG)
 					.withPlacement(Placement.NOPE.configure(IPlacementConfig.NO_PLACEMENT_CONFIG)));
 		}
