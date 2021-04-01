@@ -668,28 +668,7 @@
       "ids": {},
       "registry_name": "aihkan_arive",
       "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       }
     },
     {
@@ -749,6 +728,7 @@
       "block.aihkan.magic_tower_trim_2": "Magic Tower Trim 2",
       "block.aihkan.magic_tower_trim_1b": "Magic Tower Trim 1b",
       "entity.aihkan.murder_bot": "Murder Bot",
+      "block.aihkan.full_aih_kite_block": "Full Aih Kite Block",
       "block.aihkan.magic_dirt": "Magic Dirt",
       "item.aihkan.skizard_spawn_egg": "Skizard Spawn Egg",
       "item.aihkan.leather_gauntlet": "Leather Gauntlet",
