@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "aihkan:block/vent"
+    },
+    "facing=east": {
+      "model": "aihkan:block/vent",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "aihkan:block/vent",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "aihkan:block/vent",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "aihkan:block/vent",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "aihkan:block/vent",
+      "x": 90
+    }
+  }
+}

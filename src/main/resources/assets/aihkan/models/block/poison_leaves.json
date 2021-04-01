@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "aihkan:blocks/poison_leaves",
+    "up": "aihkan:blocks/poison_leaves",
+    "north": "aihkan:blocks/poison_leaves",
+    "east": "aihkan:blocks/poison_leaves",
+    "south": "aihkan:blocks/poison_leaves",
+    "west": "aihkan:blocks/poison_leaves",
+    "particle": "aihkan:blocks/poison_leaves"
+  }
+}
