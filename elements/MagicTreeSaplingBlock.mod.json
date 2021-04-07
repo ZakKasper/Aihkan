@@ -92,6 +92,15 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "MagicTreeSaplingBlockOnBlockRightClicked"
+    },
+    "onBlockAdded": {
+      "name": "MagicTreeSaplingBlockBlockAdded"
+    },
+    "onTickUpdate": {
+      "name": "MagicTreeSaplingBlockUpdateTick"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [
