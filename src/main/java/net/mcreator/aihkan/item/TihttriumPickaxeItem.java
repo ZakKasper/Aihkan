@@ -1,21 +1,12 @@
 
 package net.mcreator.aihkan.item;
 
-import net.minecraftforge.registries.ObjectHolder;
-
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.item.PickaxeItem;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.Item;
-import net.minecraft.item.IItemTier;
-
-import net.mcreator.aihkan.AihkanModElements;
-
 @AihkanModElements.ModElement.Tag
 public class TihttriumPickaxeItem extends AihkanModElements.ModElement {
+
 	@ObjectHolder("aihkan:tihttrium_pickaxe")
 	public static final Item block = null;
+
 	public TihttriumPickaxeItem(AihkanModElements instance) {
 		super(instance, 82);
 	}
@@ -47,6 +38,8 @@ public class TihttriumPickaxeItem extends AihkanModElements.ModElement {
 				return Ingredient.fromStacks(new ItemStack(PureTihttriumItem.block, (int) (1)));
 			}
 		}, 1, -3f, new Item.Properties().group(ItemGroup.TOOLS)) {
+
 		}.setRegistryName("tihttrium_pickaxe"));
 	}
+
 }

@@ -7,20 +7,20 @@
   ],
   "key": {
     "0": {
-      "item": "aihkan:sheen_wood_log"
+      "item": "aihkan:unknown_element"
     },
     "1": {
-      "item": "aihkan:sheen_wood_log"
+      "item": "aihkan:unknown_element"
     },
     "2": {
-      "item": "aihkan:sheen_wood_log"
+      "item": "aihkan:unknown_element"
     },
     "3": {
-      "item": "aihkan:sheen_wood_log"
+      "item": "aihkan:unknown_element"
     }
   },
   "result": {
-    "item": "aihkan:sheen_wood_wood",
+    "item": "aihkan:unknown_element",
     "count": 3
   }
 }

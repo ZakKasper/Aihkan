@@ -10,7 +10,7 @@
       "item": "minecraft:stick"
     },
     "1": {
-      "item": "aihkan:sheen_wood_planks"
+      "item": "aihkan:unknown_element"
     },
     "2": {
       "item": "minecraft:stick"
@@ -19,14 +19,14 @@
       "item": "minecraft:stick"
     },
     "4": {
-      "item": "aihkan:sheen_wood_planks"
+      "item": "aihkan:unknown_element"
     },
     "5": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "aihkan:sheen_wood_fence_gate",
+    "item": "aihkan:unknown_element",
     "count": 1
   }
 }

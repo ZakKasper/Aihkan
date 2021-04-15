@@ -26,14 +26,14 @@
     "Mz": 1.0,
     "name": "Vent",
     "specialInfo": [],
-    "hardness": 1.0,
+    "hardness": 4.0,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
       "value": "CUSTOM:AihkanItems"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "pickaxe",
     "customDrop": {
       "value": ""
     },
@@ -67,7 +67,7 @@
     },
     "luminance": 0.0,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "breakHarvestLevel": 5,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"
@@ -94,6 +94,9 @@
     "fluidRestrictions": [],
     "onRightClicked": {
       "name": "AIhPortalWarp"
+    },
+    "onEntityWalksOn": {
+      "name": "SpawnBoss2"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
