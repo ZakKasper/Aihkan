@@ -1,0 +1,39 @@
+{
+  "group": "aihkan",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "aihkan:fused_aihkite"
+    },
+    "2": {
+      "item": "aihkan:fused_aihkite"
+    },
+    "3": {
+      "item": "aihkan:fused_aihkite"
+    },
+    "4": {
+      "item": "aihkan:fused_aihkite"
+    },
+    "5": {
+      "item": "aihkan:fused_aihkite"
+    },
+    "6": {
+      "item": "aihkan:fused_aihkite"
+    },
+    "7": {
+      "item": "aihkan:fused_aihkite"
+    },
+    "8": {
+      "item": "aihkan:fused_aihkite"
+    }
+  },
+  "result": {
+    "item": "aihkan:unknown_element_chestplate",
+    "count": 1
+  }
+}

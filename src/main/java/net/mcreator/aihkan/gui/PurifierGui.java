@@ -122,15 +122,15 @@ public class PurifierGui extends AihkanModElements.ModElement {
 					}
 				}
 			}
-			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 7, 62) {
+			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 106, 35) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return (new ItemStack(Blocks.WATER, (int) (1)).getItem() == stack.getItem());
 				}
 			}));
-			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 52, 35) {
+			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 51, 35) {
 			}));
-			this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 106, 35) {
+			this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 7, 62) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;

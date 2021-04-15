@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "aihkan:blocks/vent",
+    "up": "aihkan:blocks/vent",
+    "north": "aihkan:blocks/purifier_bottom_top",
+    "east": "aihkan:blocks/purifier_bottom_top",
+    "south": "aihkan:blocks/purifier_bottom_top",
+    "west": "aihkan:blocks/purifier_bottom_top",
+    "particle": "aihkan:blocks/vent"
+  }
+}

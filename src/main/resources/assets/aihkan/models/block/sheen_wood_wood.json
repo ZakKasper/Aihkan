@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "aihkan:blocks/sheenwood_log_side",
+    "particle": "aihkan:blocks/sheenwood_log_side"
+  }
+}

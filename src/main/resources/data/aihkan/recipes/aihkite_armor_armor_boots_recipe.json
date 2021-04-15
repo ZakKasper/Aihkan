@@ -1,0 +1,26 @@
+{
+  "group": "aihkan",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "aihkan:fused_aihkite"
+    },
+    "2": {
+      "item": "aihkan:fused_aihkite"
+    },
+    "3": {
+      "item": "aihkan:fused_aihkite"
+    },
+    "5": {
+      "item": "aihkan:fused_aihkite"
+    }
+  },
+  "result": {
+    "item": "aihkan:unknown_element_boots",
+    "count": 1
+  }
+}

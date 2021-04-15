@@ -1,0 +1,29 @@
+{
+  "group": "aihkan",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "aihkan:fused_aihkite"
+    },
+    "1": {
+      "item": "aihkan:fused_aihkite"
+    },
+    "2": {
+      "item": "aihkan:fused_aihkite"
+    },
+    "3": {
+      "item": "aihkan:fused_aihkite"
+    },
+    "5": {
+      "item": "aihkan:fused_aihkite"
+    }
+  },
+  "result": {
+    "item": "aihkan:unknown_element_helmet",
+    "count": 1
+  }
+}

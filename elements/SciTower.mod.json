@@ -5,7 +5,7 @@
     "structure": "sci_tower",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 10000,
+    "spawnProbability": 100000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Ground",
@@ -13,7 +13,6 @@
     "spawnXOffset": 0,
     "spawnZOffset": 0,
     "spawnWorldTypes": [
-      "Surface",
       "CUSTOM:AihkanTestPortal"
     ],
     "restrictionBlocks": [],
@@ -25,6 +24,9 @@
         "value": "CUSTOM:Wasteland"
       }
     ],
-    "ignoreBlocks": "STRUCTURE_BLOCK"
+    "ignoreBlocks": "STRUCTURE_BLOCK",
+    "onStructureGenerated": {
+      "name": "SciTower2Maybe"
+    }
   }
 }

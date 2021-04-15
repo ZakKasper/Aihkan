@@ -2,7 +2,7 @@
   "display": {
     "background": "minecraft:textures/block/stone.png",
     "icon": {
-      "item": "aihkan:unknown_element"
+      "item": "aihkan:a_ih_portal"
     },
     "title": {
       "translate": "advancements.journeys_beginning.title"
