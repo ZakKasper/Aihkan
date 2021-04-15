@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "aihkan:block/sheen_wood_slab"
+    },
+    "type=top": {
+      "model": "aihkan:block/sheen_wood_slab_top"
+    },
+    "type=double": {
+      "model": "aihkan:block/sheen_wood_slab_full"
+    }
+  }
+}

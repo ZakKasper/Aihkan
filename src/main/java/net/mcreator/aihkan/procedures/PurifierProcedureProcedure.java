@@ -1,30 +1,11 @@
 package net.mcreator.aihkan.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.items.IItemHandlerModifiable;
-import net.minecraftforge.items.CapabilityItemHandler;
-
-import net.minecraft.world.IWorld;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.SoundCategory;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.item.Items;
-import net.minecraft.item.ItemStack;
-import net.minecraft.block.Blocks;
-
-import net.mcreator.aihkan.item.PureTihttriumItem;
-import net.mcreator.aihkan.item.DropTihttriumItem;
-import net.mcreator.aihkan.AihkanModElements;
-
-import java.util.concurrent.atomic.AtomicReference;
-import java.util.concurrent.atomic.AtomicInteger;
-import java.util.Map;
-
 @AihkanModElements.ModElement.Tag
 public class PurifierProcedureProcedure extends AihkanModElements.ModElement {
+
 	public PurifierProcedureProcedure(AihkanModElements instance) {
 		super(instance, 50);
+
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -48,10 +29,12 @@ public class PurifierProcedureProcedure extends AihkanModElements.ModElement {
 				System.err.println("Failed to load dependency world for procedure PurifierProcedure!");
 			return;
 		}
+
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
+
 		if ((((new Object() {
 			public int getAmount(BlockPos pos, int sltid) {
 				AtomicInteger _retval = new AtomicInteger(0);
@@ -186,5 +169,7 @@ public class PurifierProcedureProcedure extends AihkanModElements.ModElement {
 						SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
 			}
 		}
+
 	}
+
 }

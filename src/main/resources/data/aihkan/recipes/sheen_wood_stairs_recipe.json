@@ -1,0 +1,33 @@
+{
+  "group": "aihkan",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "aihkan:unknown_element"
+    },
+    "3": {
+      "item": "aihkan:unknown_element"
+    },
+    "4": {
+      "item": "aihkan:unknown_element"
+    },
+    "6": {
+      "item": "aihkan:unknown_element"
+    },
+    "7": {
+      "item": "aihkan:unknown_element"
+    },
+    "8": {
+      "item": "aihkan:unknown_element"
+    }
+  },
+  "result": {
+    "item": "aihkan:unknown_element",
+    "count": 4
+  }
+}

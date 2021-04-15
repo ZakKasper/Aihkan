@@ -1,0 +1,13 @@
+{
+  "group": "aihkan",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:sheenwood_log"
+    }
+  ],
+  "result": {
+    "item": "aihkan:sheen_wood_planks",
+    "count": 4
+  }
+}

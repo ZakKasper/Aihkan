@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_inventory",
+  "textures": {
+    "texture": "aihkan:blocks/sheenwood_planks",
+    "particle": "aihkan:blocks/sheenwood_planks"
+  }
+}

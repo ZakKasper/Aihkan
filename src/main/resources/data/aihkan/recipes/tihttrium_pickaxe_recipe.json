@@ -1,0 +1,30 @@
+{
+  "group": "aihkan",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "aihkan:pure_tihttrium"
+    },
+    "1": {
+      "item": "aihkan:pure_tihttrium"
+    },
+    "2": {
+      "item": "aihkan:pure_tihttrium"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "7": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "aihkan:tihttrium_pickaxe",
+    "count": 1
+  }
+}

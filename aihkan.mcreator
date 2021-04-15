@@ -524,6 +524,15 @@
       "registry_name": "magic_wood_planks_recipe"
     },
     {
+      "name": "Adam00",
+      "type": "mob",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "adam_00"
+    },
+    {
       "name": "MagicTreeSaplingBlockUpdateTick",
       "type": "procedure",
       "sortid": 39,
@@ -553,13 +562,22 @@
       }
     },
     {
-      "name": "Skizard",
+      "name": "BronzeGiant",
       "type": "mob",
       "sortid": 40,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "skizard"
+      "registry_name": "bronze_giant"
+    },
+    {
+      "name": "MurderBot",
+      "type": "mob",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "murder_bot"
     },
     {
       "name": "JourneysBeginning",
@@ -569,24 +587,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "journeys_beginning"
-    },
-    {
-      "name": "Adam00",
-      "type": "mob",
-      "sortid": 39,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "adam_00"
-    },
-    {
-      "name": "BronzeGiant",
-      "type": "mob",
-      "sortid": 40,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "bronze_giant"
     },
     {
       "name": "OvergrownCourtyard",
@@ -606,12 +606,7 @@
       "ids": {},
       "registry_name": "a_ih_portal_warp",
       "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       }
     },
     {
@@ -633,15 +628,6 @@
       "registry_name": "aih_p_recipie"
     },
     {
-      "name": "MurderBot",
-      "type": "mob",
-      "sortid": 41,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "murder_bot"
-    },
-    {
       "name": "AIhPortal",
       "type": "block",
       "sortid": 41,
@@ -660,79 +646,49 @@
       "registry_name": "rubble_2"
     },
     {
-      "name": "AihkanArive",
-      "type": "procedure",
-      "sortid": 44,
+      "name": "Skizard",
+      "type": "mob",
+      "sortid": 40,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "aihkan_arive",
-      "metadata": {
-        "dependencies": []
-      }
+      "registry_name": "skizard"
     },
     {
-      "name": "FullAihKiteBlock",
-      "type": "block",
-      "sortid": 46,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "full_aih_kite_block"
-    },
-    {
-      "name": "Ruins1",
-      "type": "structure",
-      "sortid": 45,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "ruins_1"
-    },
-    {
-      "name": "AihkiteBlock",
+      "name": "SheenWoodStickRecipe",
       "type": "recipe",
-      "sortid": 44,
+      "sortid": 112,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "aihkite_block"
+      "registry_name": "sheen_wood_stick_recipe"
     },
     {
-      "name": "Vent",
-      "type": "block",
-      "sortid": 47,
+      "name": "SheenWoodWoodRecipe",
+      "type": "recipe",
+      "sortid": 106,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "vent"
+      "registry_name": "sheen_wood_wood_recipe"
     },
     {
-      "name": "PoisonLeaves",
-      "type": "block",
-      "sortid": 48,
+      "name": "SheenWoodItemsTag",
+      "type": "tag",
+      "sortid": 105,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "poison_leaves"
+      "registry_name": "sheen_wood_items_tag"
     },
     {
-      "name": "PoisonPatch",
-      "type": "structure",
-      "sortid": 49,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "poison_patch"
-    },
-    {
-      "name": "PurifierProcedure",
+      "name": "SpawnBossMan",
       "type": "procedure",
-      "sortid": 50,
+      "sortid": 67,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "purifier_procedure",
+      "registry_name": "spawn_boss_man",
       "metadata": {
         "dependencies": [
           {
@@ -753,6 +709,271 @@
           }
         ]
       }
+    },
+    {
+      "name": "SheenWoodFenceGate",
+      "type": "block",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sheen_wood_fence_gate"
+    },
+    {
+      "name": "SciTowerAdditionalGenerationCondition",
+      "type": "procedure",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sci_tower_additional_generation_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TihttriumShovelRecipe",
+      "type": "recipe",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tihttrium_shovel_recipe"
+    },
+    {
+      "name": "SihkumitePickaxe",
+      "type": "tool",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sihkumite_pickaxe"
+    },
+    {
+      "name": "TihttriumSwordRecipe",
+      "type": "recipe",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tihttrium_sword_recipe"
+    },
+    {
+      "name": "TihttriumShovel",
+      "type": "tool",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tihttrium_shovel"
+    },
+    {
+      "name": "AihKiteToolsAxeRecipe",
+      "type": "recipe",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aih_kite_tools_axe_recipe"
+    },
+    {
+      "name": "AihkiteArmorArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aihkite_armor_armor_body_recipe"
+    },
+    {
+      "name": "AihkiteArmorArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aihkite_armor_armor_boots_recipe"
+    },
+    {
+      "name": "TihttriumPickaxe",
+      "type": "tool",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tihttrium_pickaxe"
+    },
+    {
+      "name": "AihkiteArmorArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aihkite_armor_armor_leggings_recipe"
+    },
+    {
+      "name": "SihkumiteAxe",
+      "type": "tool",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sihkumite_axe"
+    },
+    {
+      "name": "TihttriumAxe",
+      "type": "tool",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tihttrium_axe"
+    },
+    {
+      "name": "SheenWoodFence",
+      "type": "block",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sheen_wood_fence"
+    },
+    {
+      "name": "PoisonPatch",
+      "type": "structure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "poison_patch"
+    },
+    {
+      "name": "SheenWoodLeaves",
+      "type": "block",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sheen_wood_leaves"
+    },
+    {
+      "name": "AihKiteToolsShovelRecipe",
+      "type": "recipe",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aih_kite_tools_shovel_recipe"
+    },
+    {
+      "name": "AihKiteToolsSwordRecipe",
+      "type": "recipe",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aih_kite_tools_sword_recipe"
+    },
+    {
+      "name": "AihKiteToolsAxe",
+      "type": "tool",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aih_kite_tools_axe"
+    },
+    {
+      "name": "TihttriumArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tihttrium_armor_leggings_recipe"
+    },
+    {
+      "name": "MagicTreeSaplingBlockBlockAdded",
+      "type": "procedure",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_tree_sapling_block_block_added",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SihkumitePickaxeRecipe",
+      "type": "recipe",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sihkumite_pickaxe_recipe"
+    },
+    {
+      "name": "SihkumiteArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sihkumite_armor_body_recipe"
+    },
+    {
+      "name": "SihkumiteHoeRecipe",
+      "type": "recipe",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sihkumite_hoe_recipe"
+    },
+    {
+      "name": "TihttriumSword",
+      "type": "tool",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tihttrium_sword"
     },
     {
       "name": "MagicTreeSaplingBlockOnBlockRightClicked",
@@ -788,174 +1009,13 @@
       }
     },
     {
-      "name": "MagicTreeSaplingBlockBlockAdded",
-      "type": "procedure",
-      "sortid": 50,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "magic_tree_sapling_block_block_added",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "BronzeGDrop",
-      "type": "loottable",
-      "sortid": 51,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "bronze_g_drop"
-    },
-    {
-      "name": "AihkiteArmorArmor",
-      "type": "armor",
-      "sortid": 52,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "aihkite_armor_armor",
-      "metadata": {
-        "eh": true,
-        "el": true,
-        "eb": true,
-        "ec": true
-      }
-    },
-    {
-      "name": "AihkiteArmorArmorHelmetRecipe",
+      "name": "SheenWoodStairsRecipe",
       "type": "recipe",
-      "sortid": 53,
+      "sortid": 108,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "aihkite_armor_armor_helmet_recipe"
-    },
-    {
-      "name": "AihkiteArmorArmorBodyRecipe",
-      "type": "recipe",
-      "sortid": 54,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "aihkite_armor_armor_body_recipe"
-    },
-    {
-      "name": "AihkiteArmorArmorLeggingsRecipe",
-      "type": "recipe",
-      "sortid": 55,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "aihkite_armor_armor_leggings_recipe"
-    },
-    {
-      "name": "AihkiteArmorArmorBootsRecipe",
-      "type": "recipe",
-      "sortid": 56,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "aihkite_armor_armor_boots_recipe"
-    },
-    {
-      "name": "AihKiteToolsPickaxe",
-      "type": "tool",
-      "sortid": 57,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "aih_kite_tools_pickaxe"
-    },
-    {
-      "name": "AihKiteToolsAxe",
-      "type": "tool",
-      "sortid": 58,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "aih_kite_tools_axe"
-    },
-    {
-      "name": "AihKiteToolsSword",
-      "type": "tool",
-      "sortid": 59,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "aih_kite_tools_sword"
-    },
-    {
-      "name": "AihKiteToolsShovel",
-      "type": "tool",
-      "sortid": 60,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "aih_kite_tools_shovel"
-    },
-    {
-      "name": "AihKiteToolsHoe",
-      "type": "tool",
-      "sortid": 61,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "aih_kite_tools_hoe"
-    },
-    {
-      "name": "AihKiteToolsPickaxeRecipe",
-      "type": "recipe",
-      "sortid": 62,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "aih_kite_tools_pickaxe_recipe"
-    },
-    {
-      "name": "AihKiteToolsAxeRecipe",
-      "type": "recipe",
-      "sortid": 63,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "aih_kite_tools_axe_recipe"
-    },
-    {
-      "name": "AihKiteToolsSwordRecipe",
-      "type": "recipe",
-      "sortid": 64,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "aih_kite_tools_sword_recipe"
-    },
-    {
-      "name": "AihKiteToolsShovelRecipe",
-      "type": "recipe",
-      "sortid": 65,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "aih_kite_tools_shovel_recipe"
+      "registry_name": "sheen_wood_stairs_recipe"
     },
     {
       "name": "AihKiteToolsHoeRecipe",
@@ -967,33 +1027,31 @@
       "registry_name": "aih_kite_tools_hoe_recipe"
     },
     {
-      "name": "SpawnBossMan",
-      "type": "procedure",
-      "sortid": 67,
+      "name": "SihkumiteSword",
+      "type": "tool",
+      "sortid": 69,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "spawn_boss_man",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
+      "registry_name": "sihkumite_sword"
+    },
+    {
+      "name": "SheenWoodSlabRecipe",
+      "type": "recipe",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sheen_wood_slab_recipe"
+    },
+    {
+      "name": "TihttriumArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tihttrium_armor_body_recipe"
     },
     {
       "name": "SciTowerOnStructureInstanceGenerated",
@@ -1025,33 +1083,148 @@
       }
     },
     {
-      "name": "SciTowerAdditionalGenerationCondition",
-      "type": "procedure",
-      "sortid": 68,
+      "name": "TihttriumAxeRecipe",
+      "type": "recipe",
+      "sortid": 88,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "sci_tower_additional_generation_condition",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
+      "registry_name": "tihttrium_axe_recipe"
+    },
+    {
+      "name": "AihKiteToolsPickaxe",
+      "type": "tool",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aih_kite_tools_pickaxe"
+    },
+    {
+      "name": "SihkumiteArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sihkumite_armor_helmet_recipe"
+    },
+    {
+      "name": "SheenWoodFenceGateRecipe",
+      "type": "recipe",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sheen_wood_fence_gate_recipe"
+    },
+    {
+      "name": "FullAihKiteBlock",
+      "type": "block",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "full_aih_kite_block"
+    },
+    {
+      "name": "SihkumiteShovelRecipe",
+      "type": "recipe",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sihkumite_shovel_recipe"
+    },
+    {
+      "name": "AihKiteToolsSword",
+      "type": "tool",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aih_kite_tools_sword"
+    },
+    {
+      "name": "SihkumiteShovel",
+      "type": "tool",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sihkumite_shovel"
+    },
+    {
+      "name": "SheenWoodSlab",
+      "type": "block",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sheen_wood_slab"
+    },
+    {
+      "name": "SihkumiteHoe",
+      "type": "tool",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sihkumite_hoe"
+    },
+    {
+      "name": "TihttriumPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tihttrium_pickaxe_recipe"
+    },
+    {
+      "name": "TihttriumHoeRecipe",
+      "type": "recipe",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tihttrium_hoe_recipe"
+    },
+    {
+      "name": "AihkiteArmorArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aihkite_armor_armor_helmet_recipe"
+    },
+    {
+      "name": "TihttriumHoe",
+      "type": "tool",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tihttrium_hoe"
+    },
+    {
+      "name": "SheenWoodPlanks",
+      "type": "block",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sheen_wood_planks"
+    },
+    {
+      "name": "SihkumiteArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sihkumite_armor_leggings_recipe"
     },
     {
       "name": "SciTower2Maybe",
@@ -1083,6 +1256,102 @@
       }
     },
     {
+      "name": "AihKiteToolsHoe",
+      "type": "tool",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aih_kite_tools_hoe"
+    },
+    {
+      "name": "SheenWoodStairs",
+      "type": "block",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sheen_wood_stairs"
+    },
+    {
+      "name": "PoisonLeaves",
+      "type": "block",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "poison_leaves"
+    },
+    {
+      "name": "TihttriumArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tihttrium_armor_boots_recipe"
+    },
+    {
+      "name": "SheenWoodWood",
+      "type": "block",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sheen_wood_wood"
+    },
+    {
+      "name": "AihKiteToolsPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aih_kite_tools_pickaxe_recipe"
+    },
+    {
+      "name": "SihkumiteArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sihkumite_armor_boots_recipe"
+    },
+    {
+      "name": "SheenWoodFenceRecipe",
+      "type": "recipe",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sheen_wood_fence_recipe"
+    },
+    {
+      "name": "AihkiteArmorArmor",
+      "type": "armor",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aihkite_armor_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "Ruins1",
+      "type": "structure",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruins_1"
+    },
+    {
       "name": "SpawnBoss2",
       "type": "procedure",
       "sortid": 70,
@@ -1110,6 +1379,158 @@
           }
         ]
       }
+    },
+    {
+      "name": "AihkiteBlock",
+      "type": "recipe",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aihkite_block"
+    },
+    {
+      "name": "BronzeGDrop",
+      "type": "loottable",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bronze_g_drop"
+    },
+    {
+      "name": "SihkumiteAxeRecipe",
+      "type": "recipe",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sihkumite_axe_recipe"
+    },
+    {
+      "name": "TihttriumArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tihttrium_armor_helmet_recipe"
+    },
+    {
+      "name": "PurifierProcedure",
+      "type": "procedure",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purifier_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SheenWoodLog",
+      "type": "block",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sheen_wood_log"
+    },
+    {
+      "name": "TihttriumArmor",
+      "type": "armor",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tihttrium_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "SihkumiteSwordRecipe",
+      "type": "recipe",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sihkumite_sword_recipe"
+    },
+    {
+      "name": "AihKiteToolsShovel",
+      "type": "tool",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aih_kite_tools_shovel"
+    },
+    {
+      "name": "AihkanArive",
+      "type": "procedure",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aihkan_arive",
+      "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "SihkumiteArmor",
+      "type": "armor",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sihkumite_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "SheenWoodPlanksRecipe",
+      "type": "recipe",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sheen_wood_planks_recipe"
+    },
+    {
+      "name": "Vent",
+      "type": "block",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "vent"
     }
   ],
   "variable_elements": [],
@@ -1118,59 +1539,45 @@
     "en_us": {
       "block.aihkan.magic_wood": "Magic Wood",
       "block.aihkan.magic_tower_trim_2b": "Magic Tower Trim 2b",
-      "item.aihkan.drop_tihttrium": "Drop Tihttrium",
+      "item.aihkan.bronze_giant_spawn_egg": "Bronze Giant Spawn Egg",
       "item.aihkan.fused_aihkite": "Fused Aihkite",
-      "item.aihkan.aihkite_armor_armor_chestplate": "AihkiteArmor Chestplate",
+      "item.aihkan.drop_tihttrium": "Drop Tihttrium",
       "block.aihkan.magic_grass_block": "Magic Grass Block",
+      "item.aihkan.cyborg_arm_iron": "Cyborg Arm Iron",
+      "item.aihkan.diamond_gauntlet": "Diamond Gauntlet",
+      "block.aihkan.magic_tree_sapling": "Magic Tree Sapling",
+      "item.aihkan.iron_gauntlet": "Iron Gauntlet",
+      "item.aihkan.gold_gauntlet": "Gold Gauntlet",
       "block.aihkan.magic_leaves": "Magic Leaves",
       "block.aihkan.purifier_block": "Purifier Block",
       "block.aihkan.sihkumite_ore": "Sihkumite Ore",
       "item.aihkan.murder_bot_spawn_egg": "Murder Bot Spawn Egg",
-      "item.aihkan.aihkite_armor_armor_boots": "AihkiteArmor Boots",
-      "item.aihkan.aihkan_test_portal": "Aihkan Test Portal Portal Igniter",
-      "entity.aihkan.murder_bot": "Murder Bot",
-      "block.aihkan.magic_dirt": "Magic Dirt",
-      "block.aihkan.poison_leaves": "Poison Leaves",
-      "item.aihkan.skizard_spawn_egg": "Skizard Spawn Egg",
-      "item.aihkan.aih_kite_tools_sword": "AihKiteTools Sword",
-      "item.aihkan.aihkite_armor_armor_leggings": "AihkiteArmor Leggings",
-      "item.aihkan.leather_gauntlet": "Leather Gauntlet",
-      "item.aihkan.droid_passive_spawn_egg": "Droid Passive Spawn Egg",
-      "entity.aihkan.droid_passive": "Droid Passive",
-      "entity.aihkan.adam_00": "Adam 0 0",
-      "block.aihkan.aih_kite": "Aih Kite",
-      "block.aihkan.a_ih_portal": "AIh Portal",
-      "block.aihkan.block_tihttrium": "Block Tihttrium",
-      "item.aihkan.aihkite_armor_armor_helmet": "AihkiteArmor Helmet",
-      "advancements.journeys_beginning.title": "Journey\u0027s Beginning",
-      "entity.aihkan.skizard": "Skizard",
-      "item.aihkan.aih_kite_tools_hoe": "AihKiteTools Hoe",
-      "block.aihkan.magic_flower": "Magic Flower",
-      "item.aihkan.bronze_giant_spawn_egg": "Bronze Giant Spawn Egg",
-      "item.aihkan.aih_kite_tools_shovel": "AihKiteTools Shovel",
-      "item.aihkan.cyborg_arm_iron": "Cyborg Arm Iron",
-      "block.aihkan.magic_tree_sapling": "Magic Tree Sapling",
-      "item.aihkan.diamond_gauntlet": "Diamond Gauntlet",
-      "item.aihkan.iron_gauntlet": "Iron Gauntlet",
-      "item.aihkan.gold_gauntlet": "Gold Gauntlet",
-      "item.aihkan.aih_kite_tools_pickaxe": "AihKiteTools Pickaxe",
       "item.aihkan.drop_zihcrium": "Drop Zihcrium",
       "item.aihkan.aihkan": "Aihkan Portal Igniter",
+      "item.aihkan.aihkan_test_portal": "Aihkan Test Portal Portal Igniter",
       "block.aihkan.magic_wood_planks": "Magic Wood Planks",
       "block.aihkan.rubble_2": "Rubble 2",
-      "block.aihkan.vent": "Vent",
       "item.aihkan.cyborg_arm_stone": "Cyborg Arm Stone",
       "block.aihkan.magic_tower_trim_1": "Magic Tower Trim 1",
       "block.aihkan.magic_tower_trim_2": "Magic Tower Trim 2",
       "block.aihkan.magic_tower_trim_1b": "Magic Tower Trim 1b",
-      "block.aihkan.full_aih_kite_block": "Full Aih Kite Block",
+      "entity.aihkan.murder_bot": "Murder Bot",
+      "block.aihkan.magic_dirt": "Magic Dirt",
+      "item.aihkan.skizard_spawn_egg": "Skizard Spawn Egg",
+      "item.aihkan.leather_gauntlet": "Leather Gauntlet",
       "block.aihkan.magic_tower_white_block": "Magic Tower White Block",
-      "item.aihkan.aih_kite_tools_axe": "AihKiteTools Axe",
+      "item.aihkan.droid_passive_spawn_egg": "Droid Passive Spawn Egg",
+      "entity.aihkan.droid_passive": "Droid Passive",
+      "entity.aihkan.adam_00": "Adam 0 0",
       "block.aihkan.magic_tower_blue_block": "Magic Tower Blue Block",
+      "block.aihkan.aih_kite": "Aih Kite",
       "block.aihkan.magic_tree_sapling_block": "Magic Tree Sapling Block",
+      "block.aihkan.a_ih_portal": "AIh Portal",
       "item.aihkan.adam_00_spawn_egg": "Adam 0 0 Spawn Egg",
-      "advancements.journeys_beginning.descr": "Made it to Aihkan",
+      "block.aihkan.block_tihttrium": "Block Tihttrium",
+      "entity.aihkan.skizard": "Skizard",
       "block.aihkan.block_zihcrium": "Block Zihcrium",
+      "block.aihkan.magic_flower": "Magic Flower",
       "entity.aihkan.bronze_giant": "Bronze Giant"
     }
   },
