@@ -25,9 +25,12 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.Mirror;
 
 import net.mcreator.aihkan.world.dimension.AihkanTestPortalDimension;
+import net.mcreator.aihkan.procedures.SciTower2MaybeProcedure;
 import net.mcreator.aihkan.AihkanModElements;
 
 import java.util.Random;
+import java.util.Map;
+import java.util.HashMap;
 
 @AihkanModElements.ModElement.Tag
 public class SciTowerStructure extends AihkanModElements.ModElement {
@@ -44,13 +47,11 @@ public class SciTowerStructure extends AihkanModElements.ModElement {
 				int ck = (pos.getZ() >> 4) << 4;
 				DimensionType dimensionType = world.getDimension().getType();
 				boolean dimensionCriteria = false;
-				if (dimensionType == DimensionType.OVERWORLD)
-					dimensionCriteria = true;
 				if (dimensionType == AihkanTestPortalDimension.type)
 					dimensionCriteria = true;
 				if (!dimensionCriteria)
 					return false;
-				if ((random.nextInt(1000000) + 1) <= 10000) {
+				if ((random.nextInt(1000000) + 1) <= 100000) {
 					int count = random.nextInt(1) + 1;
 					for (int a = 0; a < count; a++) {
 						int i = ci + random.nextInt(16);
@@ -69,6 +70,14 @@ public class SciTowerStructure extends AihkanModElements.ModElement {
 							return false;
 						template.addBlocksToWorld(world, spawnTo, new PlacementSettings().setRotation(rotation).setRandom(random).setMirror(mirror)
 								.addProcessor(BlockIgnoreStructureProcessor.STRUCTURE_BLOCK).setChunk(null).setIgnoreEntities(false));
+						{
+							Map<String, Object> $_dependencies = new HashMap<>();
+							$_dependencies.put("x", x);
+							$_dependencies.put("y", y);
+							$_dependencies.put("z", z);
+							$_dependencies.put("world", world);
+							SciTower2MaybeProcedure.executeProcedure($_dependencies);
+						}
 					}
 				}
 				return true;
