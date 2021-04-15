@@ -1,0 +1,39 @@
+{
+  "group": "aihkan",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "aihkan:pure_tihttrium"
+    },
+    "2": {
+      "item": "aihkan:pure_tihttrium"
+    },
+    "3": {
+      "item": "aihkan:pure_tihttrium"
+    },
+    "4": {
+      "item": "aihkan:pure_tihttrium"
+    },
+    "5": {
+      "item": "aihkan:pure_tihttrium"
+    },
+    "6": {
+      "item": "aihkan:pure_tihttrium"
+    },
+    "7": {
+      "item": "aihkan:pure_tihttrium"
+    },
+    "8": {
+      "item": "aihkan:pure_tihttrium"
+    }
+  },
+  "result": {
+    "item": "aihkan:tihttrium_armor_chestplate",
+    "count": 1
+  }
+}

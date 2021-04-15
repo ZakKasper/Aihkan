@@ -1,0 +1,29 @@
+{
+  "group": "aihkan",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "aihkan:pure_tihttrium"
+    },
+    "1": {
+      "item": "aihkan:pure_tihttrium"
+    },
+    "2": {
+      "item": "aihkan:pure_tihttrium"
+    },
+    "3": {
+      "item": "aihkan:pure_tihttrium"
+    },
+    "5": {
+      "item": "aihkan:pure_tihttrium"
+    }
+  },
+  "result": {
+    "item": "aihkan:tihttrium_armor_helmet",
+    "count": 1
+  }
+}

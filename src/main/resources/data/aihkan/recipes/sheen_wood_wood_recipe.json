@@ -1,0 +1,26 @@
+{
+  "group": "aihkan",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "aihkan:sheen_wood_log"
+    },
+    "1": {
+      "item": "aihkan:sheen_wood_log"
+    },
+    "2": {
+      "item": "aihkan:sheen_wood_log"
+    },
+    "3": {
+      "item": "aihkan:sheen_wood_log"
+    }
+  },
+  "result": {
+    "item": "aihkan:sheen_wood_wood",
+    "count": 3
+  }
+}

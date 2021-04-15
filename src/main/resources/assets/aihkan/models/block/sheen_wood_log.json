@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "aihkan:blocks/sheenwood_log_top",
+    "up": "aihkan:blocks/sheenwood_log_top",
+    "north": "aihkan:blocks/sheenwood_log_side",
+    "east": "aihkan:blocks/sheenwood_log_side",
+    "south": "aihkan:blocks/sheenwood_log_side",
+    "west": "aihkan:blocks/sheenwood_log_side",
+    "particle": "aihkan:blocks/sheenwood_log_top"
+  }
+}

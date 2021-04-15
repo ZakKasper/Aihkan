@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "aihkan:items/sihkumite_pickaxe"
+  }
+}
