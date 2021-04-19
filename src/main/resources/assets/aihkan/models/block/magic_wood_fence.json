@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_side",
+  "textures": {
+    "texture": "aihkan:blocks/magicwoodplanks",
+    "particle": "aihkan:blocks/magicwoodplanks"
+  }
+}

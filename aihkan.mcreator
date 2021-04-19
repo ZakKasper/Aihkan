@@ -610,6 +610,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -1430,7 +1434,24 @@
       "ids": {},
       "registry_name": "spawn_boss_2",
       "metadata": {
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       }
     },
     {
@@ -1528,6 +1549,78 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "if_num"
+    },
+    {
+      "name": "MagicWoodFence",
+      "type": "block",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_wood_fence"
+    },
+    {
+      "name": "MagicWoodFenceCR",
+      "type": "recipe",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_wood_fence_cr"
+    },
+    {
+      "name": "MagicWoodGate",
+      "type": "block",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_wood_gate"
+    },
+    {
+      "name": "MagicWoodGateCR",
+      "type": "recipe",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_wood_gate_cr"
+    },
+    {
+      "name": "MagicWoodSlab",
+      "type": "block",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_wood_slab"
+    },
+    {
+      "name": "MagicWoodSlabCR",
+      "type": "recipe",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_wood_slab_cr"
+    },
+    {
+      "name": "MagicWoodStairs",
+      "type": "block",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_wood_stairs"
+    },
+    {
+      "name": "MagicWoodStairsCR",
+      "type": "recipe",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_wood_stairs_cr"
     }
   ],
   "variable_elements": [],
@@ -1538,9 +1631,10 @@
       "item.aihkan.tihttrium_axe": "Tihttrium Axe",
       "block.aihkan.magic_tower_trim_2b": "Magic Tower Trim 2b",
       "block.aihkan.sheen_wood_fence": "SheenWood Fence",
-      "item.aihkan.aihkite_armor_armor_chestplate": "AihkiteArmor Chestplate",
-      "item.aihkan.fused_aihkite": "Fused Aihkite",
       "item.aihkan.drop_tihttrium": "Drop Tihttrium",
+      "item.aihkan.fused_aihkite": "Fused Aihkite",
+      "item.aihkan.aihkite_armor_armor_chestplate": "AihkiteArmor Chestplate",
+      "block.aihkan.magic_wood_slab": "Magic Wood Slab",
       "block.aihkan.magic_grass_block": "Magic Grass Block",
       "block.aihkan.sheen_wood_slab": "SheenWood Slab",
       "block.aihkan.magic_leaves": "Magic Leaves",
@@ -1549,6 +1643,7 @@
       "item.aihkan.murder_bot_spawn_egg": "Murder Bot Spawn Egg",
       "item.aihkan.tihttrium_sword": "Tihttrium Sword",
       "item.aihkan.sihkumite_hoe": "Sihkumite Hoe",
+      "block.aihkan.magic_wood_fence": "Magic Wood Fence",
       "item.aihkan.aihkite_armor_armor_boots": "AihkiteArmor Boots",
       "item.aihkan.aihkan_test_portal": "Aihkan Test Portal Portal Igniter",
       "block.aihkan.sheen_wood_fence_gate": "SheenWood Fence Gate",
@@ -1564,6 +1659,7 @@
       "item.aihkan.tihttrium_armor_chestplate": "Tihttrium Chestplate",
       "item.aihkan.leather_gauntlet": "Leather Gauntlet",
       "block.aihkan.sheen_wood_leaves": "SheenWood Leaves",
+      "block.aihkan.magic_wood_gate": "Magic Wood Gate",
       "item.aihkan.droid_passive_spawn_egg": "Droid Passive Spawn Egg",
       "entity.aihkan.droid_passive": "Droid Passive",
       "entity.aihkan.adam_00": "Adam 0 0",
@@ -1583,6 +1679,7 @@
       "item.aihkan.tihttrium_armor_boots": "Tihttrium Boots",
       "item.aihkan.aih_kite_tools_shovel": "AihKiteTools Shovel",
       "item.aihkan.sihkumite_axe": "Sihkumite Axe",
+      "block.aihkan.magic_wood_stairs": "Magic Wood Stairs",
       "item.aihkan.cyborg_arm_iron": "Cyborg Arm Iron",
       "block.aihkan.magic_tree_sapling": "Magic Tree Sapling",
       "item.aihkan.diamond_gauntlet": "Diamond Gauntlet",
@@ -1592,6 +1689,7 @@
       "item.aihkan.tihttrium_hoe": "Tihttrium Hoe",
       "item.aihkan.aih_kite_tools_pickaxe": "AihKiteTools Pickaxe",
       "item.aihkan.sihkumite_armor_helmet": "Sihkumite Helmet",
+      "block.aihkan.dead_grass": "Wasteland Grass",
       "item.aihkan.drop_zihcrium": "Drop Zihcrium",
       "item.aihkan.tihttrium_armor_leggings": "Tihttrium Leggings",
       "item.aihkan.aihkan": "Aihkan Portal Igniter",
