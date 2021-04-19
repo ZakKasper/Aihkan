@@ -1519,6 +1519,15 @@
           }
         ]
       }
+    },
+    {
+      "name": "IfNum",
+      "type": "function",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "if_num"
     }
   ],
   "variable_elements": [],
