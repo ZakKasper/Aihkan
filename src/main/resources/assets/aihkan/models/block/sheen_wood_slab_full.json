@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "aihkan:blocks/sheenwood_planks",
+    "top": "aihkan:blocks/sheenwood_planks",
+    "side": "aihkan:blocks/sheenwood_planks"
+  }
+}

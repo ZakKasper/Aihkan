@@ -1119,6 +1119,432 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "if_num"
+    },
+    {
+      "name": "SheenWoodStickRecipe",
+      "type": "recipe",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sheen_wood_stick_recipe"
+    },
+    {
+      "name": "SheenWoodFenceGateRecipe",
+      "type": "recipe",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sheen_wood_fence_gate_recipe"
+    },
+    {
+      "name": "SihkumiteShovelRecipe",
+      "type": "recipe",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sihkumite_shovel_recipe"
+    },
+    {
+      "name": "SheenWoodWoodRecipe",
+      "type": "recipe",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sheen_wood_wood_recipe"
+    },
+    {
+      "name": "SheenWoodItemsTag",
+      "type": "tag",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sheen_wood_items_tag"
+    },
+    {
+      "name": "SihkumiteShovel",
+      "type": "tool",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sihkumite_shovel"
+    },
+    {
+      "name": "SheenWoodFenceGate",
+      "type": "block",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sheen_wood_fence_gate"
+    },
+    {
+      "name": "TihttriumShovelRecipe",
+      "type": "recipe",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tihttrium_shovel_recipe"
+    },
+    {
+      "name": "SheenWoodSlab",
+      "type": "block",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sheen_wood_slab"
+    },
+    {
+      "name": "SihkumitePickaxe",
+      "type": "tool",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sihkumite_pickaxe"
+    },
+    {
+      "name": "TihttriumSwordRecipe",
+      "type": "recipe",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tihttrium_sword_recipe"
+    },
+    {
+      "name": "SihkumiteHoe",
+      "type": "tool",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sihkumite_hoe"
+    },
+    {
+      "name": "TihttriumPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tihttrium_pickaxe_recipe"
+    },
+    {
+      "name": "TihttriumHoeRecipe",
+      "type": "recipe",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tihttrium_hoe_recipe"
+    },
+    {
+      "name": "TihttriumShovel",
+      "type": "tool",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tihttrium_shovel"
+    },
+    {
+      "name": "TihttriumHoe",
+      "type": "tool",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tihttrium_hoe"
+    },
+    {
+      "name": "SheenWoodPlanks",
+      "type": "block",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sheen_wood_planks"
+    },
+    {
+      "name": "SihkumiteArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sihkumite_armor_leggings_recipe"
+    },
+    {
+      "name": "TihttriumPickaxe",
+      "type": "tool",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tihttrium_pickaxe"
+    },
+    {
+      "name": "SheenWoodStairs",
+      "type": "block",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sheen_wood_stairs"
+    },
+    {
+      "name": "SihkumiteAxe",
+      "type": "tool",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sihkumite_axe"
+    },
+    {
+      "name": "TihttriumAxe",
+      "type": "tool",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tihttrium_axe"
+    },
+    {
+      "name": "SheenWoodFence",
+      "type": "block",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sheen_wood_fence"
+    },
+    {
+      "name": "TihttriumArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tihttrium_armor_boots_recipe"
+    },
+    {
+      "name": "SheenWoodWood",
+      "type": "block",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sheen_wood_wood"
+    },
+    {
+      "name": "SihkumiteArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sihkumite_armor_boots_recipe"
+    },
+    {
+      "name": "SheenWoodFenceRecipe",
+      "type": "recipe",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sheen_wood_fence_recipe"
+    },
+    {
+      "name": "SheenWoodLeaves",
+      "type": "block",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sheen_wood_leaves"
+    },
+    {
+      "name": "TihttriumArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tihttrium_armor_leggings_recipe"
+    },
+    {
+      "name": "SihkumitePickaxeRecipe",
+      "type": "recipe",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sihkumite_pickaxe_recipe"
+    },
+    {
+      "name": "SihkumiteArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sihkumite_armor_body_recipe"
+    },
+    {
+      "name": "SihkumiteAxeRecipe",
+      "type": "recipe",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sihkumite_axe_recipe"
+    },
+    {
+      "name": "TihttriumArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tihttrium_armor_helmet_recipe"
+    },
+    {
+      "name": "SheenWoodLog",
+      "type": "block",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sheen_wood_log"
+    },
+    {
+      "name": "SihkumiteHoeRecipe",
+      "type": "recipe",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sihkumite_hoe_recipe"
+    },
+    {
+      "name": "TihttriumArmor",
+      "type": "armor",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tihttrium_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "TihttriumSword",
+      "type": "tool",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tihttrium_sword"
+    },
+    {
+      "name": "SihkumiteSwordRecipe",
+      "type": "recipe",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sihkumite_sword_recipe"
+    },
+    {
+      "name": "SheenWoodStairsRecipe",
+      "type": "recipe",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sheen_wood_stairs_recipe"
+    },
+    {
+      "name": "SihkumiteSword",
+      "type": "tool",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sihkumite_sword"
+    },
+    {
+      "name": "SheenWoodSlabRecipe",
+      "type": "recipe",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sheen_wood_slab_recipe"
+    },
+    {
+      "name": "TihttriumArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tihttrium_armor_body_recipe"
+    },
+    {
+      "name": "SihkumiteArmor",
+      "type": "armor",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sihkumite_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "TihttriumAxeRecipe",
+      "type": "recipe",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tihttrium_axe_recipe"
+    },
+    {
+      "name": "SheenWoodPlanksRecipe",
+      "type": "recipe",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sheen_wood_planks_recipe"
+    },
+    {
+      "name": "SihkumiteArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sihkumite_armor_helmet_recipe"
     }
   ],
   "variable_elements": [],
@@ -1129,20 +1555,15 @@
       "block.aihkan.magic_tower_trim_2b": "Magic Tower Trim 2b",
       "item.aihkan.drop_tihttrium": "Drop Tihttrium",
       "item.aihkan.fused_aihkite": "Fused Aihkite",
-      "item.aihkan.aihkite_armor_armor_chestplate": "AihkiteArmor Chestplate",
       "block.aihkan.magic_grass_block": "Magic Grass Block",
       "block.aihkan.magic_leaves": "Magic Leaves",
       "block.aihkan.purifier_block": "Purifier Block",
       "block.aihkan.sihkumite_ore": "Sihkumite Ore",
       "item.aihkan.murder_bot_spawn_egg": "Murder Bot Spawn Egg",
-      "item.aihkan.aihkite_armor_armor_boots": "AihkiteArmor Boots",
       "item.aihkan.aihkan_test_portal": "Aihkan Test Portal Portal Igniter",
       "entity.aihkan.murder_bot": "Murder Bot",
       "block.aihkan.magic_dirt": "Magic Dirt",
-      "block.aihkan.poison_leaves": "Poison Leaves",
       "item.aihkan.skizard_spawn_egg": "Skizard Spawn Egg",
-      "item.aihkan.aih_kite_tools_sword": "AihKiteTools Sword",
-      "item.aihkan.aihkite_armor_armor_leggings": "AihkiteArmor Leggings",
       "item.aihkan.leather_gauntlet": "Leather Gauntlet",
       "item.aihkan.droid_passive_spawn_egg": "Droid Passive Spawn Egg",
       "entity.aihkan.droid_passive": "Droid Passive",
@@ -1150,19 +1571,14 @@
       "block.aihkan.aih_kite": "Aih Kite",
       "block.aihkan.a_ih_portal": "AIh Portal",
       "block.aihkan.block_tihttrium": "Block Tihttrium",
-      "item.aihkan.aihkite_armor_armor_helmet": "AihkiteArmor Helmet",
-      "advancements.journeys_beginning.title": "Journey\u0027s Beginning",
       "entity.aihkan.skizard": "Skizard",
-      "item.aihkan.aih_kite_tools_hoe": "AihKiteTools Hoe",
       "block.aihkan.magic_flower": "Magic Flower",
       "item.aihkan.bronze_giant_spawn_egg": "Bronze Giant Spawn Egg",
-      "item.aihkan.aih_kite_tools_shovel": "AihKiteTools Shovel",
       "item.aihkan.cyborg_arm_iron": "Cyborg Arm Iron",
       "block.aihkan.magic_tree_sapling": "Magic Tree Sapling",
       "item.aihkan.diamond_gauntlet": "Diamond Gauntlet",
       "item.aihkan.iron_gauntlet": "Iron Gauntlet",
       "item.aihkan.gold_gauntlet": "Gold Gauntlet",
-      "item.aihkan.aih_kite_tools_pickaxe": "AihKiteTools Pickaxe",
       "item.aihkan.drop_zihcrium": "Drop Zihcrium",
       "item.aihkan.aihkan": "Aihkan Portal Igniter",
       "block.aihkan.magic_wood_planks": "Magic Wood Planks",
@@ -1172,13 +1588,10 @@
       "block.aihkan.magic_tower_trim_1": "Magic Tower Trim 1",
       "block.aihkan.magic_tower_trim_2": "Magic Tower Trim 2",
       "block.aihkan.magic_tower_trim_1b": "Magic Tower Trim 1b",
-      "block.aihkan.full_aih_kite_block": "Full Aih Kite Block",
       "block.aihkan.magic_tower_white_block": "Magic Tower White Block",
-      "item.aihkan.aih_kite_tools_axe": "AihKiteTools Axe",
       "block.aihkan.magic_tower_blue_block": "Magic Tower Blue Block",
       "block.aihkan.magic_tree_sapling_block": "Magic Tree Sapling Block",
       "item.aihkan.adam_00_spawn_egg": "Adam 0 0 Spawn Egg",
-      "advancements.journeys_beginning.descr": "Made it to Aihkan",
       "block.aihkan.block_zihcrium": "Block Zihcrium",
       "entity.aihkan.bronze_giant": "Bronze Giant"
     }
