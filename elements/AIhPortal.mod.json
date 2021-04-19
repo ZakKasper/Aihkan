@@ -26,7 +26,7 @@
     "Mz": 1.0,
     "name": "AIh Portal",
     "specialInfo": [],
-    "hardness": 1.0,
+    "hardness": 1.1,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
@@ -67,7 +67,7 @@
     },
     "luminance": 0.0,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "breakHarvestLevel": 2,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"

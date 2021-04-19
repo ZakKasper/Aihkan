@@ -1,22 +1,12 @@
 
 package net.mcreator.aihkan.item;
 
-import net.minecraftforge.registries.ObjectHolder;
-
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.item.PickaxeItem;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.Item;
-import net.minecraft.item.IItemTier;
-
-import net.mcreator.aihkan.block.MagicWoodPlanksBlock;
-import net.mcreator.aihkan.AihkanModElements;
-
 @AihkanModElements.ModElement.Tag
 public class MagicPickaxeItem extends AihkanModElements.ModElement {
+
 	@ObjectHolder("aihkan:magic_pickaxe")
 	public static final Item block = null;
+
 	public MagicPickaxeItem(AihkanModElements instance) {
 		super(instance, 121);
 	}
@@ -48,6 +38,8 @@ public class MagicPickaxeItem extends AihkanModElements.ModElement {
 				return Ingredient.fromStacks(new ItemStack(MagicWoodPlanksBlock.block, (int) (1)));
 			}
 		}, 1, -3f, new Item.Properties().group(ItemGroup.TOOLS)) {
+
 		}.setRegistryName("magic_pickaxe"));
 	}
+
 }
