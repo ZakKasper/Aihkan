@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "aihkan:blocks/magicwoodplanks",
+    "top": "aihkan:blocks/magicwoodplanks",
+    "side": "aihkan:blocks/magicwoodplanks"
+  }
+}
