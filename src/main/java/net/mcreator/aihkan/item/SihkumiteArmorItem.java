@@ -28,11 +28,11 @@ public class SihkumiteArmorItem extends AihkanModElements.ModElement {
 			}
 
 			public int getDamageReductionAmount(EquipmentSlotType slot) {
-				return new int[]{4, 12, 10, 4}[slot.getIndex()];
+				return new int[]{6, 14, 12, 6}[slot.getIndex()];
 			}
 
 			public int getEnchantability() {
-				return 18;
+				return 13;
 			}
 
 			public net.minecraft.util.SoundEvent getSoundEvent() {
@@ -49,7 +49,7 @@ public class SihkumiteArmorItem extends AihkanModElements.ModElement {
 			}
 
 			public float getToughness() {
-				return 0f;
+				return 1.7999999999999998f;
 			}
 		};
 

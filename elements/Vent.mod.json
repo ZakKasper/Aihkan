@@ -10,7 +10,7 @@
     "textureBack": "purifier_bottom_top",
     "renderType": 10,
     "customModelName": "Normal",
-    "rotationMode": 1,
+    "rotationMode": 4,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
@@ -92,11 +92,8 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onRightClicked": {
-      "name": "AIhPortalWarp"
-    },
-    "onTickUpdate": {
-      "name": "SpawnBossMan"
+    "onEntityWalksOn": {
+      "name": "SpawnBoss2"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],

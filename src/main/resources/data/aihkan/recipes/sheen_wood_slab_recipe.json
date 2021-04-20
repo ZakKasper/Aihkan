@@ -6,17 +6,17 @@
   ],
   "key": {
     "0": {
-      "item": "aihkan:unknown_element"
+      "item": "aihkan:sheen_wood_planks"
     },
     "1": {
-      "item": "aihkan:unknown_element"
+      "item": "aihkan:sheen_wood_planks"
     },
     "2": {
-      "item": "aihkan:unknown_element"
+      "item": "aihkan:sheen_wood_planks"
     }
   },
   "result": {
-    "item": "aihkan:unknown_element",
+    "item": "aihkan:sheen_wood_slab",
     "count": 6
   }
 }

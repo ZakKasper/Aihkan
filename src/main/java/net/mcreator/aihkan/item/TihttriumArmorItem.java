@@ -24,15 +24,15 @@ public class TihttriumArmorItem extends AihkanModElements.ModElement {
 	public void initElements() {
 		IArmorMaterial armormaterial = new IArmorMaterial() {
 			public int getDurability(EquipmentSlotType slot) {
-				return new int[]{13, 15, 16, 11}[slot.getIndex()] * 15;
+				return new int[]{13, 15, 16, 11}[slot.getIndex()] * 40;
 			}
 
 			public int getDamageReductionAmount(EquipmentSlotType slot) {
-				return new int[]{2, 6, 5, 2}[slot.getIndex()];
+				return new int[]{8, 12, 11, 8}[slot.getIndex()];
 			}
 
 			public int getEnchantability() {
-				return 9;
+				return 20;
 			}
 
 			public net.minecraft.util.SoundEvent getSoundEvent() {
@@ -49,11 +49,11 @@ public class TihttriumArmorItem extends AihkanModElements.ModElement {
 			}
 
 			public float getToughness() {
-				return 0f;
+				return 2.5f;
 			}
 		};
 
-		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.HEAD, new Item.Properties().group(ItemGroup.COMBAT)) {
+		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.HEAD, new Item.Properties().group(AihkanItemsItemGroup.tab)) {
 
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
@@ -62,7 +62,7 @@ public class TihttriumArmorItem extends AihkanModElements.ModElement {
 
 		}.setRegistryName("tihttrium_armor_helmet"));
 
-		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.CHEST, new Item.Properties().group(ItemGroup.COMBAT)) {
+		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.CHEST, new Item.Properties().group(AihkanItemsItemGroup.tab)) {
 
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
@@ -71,7 +71,7 @@ public class TihttriumArmorItem extends AihkanModElements.ModElement {
 
 		}.setRegistryName("tihttrium_armor_chestplate"));
 
-		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.LEGS, new Item.Properties().group(ItemGroup.COMBAT)) {
+		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.LEGS, new Item.Properties().group(AihkanItemsItemGroup.tab)) {
 
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
@@ -80,7 +80,7 @@ public class TihttriumArmorItem extends AihkanModElements.ModElement {
 
 		}.setRegistryName("tihttrium_armor_leggings"));
 
-		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.FEET, new Item.Properties().group(ItemGroup.COMBAT)) {
+		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.FEET, new Item.Properties().group(AihkanItemsItemGroup.tab)) {
 
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
