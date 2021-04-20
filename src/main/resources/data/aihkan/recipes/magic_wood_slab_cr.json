@@ -1,0 +1,22 @@
+{
+  "group": "aihkan",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "aihkan:magic_wood_planks"
+    },
+    "1": {
+      "item": "aihkan:magic_wood_planks"
+    },
+    "2": {
+      "item": "aihkan:magic_wood_planks"
+    }
+  },
+  "result": {
+    "item": "aihkan:unknown_element",
+    "count": 6
+  }
+}
