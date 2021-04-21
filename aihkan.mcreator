@@ -1725,6 +1725,15 @@
       "registry_name": "magic_hoe"
     },
     {
+      "name": "AihkiteDropReal",
+      "type": "loottable",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aihkite_drop_real"
+    },
+    {
       "name": "VentMagic",
       "type": "block",
       "sortid": 131,
@@ -1734,13 +1743,151 @@
       "registry_name": "vent_magic"
     },
     {
-      "name": "AihkiteDropReal",
-      "type": "loottable",
-      "sortid": 132,
+      "name": "Snakevenom",
+      "type": "gun",
+      "sortid": 117,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "aihkite_drop_real"
+      "registry_name": "snakevenom"
+    },
+    {
+      "name": "Cyborg",
+      "type": "mob",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cyborg"
+    },
+    {
+      "name": "SnakevenomBulletHitsPlayer",
+      "type": "procedure",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "snakevenom_bullet_hits_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Goblin",
+      "type": "mob",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "goblin"
+    },
+    {
+      "name": "MurderBotBoltBulletHitsBlock",
+      "type": "procedure",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "murder_bot_bolt_bullet_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Botboltitem",
+      "type": "item",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "botboltitem"
+    },
+    {
+      "name": "SnakevenomRangedItemUsed",
+      "type": "procedure",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "snakevenom_ranged_item_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MurderBotBolt",
+      "type": "gun",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "murder_bot_bolt"
+    },
+    {
+      "name": "Snakeboss",
+      "type": "mob",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "snakeboss"
+    },
+    {
+      "name": "MurderBotBoltRangedItemUsed",
+      "type": "procedure",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "murder_bot_bolt_ranged_item_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Snakevenomitem",
+      "type": "item",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "snakevenomitem"
     }
   ],
   "variable_elements": [],
