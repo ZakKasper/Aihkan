@@ -1575,7 +1575,7 @@
       "name": "SnakevenomBulletHitsPlayer",
       "type": "procedure",
       "sortid": 118,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "snakevenom_bullet_hits_player",
@@ -1678,7 +1678,7 @@
       "name": "MurderBotBoltRangedItemUsed",
       "type": "procedure",
       "sortid": 114,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "murder_bot_bolt_ranged_item_used",
@@ -1740,7 +1740,7 @@
       "name": "MagicShovel",
       "type": "tool",
       "sortid": 124,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_shovel"
@@ -1758,7 +1758,7 @@
       "name": "MagicPickaxe",
       "type": "tool",
       "sortid": 121,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_pickaxe"
@@ -1870,6 +1870,24 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_hoe"
+    },
+    {
+      "name": "AihkiteDropReal",
+      "type": "loottable",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aihkite_drop_real"
+    },
+    {
+      "name": "VentMagic",
+      "type": "block",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "vent_magic"
     }
   ],
   "variable_elements": [],

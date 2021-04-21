@@ -4,13 +4,13 @@ package net.mcreator.aihkan.block;
 import net.minecraft.block.material.Material;
 
 @AihkanModElements.ModElement.Tag
-public class VentBlock extends AihkanModElements.ModElement {
+public class VentMagicBlock extends AihkanModElements.ModElement {
 
-	@ObjectHolder("aihkan:vent")
+	@ObjectHolder("aihkan:vent_magic")
 	public static final Block block = null;
 
-	public VentBlock(AihkanModElements instance) {
-		super(instance, 47);
+	public VentMagicBlock(AihkanModElements instance) {
+		super(instance, 131);
 
 	}
 
@@ -23,36 +23,13 @@ public class VentBlock extends AihkanModElements.ModElement {
 
 	public static class CustomBlock extends Block {
 
-		public static final DirectionProperty FACING = DirectionalBlock.FACING;
-
 		public CustomBlock() {
 			super(
 
-					Block.Properties.create(Material.ROCK).sound(SoundType.GROUND).hardnessAndResistance(10f, 20f).lightValue(0).harvestLevel(5)
+					Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(10f, 20f).lightValue(0).harvestLevel(5)
 							.harvestTool(ToolType.PICKAXE));
 
-			this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH));
-
-			setRegistryName("vent");
-		}
-
-		@Override
-		protected void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) {
-			builder.add(FACING);
-		}
-
-		public BlockState rotate(BlockState state, Rotation rot) {
-			return state.with(FACING, rot.rotate(state.get(FACING)));
-		}
-
-		public BlockState mirror(BlockState state, Mirror mirrorIn) {
-			return state.rotate(mirrorIn.toRotation(state.get(FACING)));
-		}
-
-		@Override
-		public BlockState getStateForPlacement(BlockItemUseContext context) {
-			Direction facing = context.getFace();;
-			return this.getDefaultState().with(FACING, facing);
+			setRegistryName("vent_magic");
 		}
 
 		@Override
@@ -78,7 +55,7 @@ public class VentBlock extends AihkanModElements.ModElement {
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
 
-				SpawnBoss2Procedure.executeProcedure($_dependencies);
+				SpawnBossManProcedure.executeProcedure($_dependencies);
 			}
 		}
 
