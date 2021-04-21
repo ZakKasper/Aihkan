@@ -73,11 +73,6 @@ public class VentBlock extends AihkanModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-
 				SpawnBoss2Procedure.executeProcedure($_dependencies);
 			}
 		}
