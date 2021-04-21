@@ -1,17 +1,30 @@
 
 package net.mcreator.aihkan.block;
 
+import net.minecraftforge.registries.ObjectHolder;
+
+import net.minecraft.world.storage.loot.LootContext;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Item;
+import net.minecraft.item.BlockItem;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.StairsBlock;
+import net.minecraft.block.SoundType;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.Block;
+
+import net.mcreator.aihkan.itemgroup.AihkanItemsItemGroup;
+import net.mcreator.aihkan.AihkanModElements;
+
+import java.util.List;
+import java.util.Collections;
 
 @AihkanModElements.ModElement.Tag
 public class MagicWoodStairsBlock extends AihkanModElements.ModElement {
-
 	@ObjectHolder("aihkan:magic_wood_stairs")
 	public static final Block block = null;
-
 	public MagicWoodStairsBlock(AihkanModElements instance) {
 		super(instance, 119);
-
 	}
 
 	@Override
@@ -20,26 +33,19 @@ public class MagicWoodStairsBlock extends AihkanModElements.ModElement {
 		elements.items
 				.add(() -> new BlockItem(block, new Item.Properties().group(AihkanItemsItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
-
 	public static class CustomBlock extends StairsBlock {
-
 		public CustomBlock() {
 			super(new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(1f, 10f)).getDefaultState(),
-
-					Block.Properties.create(Material.ROCK).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).lightValue(0));
-
+					Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(1f, 10f).lightValue(0));
 			setRegistryName("magic_wood_stairs");
 		}
 
 		@Override
 		public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
-
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
 			return Collections.singletonList(new ItemStack(this, 1));
 		}
-
 	}
-
 }

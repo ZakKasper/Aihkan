@@ -2,33 +2,35 @@
 package net.mcreator.aihkan.block;
 
 import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.common.ToolType;
 
 import net.minecraft.world.storage.loot.LootContext;
-import net.minecraft.world.IBlockReader;
+import net.minecraft.world.World;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.Direction;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
+import net.minecraft.entity.Entity;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
-import net.minecraft.block.FenceGateBlock;
-import net.minecraft.block.FenceBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import net.mcreator.aihkan.procedures.SpawnBossManProcedure;
 import net.mcreator.aihkan.itemgroup.AihkanItemsItemGroup;
 import net.mcreator.aihkan.AihkanModElements;
 
+import java.util.Map;
 import java.util.List;
+import java.util.HashMap;
 import java.util.Collections;
 
 @AihkanModElements.ModElement.Tag
-public class SheenWoodFenceBlock extends AihkanModElements.ModElement {
-	@ObjectHolder("aihkan:sheen_wood_fence")
+public class VentMagicBlock extends AihkanModElements.ModElement {
+	@ObjectHolder("aihkan:vent_magic")
 	public static final Block block = null;
-	public SheenWoodFenceBlock(AihkanModElements instance) {
-		super(instance, 103);
+	public VentMagicBlock(AihkanModElements instance) {
+		super(instance, 131);
 	}
 
 	@Override
@@ -37,22 +39,11 @@ public class SheenWoodFenceBlock extends AihkanModElements.ModElement {
 		elements.items
 				.add(() -> new BlockItem(block, new Item.Properties().group(AihkanItemsItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
-	public static class CustomBlock extends FenceBlock {
+	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(2f, 3f).lightValue(0));
-			setRegistryName("sheen_wood_fence");
-		}
-
-		@Override
-		public boolean canConnect(BlockState state, boolean checkattach, Direction face) {
-			boolean flag = state.getBlock() instanceof FenceBlock && state.getMaterial() == this.material;
-			boolean flag1 = state.getBlock() instanceof FenceGateBlock && FenceGateBlock.isParallel(state, face);
-			return !cannotAttach(state.getBlock()) && checkattach || flag || flag1;
-		}
-
-		@Override
-		public int getFlammability(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
-			return 5;
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(10f, 20f).lightValue(0).harvestLevel(5)
+					.harvestTool(ToolType.PICKAXE));
+			setRegistryName("vent_magic");
 		}
 
 		@Override
@@ -60,7 +51,23 @@ public class SheenWoodFenceBlock extends AihkanModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(this, 1));
+			return Collections.singletonList(new ItemStack(this, 0));
+		}
+
+		@Override
+		public void onEntityWalk(World world, BlockPos pos, Entity entity) {
+			super.onEntityWalk(world, pos, entity);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				SpawnBossManProcedure.executeProcedure($_dependencies);
+			}
 		}
 	}
 }

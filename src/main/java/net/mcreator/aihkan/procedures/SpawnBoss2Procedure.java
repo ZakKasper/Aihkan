@@ -60,7 +60,7 @@ public class SpawnBoss2Procedure extends AihkanModElements.ModElement {
 				}.compareDistOf(x, y, z)).findFirst().orElse(null)) != null)) {
 			if (world instanceof World && !world.getWorld().isRemote) {
 				Entity entityToSpawn = new BronzeGiantEntity.CustomEntity(BronzeGiantEntity.entity, world.getWorld());
-				entityToSpawn.setLocationAndAngles(x, (y + 1), z, world.getRandom().nextFloat() * 360F, 0);
+				entityToSpawn.setLocationAndAngles(x, (y + 1), (z + 4), world.getRandom().nextFloat() * 360F, 0);
 				if (entityToSpawn instanceof MobEntity)
 					((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),
 							SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
