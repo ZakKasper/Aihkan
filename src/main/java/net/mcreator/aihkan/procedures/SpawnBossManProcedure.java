@@ -12,7 +12,7 @@ import net.minecraft.entity.ILivingEntityData;
 import net.minecraft.entity.Entity;
 import net.minecraft.block.Blocks;
 
-import net.mcreator.aihkan.entity.SkizardEntity;
+import net.mcreator.aihkan.entity.SnakebossEntity;
 import net.mcreator.aihkan.AihkanModElements;
 
 import java.util.function.Function;
@@ -59,8 +59,8 @@ public class SpawnBossManProcedure extends AihkanModElements.ModElement {
 					}
 				}.compareDistOf(x, y, z)).findFirst().orElse(null)) != null)) {
 			if (world instanceof World && !world.getWorld().isRemote) {
-				Entity entityToSpawn = new SkizardEntity.CustomEntity(SkizardEntity.entity, world.getWorld());
-				entityToSpawn.setLocationAndAngles(x, (y + 2), (z + 4), world.getRandom().nextFloat() * 360F, 0);
+				Entity entityToSpawn = new SnakebossEntity.CustomEntity(SnakebossEntity.entity, world.getWorld());
+				entityToSpawn.setLocationAndAngles(x, (y + 1), (z + 4), world.getRandom().nextFloat() * 360F, 0);
 				if (entityToSpawn instanceof MobEntity)
 					((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),
 							SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);

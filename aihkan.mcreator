@@ -574,7 +574,7 @@
       "name": "MurderBot",
       "type": "mob",
       "sortid": 41,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "murder_bot"
@@ -592,7 +592,7 @@
       "name": "OvergrownCourtyard",
       "type": "structure",
       "sortid": 39,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "overgrown_courtyard"
@@ -601,7 +601,7 @@
       "name": "AIhPortalWarp",
       "type": "procedure",
       "sortid": 42,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "a_ih_portal_warp",
@@ -610,18 +610,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
           },
           {
             "name": "world",
@@ -782,7 +770,7 @@
       "name": "SihkumitePickaxe",
       "type": "tool",
       "sortid": 67,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "sihkumite_pickaxe"
@@ -854,7 +842,7 @@
       "name": "SihkumiteAxe",
       "type": "tool",
       "sortid": 68,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "sihkumite_axe"
@@ -863,7 +851,7 @@
       "name": "TihttriumAxe",
       "type": "tool",
       "sortid": 83,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "tihttrium_axe"
@@ -917,7 +905,7 @@
       "name": "AihKiteToolsAxe",
       "type": "tool",
       "sortid": 58,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "aih_kite_tools_axe"
@@ -1051,7 +1039,7 @@
       "name": "SihkumiteSword",
       "type": "tool",
       "sortid": 69,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "sihkumite_sword"
@@ -1116,7 +1104,7 @@
       "name": "AihKiteToolsPickaxe",
       "type": "tool",
       "sortid": 57,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "aih_kite_tools_pickaxe"
@@ -1441,7 +1429,7 @@
       "name": "PurifierProcedure",
       "type": "procedure",
       "sortid": 50,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "purifier_procedure",
@@ -1605,7 +1593,7 @@
       "name": "MurderBotBoltBulletHitsBlock",
       "type": "procedure",
       "sortid": 114,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "murder_bot_bolt_bullet_hits_block",
@@ -1852,15 +1840,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_wood_gate"
-    },
-    {
-      "name": "IfNum",
-      "type": "function",
-      "sortid": 71,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "if_num"
     },
     {
       "name": "MagicHoe",
