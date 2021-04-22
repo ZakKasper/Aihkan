@@ -46,7 +46,7 @@ public class AIhPortalBlock extends AihkanModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.REDSTONE_LIGHT).sound(SoundType.GLASS).hardnessAndResistance(1f, 10f).lightValue(0));
+			super(Block.Properties.create(Material.REDSTONE_LIGHT).sound(SoundType.GLASS).hardnessAndResistance(1.1f, 10f).lightValue(0));
 			setRegistryName("a_ih_portal");
 		}
 
@@ -75,6 +75,7 @@ public class AIhPortalBlock extends AihkanModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
+				$_dependencies.put("world", world);
 				AIhPortalWarpProcedure.executeProcedure($_dependencies);
 			}
 			return ActionResultType.SUCCESS;

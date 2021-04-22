@@ -11,7 +11,7 @@
     "enableBoots": true,
     "textureBoots": "tihttrium_boots",
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:AihkanItems"
     },
     "armorTextureFile": "tihttrium",
     "helmetName": "Tihttrium Helmet",
@@ -38,13 +38,13 @@
     "bootsModelPartL": "Boots L",
     "bootsModelPartR": "Boots R",
     "bootsModelTexture": "From armor",
-    "maxDamage": 15,
-    "damageValueHelmet": 2,
-    "damageValueBody": 5,
-    "damageValueLeggings": 6,
-    "damageValueBoots": 2,
-    "enchantability": 9,
-    "toughness": 0.0,
+    "maxDamage": 40,
+    "damageValueHelmet": 8,
+    "damageValueBody": 11,
+    "damageValueLeggings": 12,
+    "damageValueBoots": 8,
+    "enchantability": 20,
+    "toughness": 2.5,
     "equipSound": {
       "value": ""
     },
