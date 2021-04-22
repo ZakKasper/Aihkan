@@ -1519,6 +1519,24 @@
           }
         ]
       }
+    },
+    {
+      "name": "TechLab",
+      "type": "structure",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tech_lab"
+    },
+    {
+      "name": "MagicTower",
+      "type": "structure",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_tower"
     }
   ],
   "variable_elements": [],
