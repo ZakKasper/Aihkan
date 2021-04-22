@@ -33,12 +33,12 @@
     "creativeTab": {
       "value": "CUSTOM:AihkanItems"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "pickaxe",
     "customDrop": {
       "value": "CUSTOM:AihkiteGem"
     },
     "dropAmount": 4,
-    "useLootTableForDrops": false,
+    "useLootTableForDrops": true,
     "isBeaconBase": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
