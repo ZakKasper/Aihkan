@@ -612,6 +612,18 @@
             "type": "entity"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -1711,6 +1723,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_hoe_recipe"
+    },
+    {
+      "name": "AihKiteDrops",
+      "type": "loottable",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aih_kite_drops"
     }
   ],
   "variable_elements": [],
@@ -1756,7 +1777,7 @@
       "entity.aihkan.droid_passive": "Droid Passive",
       "entity.aihkan.adam_00": "Adam 0 0",
       "item.aihkan.sihkumite_pickaxe": "Sihkumite Pickaxe",
-      "block.aihkan.aih_kite": "Aih Kite",
+      "block.aihkan.aih_kite": "AihKite",
       "item.aihkan.tihttrium_pickaxe": "Tihttrium Pickaxe",
       "block.aihkan.a_ih_portal": "AIh Portal",
       "item.aihkan.magic_shovel": "Magic Shovel",
