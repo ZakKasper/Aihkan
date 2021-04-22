@@ -612,18 +612,6 @@
             "type": "entity"
           },
           {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
             "name": "world",
             "type": "world"
           }
@@ -1554,15 +1542,6 @@
       }
     },
     {
-      "name": "IfNum",
-      "type": "function",
-      "sortid": 71,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "if_num"
-    },
-    {
       "name": "MagicWoodFence",
       "type": "block",
       "sortid": 113,
@@ -1732,101 +1711,282 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "aih_kite_drops"
+    },
+    {
+      "name": "Goblin",
+      "type": "mob",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "goblin"
+    },
+    {
+      "name": "VentMagic",
+      "type": "block",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "vent_magic"
+    },
+    {
+      "name": "MurderBotBoltBulletHitsBlock",
+      "type": "procedure",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "murder_bot_bolt_bullet_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MagicTower",
+      "type": "structure",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_tower"
+    },
+    {
+      "name": "Snakeboss",
+      "type": "mob",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "snakeboss"
+    },
+    {
+      "name": "MurderBotBoltRangedItemUsed",
+      "type": "procedure",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "murder_bot_bolt_ranged_item_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Snakevenomitem",
+      "type": "item",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "snakevenomitem"
+    },
+    {
+      "name": "Snakevenom",
+      "type": "gun",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "snakevenom"
+    },
+    {
+      "name": "AihkiteDropReal",
+      "type": "loottable",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aihkite_drop_real"
+    },
+    {
+      "name": "SnakevenomBulletHitsPlayer",
+      "type": "procedure",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "snakevenom_bullet_hits_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cyborg",
+      "type": "mob",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cyborg"
+    },
+    {
+      "name": "SnakevenomRangedItemUsed",
+      "type": "procedure",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "snakevenom_ranged_item_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Botboltitem",
+      "type": "item",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "botboltitem"
+    },
+    {
+      "name": "MurderBotBolt",
+      "type": "gun",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "murder_bot_bolt"
+    },
+    {
+      "name": "TechLab",
+      "type": "structure",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tech_lab"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.aihkan.magic_wood": "Magic Wood",
       "item.aihkan.tihttrium_axe": "Tihttrium Axe",
-      "block.aihkan.magic_tower_trim_2b": "Magic Tower Trim 2b",
       "block.aihkan.sheen_wood_fence": "SheenWood Fence",
+      "block.aihkan.magic_tower_trim_2b": "Magic Tower Trim 2b",
       "item.aihkan.aihkite_armor_armor_chestplate": "AihkiteArmor Chestplate",
-      "item.aihkan.fused_aihkite": "Fused Aihkite",
-      "item.aihkan.drop_tihttrium": "Drop Tihttrium",
       "block.aihkan.magic_wood_slab": "Magic Wood Slab",
       "block.aihkan.magic_grass_block": "Magic Grass Block",
-      "block.aihkan.sheen_wood_slab": "SheenWood Slab",
       "block.aihkan.magic_leaves": "Magic Leaves",
-      "block.aihkan.purifier_block": "Purifier Block",
       "block.aihkan.sihkumite_ore": "Sihkumite Ore",
-      "item.aihkan.murder_bot_spawn_egg": "Murder Bot Spawn Egg",
       "item.aihkan.tihttrium_sword": "Tihttrium Sword",
-      "item.aihkan.magic_sword": "Magic Sword",
       "item.aihkan.sihkumite_hoe": "Sihkumite Hoe",
-      "block.aihkan.magic_wood_fence": "Magic Wood Fence",
       "item.aihkan.aihkite_armor_armor_boots": "AihkiteArmor Boots",
-      "item.aihkan.aihkan_test_portal": "Aihkan Test Portal Portal Igniter",
       "block.aihkan.sheen_wood_fence_gate": "SheenWood Fence Gate",
-      "item.aihkan.magic_axe": "Magic Axe",
+      "item.aihkan.aihkan_test_portal": "Aihkan Test Portal Portal Igniter",
       "block.aihkan.sheen_wood_wood": "SheenWood Wood",
-      "item.aihkan.sihkumite_armor_chestplate": "Sihkumite Chestplate",
       "item.aihkan.sihkumite_armor_boots": "Sihkumite Boots",
-      "entity.aihkan.murder_bot": "Murder Bot",
-      "block.aihkan.magic_dirt": "Magic Dirt",
       "block.aihkan.poison_leaves": "Poison Leaves",
-      "item.aihkan.skizard_spawn_egg": "Skizard Spawn Egg",
-      "item.aihkan.aih_kite_tools_sword": "AihKiteTools Sword",
       "item.aihkan.aihkite_armor_armor_leggings": "AihkiteArmor Leggings",
       "item.aihkan.tihttrium_armor_chestplate": "Tihttrium Chestplate",
-      "item.aihkan.leather_gauntlet": "Leather Gauntlet",
-      "block.aihkan.sheen_wood_leaves": "SheenWood Leaves",
-      "block.aihkan.magic_wood_gate": "Magic Wood Gate",
       "item.aihkan.droid_passive_spawn_egg": "Droid Passive Spawn Egg",
       "entity.aihkan.droid_passive": "Droid Passive",
       "entity.aihkan.adam_00": "Adam 0 0",
       "item.aihkan.sihkumite_pickaxe": "Sihkumite Pickaxe",
       "block.aihkan.aih_kite": "AihKite",
-      "item.aihkan.tihttrium_pickaxe": "Tihttrium Pickaxe",
-      "block.aihkan.a_ih_portal": "AIh Portal",
-      "item.aihkan.magic_shovel": "Magic Shovel",
       "block.aihkan.block_tihttrium": "Block Tihttrium",
       "block.aihkan.sheen_wood_planks": "SheenWood Planks",
       "item.aihkan.aihkite_armor_armor_helmet": "AihkiteArmor Helmet",
-      "advancements.journeys_beginning.title": "Journey\u0027s Beginning",
-      "entity.aihkan.skizard": "Skizard",
-      "item.aihkan.aih_kite_tools_hoe": "AihKiteTools Hoe",
-      "block.aihkan.sheen_wood_stairs": "SheenWood Stairs",
-      "block.aihkan.magic_flower": "Magic Flower",
-      "item.aihkan.bronze_giant_spawn_egg": "Bronze Giant Spawn Egg",
       "item.aihkan.tihttrium_armor_boots": "Tihttrium Boots",
       "item.aihkan.aih_kite_tools_shovel": "AihKiteTools Shovel",
       "item.aihkan.sihkumite_axe": "Sihkumite Axe",
       "block.aihkan.magic_wood_stairs": "Magic Wood Stairs",
       "item.aihkan.cyborg_arm_iron": "Cyborg Arm Iron",
       "block.aihkan.magic_tree_sapling": "Magic Tree Sapling",
-      "item.aihkan.diamond_gauntlet": "Diamond Gauntlet",
       "item.aihkan.iron_gauntlet": "Iron Gauntlet",
-      "item.aihkan.gold_gauntlet": "Gold Gauntlet",
-      "item.aihkan.magic_pickaxe": "Magic Pickaxe",
       "item.aihkan.sihkumite_shovel": "Sihkumite Shovel",
-      "item.aihkan.tihttrium_hoe": "Tihttrium Hoe",
-      "item.aihkan.aih_kite_tools_pickaxe": "AihKiteTools Pickaxe",
       "item.aihkan.sihkumite_armor_helmet": "Sihkumite Helmet",
-      "block.aihkan.dead_grass": "Wasteland Grass",
-      "item.aihkan.drop_zihcrium": "Drop Zihcrium",
       "item.aihkan.tihttrium_armor_leggings": "Tihttrium Leggings",
       "item.aihkan.aihkan": "Aihkan Portal Igniter",
-      "block.aihkan.magic_wood_planks": "Magic Wood Planks",
-      "block.aihkan.rubble_2": "Rubble 2",
       "item.aihkan.tihttrium_shovel": "Tihttrium Shovel",
-      "block.aihkan.vent": "Vent",
-      "item.aihkan.cyborg_arm_stone": "Cyborg Arm Stone",
       "block.aihkan.magic_tower_trim_1": "Magic Tower Trim 1",
       "block.aihkan.magic_tower_trim_2": "Magic Tower Trim 2",
-      "block.aihkan.magic_tower_trim_1b": "Magic Tower Trim 1b",
-      "block.aihkan.full_aih_kite_block": "Full Aih Kite Block",
-      "item.aihkan.magic_hoe": "Magic Hoe",
       "block.aihkan.magic_tower_white_block": "Magic Tower White Block",
-      "item.aihkan.aih_kite_tools_axe": "AihKiteTools Axe",
       "block.aihkan.magic_tower_blue_block": "Magic Tower Blue Block",
-      "block.aihkan.sheen_wood_log": "SheenWood Log",
       "block.aihkan.magic_tree_sapling_block": "Magic Tree Sapling Block",
       "item.aihkan.sihkumite_armor_leggings": "Sihkumite Leggings",
       "item.aihkan.adam_00_spawn_egg": "Adam 0 0 Spawn Egg",
       "item.aihkan.sihkumite_sword": "Sihkumite Sword",
-      "advancements.journeys_beginning.descr": "Made it to Aihkan",
+      "block.aihkan.magic_wood": "Magic Wood",
+      "item.aihkan.fused_aihkite": "Fused Aihkite",
+      "item.aihkan.drop_tihttrium": "Drop Tihttrium",
+      "block.aihkan.sheen_wood_slab": "SheenWood Slab",
+      "block.aihkan.purifier_block": "Purifier Block",
+      "item.aihkan.murder_bot_spawn_egg": "Murder Bot Spawn Egg",
+      "item.aihkan.magic_sword": "Magic Sword",
+      "block.aihkan.magic_wood_fence": "Magic Wood Fence",
+      "item.aihkan.magic_axe": "Magic Axe",
+      "item.aihkan.sihkumite_armor_chestplate": "Sihkumite Chestplate",
+      "item.aihkan.snakevenom": "Snakevenom",
+      "entity.aihkan.murder_bot": "Murder Bot",
+      "block.aihkan.magic_dirt": "Magic Dirt",
+      "item.aihkan.skizard_spawn_egg": "Skizard Spawn Egg",
+      "item.aihkan.aih_kite_tools_sword": "AihKiteTools Sword",
+      "item.aihkan.leather_gauntlet": "Leather Gauntlet",
+      "block.aihkan.sheen_wood_leaves": "SheenWood Leaves",
+      "block.aihkan.magic_wood_gate": "Magic Wood Gate",
+      "item.aihkan.tihttrium_pickaxe": "Tihttrium Pickaxe",
+      "block.aihkan.a_ih_portal": "AIh Portal",
+      "item.aihkan.magic_shovel": "Magic Shovel",
+      "entity.aihkan.skizard": "Skizard",
+      "item.aihkan.aih_kite_tools_hoe": "AihKiteTools Hoe",
+      "block.aihkan.sheen_wood_stairs": "SheenWood Stairs",
+      "block.aihkan.magic_flower": "Magic Flower",
+      "item.aihkan.bronze_giant_spawn_egg": "Bronze Giant Spawn Egg",
+      "item.aihkan.diamond_gauntlet": "Diamond Gauntlet",
+      "item.aihkan.gold_gauntlet": "Gold Gauntlet",
+      "item.aihkan.magic_pickaxe": "Magic Pickaxe",
+      "item.aihkan.tihttrium_hoe": "Tihttrium Hoe",
+      "item.aihkan.aih_kite_tools_pickaxe": "AihKiteTools Pickaxe",
+      "item.aihkan.drop_zihcrium": "Drop Zihcrium",
+      "block.aihkan.magic_wood_planks": "Magic Wood Planks",
+      "block.aihkan.rubble_2": "Rubble 2",
+      "block.aihkan.vent": "Vent",
+      "item.aihkan.cyborg_arm_stone": "Cyborg Arm Stone",
+      "block.aihkan.magic_tower_trim_1b": "Magic Tower Trim 1b",
+      "block.aihkan.full_aih_kite_block": "Full Aih Kite Block",
+      "item.aihkan.magic_hoe": "Magic Hoe",
+      "item.aihkan.aih_kite_tools_axe": "AihKiteTools Axe",
+      "block.aihkan.sheen_wood_log": "SheenWood Log",
       "item.aihkan.tihttrium_armor_helmet": "Tihttrium Helmet",
       "block.aihkan.block_zihcrium": "Block Zihcrium",
       "entity.aihkan.bronze_giant": "Bronze Giant"
