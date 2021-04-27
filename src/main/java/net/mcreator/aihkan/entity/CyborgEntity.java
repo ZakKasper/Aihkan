@@ -1,16 +1,68 @@
 
 package net.mcreator.aihkan.entity;
 
-import net.minecraft.block.material.Material;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.fml.network.NetworkHooks;
+import net.minecraftforge.fml.network.FMLPlayMessages;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.client.registry.RenderingRegistry;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.client.event.ModelRegistryEvent;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
+
+import net.minecraft.world.gen.Heightmap;
+import net.minecraft.world.biome.Biome;
+import net.minecraft.world.World;
+import net.minecraft.util.math.MathHelper;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.DamageSource;
+import net.minecraft.network.IPacket;
+import net.minecraft.item.SpawnEggItem;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.Item;
+import net.minecraft.inventory.EquipmentSlotType;
+import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.monster.MonsterEntity;
+import net.minecraft.entity.ai.goal.SwimGoal;
+import net.minecraft.entity.ai.goal.RangedAttackGoal;
+import net.minecraft.entity.ai.goal.RandomWalkingGoal;
+import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
+import net.minecraft.entity.ai.goal.MeleeAttackGoal;
+import net.minecraft.entity.ai.goal.LookRandomlyGoal;
+import net.minecraft.entity.ai.goal.HurtByTargetGoal;
+import net.minecraft.entity.SharedMonsterAttributes;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.IRangedAttackMob;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.EntitySpawnPlacementRegistry;
+import net.minecraft.entity.EntityClassification;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.CreatureAttribute;
+import net.minecraft.client.renderer.texture.OverlayTexture;
+import net.minecraft.client.renderer.model.ModelRenderer;
+import net.minecraft.client.renderer.entity.model.EntityModel;
+import net.minecraft.client.renderer.entity.layers.LayerRenderer;
+import net.minecraft.client.renderer.entity.MobRenderer;
+import net.minecraft.client.renderer.entity.IEntityRenderer;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.IRenderTypeBuffer;
+
+import net.mcreator.aihkan.item.MurderBotBoltItem;
+import net.mcreator.aihkan.item.BotboltitemItem;
+import net.mcreator.aihkan.AihkanModElements;
+
+import com.mojang.blaze3d.vertex.IVertexBuilder;
+import com.mojang.blaze3d.matrix.MatrixStack;
 
 @AihkanModElements.ModElement.Tag
 public class CyborgEntity extends AihkanModElements.ModElement {
-
 	public static EntityType entity = null;
-
 	public CyborgEntity(AihkanModElements instance) {
 		super(instance, 116);
-
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -19,12 +71,9 @@ public class CyborgEntity extends AihkanModElements.ModElement {
 		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER).setShouldReceiveVelocityUpdates(true)
 				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1.8f)).build("cyborg")
 						.setRegistryName("cyborg");
-
 		elements.entities.add(() -> entity);
-
 		elements.items.add(
 				() -> new SpawnEggItem(entity, -6684673, -6684775, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("cyborg_spawn_egg"));
-
 	}
 
 	@Override
@@ -35,13 +84,10 @@ public class CyborgEntity extends AihkanModElements.ModElement {
 				biomeCriteria = true;
 			if (!biomeCriteria)
 				continue;
-
 			biome.getSpawns(EntityClassification.MONSTER).add(new Biome.SpawnListEntry(entity, 5, 1, 1));
 		}
-
 		EntitySpawnPlacementRegistry.register(entity, EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES,
 				MonsterEntity::canMonsterSpawn);
-
 	}
 
 	@SubscribeEvent
@@ -58,11 +104,8 @@ public class CyborgEntity extends AihkanModElements.ModElement {
 				}
 			};
 		});
-
 	}
-
 	public static class CustomEntity extends MonsterEntity implements IRangedAttackMob {
-
 		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
 			this(entity, world);
 		}
@@ -71,9 +114,7 @@ public class CyborgEntity extends AihkanModElements.ModElement {
 			super(type, world);
 			experienceValue = 0;
 			setNoAI(false);
-
 			this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(BotboltitemItem.block, (int) (1)));
-
 		}
 
 		@Override
@@ -84,7 +125,6 @@ public class CyborgEntity extends AihkanModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-
 			this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, PlayerEntity.class, false, false));
 			this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, ServerPlayerEntity.class, false, false));
 			this.goalSelector.addGoal(3, new MeleeAttackGoal(this, 1.2, false));
@@ -92,7 +132,6 @@ public class CyborgEntity extends AihkanModElements.ModElement {
 			this.targetSelector.addGoal(5, new HurtByTargetGoal(this));
 			this.goalSelector.addGoal(6, new LookRandomlyGoal(this));
 			this.goalSelector.addGoal(7, new SwimGoal(this));
-
 			this.goalSelector.addGoal(1, new RangedAttackGoal(this, 1.25, 20, 10) {
 				@Override
 				public boolean shouldContinueExecuting() {
@@ -124,31 +163,24 @@ public class CyborgEntity extends AihkanModElements.ModElement {
 		@Override
 		protected void registerAttributes() {
 			super.registerAttributes();
-
 			if (this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED) != null)
 				this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.3);
-
 			if (this.getAttribute(SharedMonsterAttributes.MAX_HEALTH) != null)
 				this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(16);
-
 			if (this.getAttribute(SharedMonsterAttributes.ARMOR) != null)
 				this.getAttribute(SharedMonsterAttributes.ARMOR).setBaseValue(0);
-
 			if (this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE) == null)
 				this.getAttributes().registerAttribute(SharedMonsterAttributes.ATTACK_DAMAGE);
 			this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(3);
-
 		}
 
 		public void attackEntityWithRangedAttack(LivingEntity target, float flval) {
 			MurderBotBoltItem.shoot(this, target);
 		}
-
 	}
 
 	@OnlyIn(Dist.CLIENT)
 	private static class GlowingLayer<T extends Entity, M extends EntityModel<T>> extends LayerRenderer<T, M> {
-
 		public GlowingLayer(IEntityRenderer<T, M> er) {
 			super(er);
 		}
@@ -158,13 +190,11 @@ public class CyborgEntity extends AihkanModElements.ModElement {
 			IVertexBuilder ivertexbuilder = bufferIn.getBuffer(RenderType.getEyes(new ResourceLocation("aihkan:textures/cyborgtexture.png")));
 			this.getEntityModel().render(matrixStackIn, ivertexbuilder, 15728640, OverlayTexture.NO_OVERLAY, 1, 1, 1, 1);
 		}
-
 	}
 
 	// Made with Blockbench 3.8.3
 	// Exported for Minecraft version 1.15 - 1.16
 	// Paste this class into your mod and generate all required imports
-
 	public static class Modelcustom_model extends EntityModel<Entity> {
 		private final ModelRenderer Head;
 		private final ModelRenderer Chest;
@@ -172,15 +202,12 @@ public class CyborgEntity extends AihkanModElements.ModElement {
 		private final ModelRenderer Rarm;
 		private final ModelRenderer Lleg;
 		private final ModelRenderer Rleg;
-
 		public Modelcustom_model() {
 			textureWidth = 32;
 			textureHeight = 32;
-
 			Head = new ModelRenderer(this);
 			Head.setRotationPoint(0.5F, 11.0F, 0.0F);
 			Head.setTextureOffset(16, 20).addBox(-2.0F, -4.0F, -2.0F, 4.0F, 4.0F, 4.0F, 0.0F, false);
-
 			Chest = new ModelRenderer(this);
 			Chest.setRotationPoint(0.5F, 15.4F, 0.0F);
 			Chest.setTextureOffset(28, 17).addBox(-0.5F, -4.4F, -0.5F, 1.0F, 1.0F, 1.0F, 0.0F, false);
@@ -188,7 +215,6 @@ public class CyborgEntity extends AihkanModElements.ModElement {
 			Chest.setTextureOffset(0, 18).addBox(-1.5F, -0.4F, -1.0F, 3.0F, 2.0F, 2.0F, 0.0F, false);
 			Chest.setTextureOffset(28, 17).addBox(-0.5F, 1.6F, -0.5F, 1.0F, 1.0F, 1.0F, 0.0F, false);
 			Chest.setTextureOffset(0, 22).addBox(-2.5F, 2.6F, -1.0F, 5.0F, 1.0F, 2.0F, 0.0F, false);
-
 			Larm = new ModelRenderer(this);
 			Larm.setRotationPoint(4.0F, 13.5F, 0.0F);
 			Larm.setTextureOffset(24, 28).addBox(0.0F, -1.0F, -1.0F, 2.0F, 2.0F, 2.0F, 0.0F, false);
@@ -197,7 +223,6 @@ public class CyborgEntity extends AihkanModElements.ModElement {
 			Larm.setTextureOffset(28, 9).addBox(0.5F, -1.25F, -0.5F, 1.0F, 1.0F, 1.0F, 0.0F, false);
 			Larm.setTextureOffset(28, 9).addBox(0.5F, -0.5F, 0.253F, 1.0F, 1.0F, 1.0F, 0.0F, false);
 			Larm.setTextureOffset(8, 25).addBox(0.5F, 0.5F, -0.5F, 1.0F, 6.0F, 1.0F, 0.0F, false);
-
 			Rarm = new ModelRenderer(this);
 			Rarm.setRotationPoint(-3.0F, 13.5F, 0.0F);
 			Rarm.setTextureOffset(12, 28).addBox(-2.0F, -1.0F, -1.0F, 2.0F, 2.0F, 2.0F, 0.0F, false);
@@ -207,11 +232,9 @@ public class CyborgEntity extends AihkanModElements.ModElement {
 			Rarm.setTextureOffset(28, 11).addBox(-2.25F, -0.5F, -0.5F, 1.0F, 1.0F, 1.0F, 0.0F, false);
 			Rarm.setTextureOffset(28, 11).addBox(-1.5F, -1.25F, -0.5F, 1.0F, 1.0F, 1.0F, 0.0F, false);
 			Rarm.setTextureOffset(28, 11).addBox(-1.5F, -0.5F, -1.25F, 1.0F, 1.0F, 1.0F, 0.0F, false);
-
 			Lleg = new ModelRenderer(this);
 			Lleg.setRotationPoint(2.0F, 19.0F, 0.0F);
 			Lleg.setTextureOffset(0, 25).addBox(-1.0F, 0.0F, -1.0F, 2.0F, 5.0F, 2.0F, 0.0F, false);
-
 			Rleg = new ModelRenderer(this);
 			Rleg.setRotationPoint(-1.0F, 19.0F, 0.0F);
 			Rleg.setTextureOffset(0, 25).addBox(-1.0F, 0.0F, -1.0F, 2.0F, 5.0F, 2.0F, 0.0F, false);
@@ -235,7 +258,6 @@ public class CyborgEntity extends AihkanModElements.ModElement {
 		}
 
 		public void setRotationAngles(Entity e, float f, float f1, float f2, float f3, float f4) {
-
 			this.Head.rotateAngleY = f3 / (180F / (float) Math.PI);
 			this.Head.rotateAngleX = f4 / (180F / (float) Math.PI);
 			this.Larm.rotateAngleX = MathHelper.cos(f * 0.6662F) * f1;
@@ -244,5 +266,4 @@ public class CyborgEntity extends AihkanModElements.ModElement {
 			this.Rarm.rotateAngleX = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
 		}
 	}
-
 }

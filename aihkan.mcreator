@@ -612,18 +612,6 @@
             "type": "entity"
           },
           {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
             "name": "world",
             "type": "world"
           }
@@ -1920,6 +1908,7 @@
       "block.aihkan.magic_grass_block": "Magic Grass Block",
       "item.aihkan.cyborg_spawn_egg": "Cyborg Spawn Egg",
       "item.aihkan.snakevenomitem": "Snakevenomitem",
+      "biome.aihkan.magic_forest": "Magic Forest",
       "block.aihkan.magic_leaves": "Magic Leaves",
       "block.aihkan.sihkumite_ore": "Sihkumite Ore",
       "item.aihkan.tihttrium_sword": "Tihttrium Sword",
@@ -1937,7 +1926,7 @@
       "entity.aihkan.droid_passive": "Droid Passive",
       "entity.aihkan.adam_00": "Adam 0 0",
       "item.aihkan.sihkumite_pickaxe": "Sihkumite Pickaxe",
-      "block.aihkan.aih_kite": "Aih Kite",
+      "block.aihkan.aih_kite": "AihKite",
       "block.aihkan.block_tihttrium": "Block Tihttrium",
       "block.aihkan.sheen_wood_planks": "SheenWood Planks",
       "item.aihkan.aihkite_armor_armor_helmet": "AihkiteArmor Helmet",
@@ -1952,6 +1941,7 @@
       "item.aihkan.sihkumite_armor_helmet": "Sihkumite Helmet",
       "item.aihkan.tihttrium_armor_leggings": "Tihttrium Leggings",
       "item.aihkan.aihkan": "Aihkan Portal Igniter",
+      "biome.aihkan.wasteland": "Wasteland",
       "item.aihkan.tihttrium_shovel": "Tihttrium Shovel",
       "block.aihkan.magic_tower_trim_1": "Magic Tower Trim 1",
       "block.aihkan.magic_tower_trim_2": "Magic Tower Trim 2",
