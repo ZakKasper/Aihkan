@@ -1854,15 +1854,6 @@
       "registry_name": "magic_wood_gate"
     },
     {
-      "name": "IfNum",
-      "type": "function",
-      "sortid": 71,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "if_num"
-    },
-    {
       "name": "MagicHoe",
       "type": "tool",
       "sortid": 125,
@@ -1870,6 +1861,51 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "magic_hoe"
+    },
+    {
+      "name": "AihkiteDropReal",
+      "type": "loottable",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aihkite_drop_real"
+    },
+    {
+      "name": "AihKiteDrops",
+      "type": "loottable",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aih_kite_drops"
+    },
+    {
+      "name": "VentMagic",
+      "type": "block",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "vent_magic"
+    },
+    {
+      "name": "MagicTower",
+      "type": "structure",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_tower"
+    },
+    {
+      "name": "TechLab",
+      "type": "structure",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tech_lab"
     }
   ],
   "variable_elements": [],

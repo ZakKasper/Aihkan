@@ -24,7 +24,7 @@
     "Mx": 1.0,
     "My": 1.0,
     "Mz": 1.0,
-    "name": "Aih Kite",
+    "name": "AihKite",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
@@ -33,12 +33,12 @@
     "creativeTab": {
       "value": "CUSTOM:AihkanItems"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "pickaxe",
     "customDrop": {
-      "value": "CUSTOM:AihkiteGem"
+      "value": ""
     },
-    "dropAmount": 4,
-    "useLootTableForDrops": false,
+    "dropAmount": 0,
+    "useLootTableForDrops": true,
     "isBeaconBase": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
@@ -67,7 +67,7 @@
     },
     "luminance": 0.0,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "breakHarvestLevel": 3,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"
