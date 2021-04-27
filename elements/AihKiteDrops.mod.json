@@ -5,8 +5,8 @@
     "type": "Block",
     "pools": [
       {
-        "minrolls": 2,
-        "maxrolls": 4,
+        "minrolls": 1,
+        "maxrolls": 1,
         "minbonusrolls": 1,
         "maxbonusrolls": 1,
         "hasbonusrolls": false,
@@ -14,11 +14,11 @@
           {
             "type": "item",
             "item": {
-              "value": "CUSTOM:AihKiteGem2"
+              "value": "CUSTOM:AihkiteGem"
             },
             "weight": 1,
-            "minCount": 1,
-            "maxCount": 1,
+            "minCount": 2,
+            "maxCount": 2,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,
@@ -28,11 +28,11 @@
           {
             "type": "item",
             "item": {
-              "value": "CUSTOM:AihkiteGem"
+              "value": "CUSTOM:AihKiteGem2"
             },
             "weight": 1,
-            "minCount": 1,
-            "maxCount": 1,
+            "minCount": 2,
+            "maxCount": 2,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,
@@ -42,7 +42,7 @@
         ]
       }
     ],
-    "name": "aihkite_drop_real",
+    "name": "blocks/aihkite",
     "namespace": "mod"
   }
 }

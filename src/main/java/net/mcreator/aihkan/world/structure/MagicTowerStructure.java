@@ -2,10 +2,10 @@
 package net.mcreator.aihkan.world.structure;
 
 @AihkanModElements.ModElement.Tag
-public class OvergrownCourtyardStructure extends AihkanModElements.ModElement {
+public class MagicTowerStructure extends AihkanModElements.ModElement {
 
-	public OvergrownCourtyardStructure(AihkanModElements instance) {
-		super(instance, 39);
+	public MagicTowerStructure(AihkanModElements instance) {
+		super(instance, 114);
 	}
 
 	@Override
@@ -25,7 +25,7 @@ public class OvergrownCourtyardStructure extends AihkanModElements.ModElement {
 				if (!dimensionCriteria)
 					return false;
 
-				if ((random.nextInt(1000000) + 1) <= 1000) {
+				if ((random.nextInt(1000000) + 1) <= 50000) {
 					int count = random.nextInt(1) + 1;
 					for (int a = 0; a < count; a++) {
 						int i = ci + random.nextInt(16);
@@ -44,7 +44,7 @@ public class OvergrownCourtyardStructure extends AihkanModElements.ModElement {
 						int z = spawnTo.getZ();
 
 						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-								.getTemplateDefaulted(new ResourceLocation("aihkan", "overgrown_courtyard"));
+								.getTemplateDefaulted(new ResourceLocation("aihkan", "magictower"));
 
 						if (template == null)
 							return false;
@@ -60,11 +60,6 @@ public class OvergrownCourtyardStructure extends AihkanModElements.ModElement {
 		};
 
 		for (Biome biome : ForgeRegistries.BIOMES.getValues()) {
-			boolean biomeCriteria = false;
-			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("aihkan:magic_forest")))
-				biomeCriteria = true;
-			if (!biomeCriteria)
-				continue;
 
 			biome.addFeature(GenerationStage.Decoration.SURFACE_STRUCTURES, feature.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG)
 					.withPlacement(Placement.NOPE.configure(IPlacementConfig.NO_PLACEMENT_CONFIG)));
