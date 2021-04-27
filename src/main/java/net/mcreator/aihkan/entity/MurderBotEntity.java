@@ -1,16 +1,61 @@
 
 package net.mcreator.aihkan.entity;
 
-import net.minecraft.block.material.Material;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.fml.network.NetworkHooks;
+import net.minecraftforge.fml.network.FMLPlayMessages;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.client.registry.RenderingRegistry;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.client.event.ModelRegistryEvent;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
+
+import net.minecraft.world.gen.Heightmap;
+import net.minecraft.world.biome.Biome;
+import net.minecraft.world.World;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.DamageSource;
+import net.minecraft.network.IPacket;
+import net.minecraft.item.SpawnEggItem;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.Item;
+import net.minecraft.entity.projectile.ArrowEntity;
+import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.monster.MonsterEntity;
+import net.minecraft.entity.ai.goal.RandomWalkingGoal;
+import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
+import net.minecraft.entity.ai.goal.MeleeAttackGoal;
+import net.minecraft.entity.ai.goal.LookRandomlyGoal;
+import net.minecraft.entity.ai.goal.LeapAtTargetGoal;
+import net.minecraft.entity.SharedMonsterAttributes;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.EntitySpawnPlacementRegistry;
+import net.minecraft.entity.EntityClassification;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.CreatureEntity;
+import net.minecraft.entity.CreatureAttribute;
+import net.minecraft.client.renderer.texture.OverlayTexture;
+import net.minecraft.client.renderer.model.ModelRenderer;
+import net.minecraft.client.renderer.entity.model.EntityModel;
+import net.minecraft.client.renderer.entity.layers.LayerRenderer;
+import net.minecraft.client.renderer.entity.MobRenderer;
+import net.minecraft.client.renderer.entity.IEntityRenderer;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.IRenderTypeBuffer;
+
+import net.mcreator.aihkan.AihkanModElements;
+
+import com.mojang.blaze3d.vertex.IVertexBuilder;
+import com.mojang.blaze3d.matrix.MatrixStack;
 
 @AihkanModElements.ModElement.Tag
 public class MurderBotEntity extends AihkanModElements.ModElement {
-
 	public static EntityType entity = null;
-
 	public MurderBotEntity(AihkanModElements instance) {
 		super(instance, 41);
-
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -19,24 +64,18 @@ public class MurderBotEntity extends AihkanModElements.ModElement {
 		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER).setShouldReceiveVelocityUpdates(true)
 				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1.8f)).build("murder_bot")
 						.setRegistryName("murder_bot");
-
 		elements.entities.add(() -> entity);
-
 		elements.items.add(() -> new SpawnEggItem(entity, -16758776, -13969937, new Item.Properties().group(ItemGroup.MISC))
 				.setRegistryName("murder_bot_spawn_egg"));
-
 	}
 
 	@Override
 	public void init(FMLCommonSetupEvent event) {
 		for (Biome biome : ForgeRegistries.BIOMES.getValues()) {
-
 			biome.getSpawns(EntityClassification.MONSTER).add(new Biome.SpawnListEntry(entity, 20, 1, 2));
 		}
-
 		EntitySpawnPlacementRegistry.register(entity, EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES,
 				MonsterEntity::canMonsterSpawn);
-
 	}
 
 	@SubscribeEvent
@@ -53,11 +92,8 @@ public class MurderBotEntity extends AihkanModElements.ModElement {
 				}
 			};
 		});
-
 	}
-
 	public static class CustomEntity extends CreatureEntity {
-
 		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
 			this(entity, world);
 		}
@@ -66,7 +102,6 @@ public class MurderBotEntity extends AihkanModElements.ModElement {
 			super(type, world);
 			experienceValue = 0;
 			setNoAI(false);
-
 		}
 
 		@Override
@@ -77,14 +112,12 @@ public class MurderBotEntity extends AihkanModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-
 			this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, PlayerEntity.class, false, false));
 			this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, ServerPlayerEntity.class, false, false));
 			this.goalSelector.addGoal(3, new MeleeAttackGoal(this, 1.2, false));
 			this.goalSelector.addGoal(4, new LookRandomlyGoal(this));
 			this.goalSelector.addGoal(5, new LeapAtTargetGoal(this, (float) 0.5));
 			this.goalSelector.addGoal(6, new RandomWalkingGoal(this, 1));
-
 		}
 
 		@Override
@@ -121,35 +154,26 @@ public class MurderBotEntity extends AihkanModElements.ModElement {
 		@Override
 		protected void registerAttributes() {
 			super.registerAttributes();
-
 			if (this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED) != null)
 				this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.3);
-
 			if (this.getAttribute(SharedMonsterAttributes.MAX_HEALTH) != null)
 				this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(10);
-
 			if (this.getAttribute(SharedMonsterAttributes.ARMOR) != null)
 				this.getAttribute(SharedMonsterAttributes.ARMOR).setBaseValue(0);
-
 			if (this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE) == null)
 				this.getAttributes().registerAttribute(SharedMonsterAttributes.ATTACK_DAMAGE);
 			this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(4);
-
 			if (this.getAttribute(SharedMonsterAttributes.KNOCKBACK_RESISTANCE) == null)
 				this.getAttributes().registerAttribute(SharedMonsterAttributes.KNOCKBACK_RESISTANCE);
 			this.getAttribute(SharedMonsterAttributes.KNOCKBACK_RESISTANCE).setBaseValue(0.5D);
-
 			if (this.getAttribute(SharedMonsterAttributes.ATTACK_KNOCKBACK) == null)
 				this.getAttributes().registerAttribute(SharedMonsterAttributes.ATTACK_KNOCKBACK);
 			this.getAttribute(SharedMonsterAttributes.ATTACK_KNOCKBACK).setBaseValue(1D);
-
 		}
-
 	}
 
 	@OnlyIn(Dist.CLIENT)
 	private static class GlowingLayer<T extends Entity, M extends EntityModel<T>> extends LayerRenderer<T, M> {
-
 		public GlowingLayer(IEntityRenderer<T, M> er) {
 			super(er);
 		}
@@ -159,20 +183,16 @@ public class MurderBotEntity extends AihkanModElements.ModElement {
 			IVertexBuilder ivertexbuilder = bufferIn.getBuffer(RenderType.getEyes(new ResourceLocation("aihkan:textures/murderbottexture.png")));
 			this.getEntityModel().render(matrixStackIn, ivertexbuilder, 15728640, OverlayTexture.NO_OVERLAY, 1, 1, 1, 1);
 		}
-
 	}
 
 	// Made with Blockbench 3.7.5
 	// Exported for Minecraft version 1.15
 	// Paste this class into your mod and generate all required imports
-
 	public static class ModelmurderBot extends EntityModel<Entity> {
 		private final ModelRenderer bb_main;
-
 		public ModelmurderBot() {
 			textureWidth = 128;
 			textureHeight = 128;
-
 			bb_main = new ModelRenderer(this);
 			bb_main.setRotationPoint(0.25F, 14.5714F, -0.5357F);
 			bb_main.setTextureOffset(0, 0).addBox(-4.25F, -6.5714F, -3.4643F, 8.0F, 8.0F, 8.0F, 0.0F, false);
@@ -197,8 +217,6 @@ public class MurderBotEntity extends AihkanModElements.ModElement {
 		}
 
 		public void setRotationAngles(Entity e, float f, float f1, float f2, float f3, float f4) {
-
 		}
 	}
-
 }

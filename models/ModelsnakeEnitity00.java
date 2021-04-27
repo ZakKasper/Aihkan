@@ -1,4 +1,4 @@
-// Made with Blockbench 3.8.3
+// Made with Blockbench 3.8.4
 // Exported for Minecraft version 1.15 - 1.16
 // Paste this class into your mod and generate all required imports
 
@@ -9,28 +9,28 @@ public static class ModelsnakeEnitity00 extends EntityModel<Entity> {
 	private final ModelRenderer chest;
 
 	public ModelsnakeEnitity00() {
-		textureWidth = 32;
-		textureHeight = 32;
+		textureWidth = 64;
+		textureHeight = 64;
 
 		tail = new ModelRenderer(this);
 		tail.setRotationPoint(0.0F, 24.0F, 0.0F);
-		tail.setTextureOffset(0, 9).addBox(-2.0F, -5.0F, 3.0F, 4.0F, 5.0F, 3.0F, 0.0F, false);
-		tail.setTextureOffset(20, 1).addBox(-1.5F, -7.0F, 3.0F, 3.0F, 2.0F, 3.0F, 0.0F, false);
-		tail.setTextureOffset(4, 2).addBox(-1.0F, -9.0F, 3.5F, 2.0F, 2.0F, 2.0F, 0.0F, false);
+		tail.setTextureOffset(0, 18).addBox(-4.0F, -10.0F, 4.0F, 8.0F, 10.0F, 6.0F, 0.0F, false);
+		tail.setTextureOffset(40, 2).addBox(-3.0F, -14.0F, 4.0F, 6.0F, 4.0F, 6.0F, 0.0F, false);
+		tail.setTextureOffset(8, 4).addBox(-2.0F, -18.0F, 5.5F, 4.0F, 4.0F, 4.0F, 0.0F, false);
 
 		neck = new ModelRenderer(this);
 		neck.setRotationPoint(0.0F, 24.0F, 0.0F);
-		neck.setTextureOffset(18, 14).addBox(-2.0F, -11.0F, -4.0F, 4.0F, 11.0F, 3.0F, 0.0F, false);
+		neck.setTextureOffset(36, 28).addBox(-4.0F, -22.0F, -10.0F, 8.0F, 22.0F, 6.0F, 0.0F, false);
 
 		head = new ModelRenderer(this);
-		head.setRotationPoint(0.0F, 24.0F, 0.0F);
-		head.setTextureOffset(0, 22).addBox(-2.0F, -15.0F, -7.0F, 4.0F, 4.0F, 6.0F, 0.0F, false);
-		head.setTextureOffset(0, 17).addBox(-2.0F, -13.0F, -10.0F, 4.0F, 2.0F, 3.0F, 0.0F, false);
-		head.setTextureOffset(0, 0).addBox(-0.5F, -11.0F, -12.0F, 1.0F, 0.0F, 2.0F, 0.0F, false);
+		head.setRotationPoint(0.0F, 13.0F, -3.0F);
+		head.setTextureOffset(0, 44).addBox(-4.0F, -19.0F, -13.0F, 8.0F, 8.0F, 12.0F, 0.0F, false);
+		head.setTextureOffset(0, 34).addBox(-4.0F, -15.0F, -19.0F, 8.0F, 4.0F, 6.0F, 0.0F, false);
+		head.setTextureOffset(0, 0).addBox(-1.0F, -11.0F, -23.0F, 2.0F, 0.0F, 4.0F, 0.0F, false);
 
 		chest = new ModelRenderer(this);
 		chest.setRotationPoint(0.0F, 24.0F, 0.0F);
-		chest.setTextureOffset(16, 7).addBox(-2.0F, -3.0F, -1.0F, 4.0F, 3.0F, 4.0F, 0.0F, false);
+		chest.setTextureOffset(32, 14).addBox(-4.0F, -6.0F, -4.0F, 8.0F, 6.0F, 8.0F, 0.0F, false);
 	}
 
 	@Override

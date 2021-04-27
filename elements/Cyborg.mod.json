@@ -4,7 +4,7 @@
   "definition": {
     "mobName": "Cyborg",
     "mobLabel": "",
-    "mobModelName": "Modelcustom_model",
+    "mobModelName": "ModelcyborgModel",
     "mobModelTexture": "cyborgtexture.png",
     "mobModelGlowTexture": "cyborgtexture.png",
     "modelWidth": 0.6,
