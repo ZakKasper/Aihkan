@@ -29,11 +29,11 @@ public class MagicSwordItem extends AihkanModElements.ModElement {
 			}
 
 			public float getEfficiency() {
-				return 5f;
+				return 3f;
 			}
 
 			public float getAttackDamage() {
-				return 4.5f;
+				return 1f;
 			}
 
 			public int getHarvestLevel() {
