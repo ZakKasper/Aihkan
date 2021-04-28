@@ -37,7 +37,7 @@
     "customDrop": {
       "value": "CUSTOM:DropTihttrium"
     },
-    "dropAmount": 1,
+    "dropAmount": 2,
     "useLootTableForDrops": false,
     "isBeaconBase": false,
     "enchantPowerBonus": 0.0,

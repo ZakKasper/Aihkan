@@ -3,7 +3,7 @@ package net.mcreator.aihkan.world.biome;
 
 import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.common.BiomeManager;
+import net.minecraftforge.common.BiomeDictionary;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
@@ -37,8 +37,7 @@ public class MagicForestBiome extends AihkanModElements.ModElement {
 
 	@Override
 	public void init(FMLCommonSetupEvent event) {
-		BiomeManager.addSpawnBiome(biome);
-		BiomeManager.addBiome(BiomeManager.BiomeType.WARM, new BiomeManager.BiomeEntry(biome, 5));
+		BiomeDictionary.addTypes(biome, BiomeDictionary.Type.FOREST);
 	}
 	static class CustomBiome extends Biome {
 		public CustomBiome() {
