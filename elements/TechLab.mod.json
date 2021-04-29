@@ -5,7 +5,7 @@
     "structure": "tech_lab",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 10000,
+    "spawnProbability": 700,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Ground",
@@ -13,7 +13,8 @@
     "spawnXOffset": 0,
     "spawnZOffset": 0,
     "spawnWorldTypes": [
-      "CUSTOM:AihkanTestPortal"
+      "CUSTOM:AihkanTestPortal",
+      "Surface"
     ],
     "restrictionBlocks": [],
     "restrictionBiomes": [],

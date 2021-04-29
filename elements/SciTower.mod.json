@@ -5,7 +5,7 @@
     "structure": "sci_tower",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 100000,
+    "spawnProbability": 500,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Ground",
@@ -17,9 +17,6 @@
     ],
     "restrictionBlocks": [],
     "restrictionBiomes": [
-      {
-        "value": "CUSTOM:MagicForest"
-      },
       {
         "value": "CUSTOM:Wasteland"
       }

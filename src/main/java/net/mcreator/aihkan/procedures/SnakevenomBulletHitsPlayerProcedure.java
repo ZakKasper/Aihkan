@@ -32,7 +32,7 @@ public class SnakevenomBulletHitsPlayerProcedure extends AihkanModElements.ModEl
 		Entity entity = (Entity) dependencies.get("entity");
 		IWorld world = (IWorld) dependencies.get("world");
 		if (world instanceof World && !world.getWorld().isRemote && entity instanceof LivingEntity) {
-			SnakevenomItem.shoot(world.getWorld(), (LivingEntity) entity, new Random(), (float) 2, (float) 5, (int) 3);
+			SnakevenomItem.shoot(world.getWorld(), (LivingEntity) entity, new Random(), (float) 2, (float) 2, (int) 1);
 		}
 		entity.attackEntityFrom(DamageSource.IN_FIRE, (float) 1);
 	}

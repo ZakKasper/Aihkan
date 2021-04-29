@@ -39,7 +39,7 @@
     "temperature": 1.6,
     "baseHeight": 0.1,
     "heightVariation": 0.1,
-    "spawnBiome": true,
+    "spawnBiome": false,
     "biomeWeight": 5,
     "biomeType": "WARM",
     "biomeCategory": "SAVANNA",
