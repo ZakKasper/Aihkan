@@ -45,9 +45,13 @@ import net.minecraft.client.renderer.entity.IEntityRenderer;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.IRenderTypeBuffer;
 
+import net.mcreator.aihkan.procedures.SnakebossEntityDiesProcedure;
 import net.mcreator.aihkan.item.SnakevenomItem;
 import net.mcreator.aihkan.item.PureTihttriumItem;
 import net.mcreator.aihkan.AihkanModElements;
+
+import java.util.Map;
+import java.util.HashMap;
 
 import com.mojang.blaze3d.vertex.IVertexBuilder;
 import com.mojang.blaze3d.matrix.MatrixStack;
@@ -141,6 +145,24 @@ public class SnakebossEntity extends AihkanModElements.ModElement {
 		@Override
 		public net.minecraft.util.SoundEvent getDeathSound() {
 			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
+		}
+
+		@Override
+		public void onDeath(DamageSource source) {
+			super.onDeath(source);
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			Entity sourceentity = source.getTrueSource();
+			Entity entity = this;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				SnakebossEntityDiesProcedure.executeProcedure($_dependencies);
+			}
 		}
 
 		@Override

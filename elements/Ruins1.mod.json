@@ -17,32 +17,7 @@
       "CUSTOM:AihkanTestPortal"
     ],
     "restrictionBlocks": [],
-    "restrictionBiomes": [
-      {
-        "value": "mountains"
-      },
-      {
-        "value": "CUSTOM:Wasteland"
-      },
-      {
-        "value": "forest"
-      },
-      {
-        "value": "desert"
-      },
-      {
-        "value": "taiga"
-      },
-      {
-        "value": "plains"
-      },
-      {
-        "value": "savanna"
-      },
-      {
-        "value": "badlands"
-      }
-    ],
+    "restrictionBiomes": [],
     "ignoreBlocks": "STRUCTURE_BLOCK"
   }
 }

@@ -46,6 +46,8 @@ public class TechLabStructure extends AihkanModElements.ModElement {
 				boolean dimensionCriteria = false;
 				if (dimensionType == AihkanTestPortalDimension.type)
 					dimensionCriteria = true;
+				if (dimensionType == DimensionType.OVERWORLD)
+					dimensionCriteria = true;
 				if (!dimensionCriteria)
 					return false;
 				if ((random.nextInt(1000000) + 1) <= 700) {
