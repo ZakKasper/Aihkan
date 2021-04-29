@@ -14,21 +14,28 @@ import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.gen.ChunkGenerator;
 import net.minecraft.world.dimension.DimensionType;
 import net.minecraft.world.biome.Biome;
+import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
+import net.minecraft.fluid.IFluidState;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.aihkan.world.dimension.AihkanTestPortalDimension;
+import net.mcreator.aihkan.procedures.AihKiteBlockDestroyedByPlayerProcedure;
 import net.mcreator.aihkan.itemgroup.AihkanItemsItemGroup;
 import net.mcreator.aihkan.AihkanModElements;
 
 import java.util.Random;
+import java.util.Map;
+import java.util.HashMap;
 
 @AihkanModElements.ModElement.Tag
 public class AihKiteBlock extends AihkanModElements.ModElement {
@@ -49,6 +56,23 @@ public class AihKiteBlock extends AihkanModElements.ModElement {
 			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1f, 10f).lightValue(0).harvestLevel(3)
 					.harvestTool(ToolType.PICKAXE));
 			setRegistryName("aih_kite");
+		}
+
+		@Override
+		public boolean removedByPlayer(BlockState state, World world, BlockPos pos, PlayerEntity entity, boolean willHarvest, IFluidState fluid) {
+			boolean retval = super.removedByPlayer(state, world, pos, entity, willHarvest, fluid);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				AihKiteBlockDestroyedByPlayerProcedure.executeProcedure($_dependencies);
+			}
+			return retval;
 		}
 	}
 	@Override
@@ -83,7 +107,7 @@ public class AihKiteBlock extends AihkanModElements.ModElement {
 				if (blockAt.getBlock() == Blocks.LAPIS_ORE.getDefaultState().getBlock())
 					blockCriteria = true;
 				return blockCriteria;
-			}), block.getDefaultState(), 16)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(10, 0, 0, 50))));
+			}), block.getDefaultState(), 9)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(6, 0, 0, 45))));
 		}
 	}
 }

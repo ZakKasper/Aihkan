@@ -26,6 +26,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import net.mcreator.aihkan.world.dimension.AihkanTestPortalDimension;
 import net.mcreator.aihkan.itemgroup.AihkanItemsItemGroup;
 import net.mcreator.aihkan.AihkanModElements;
 
@@ -72,6 +73,8 @@ public class SihkumiteOreBlock extends AihkanModElements.ModElement {
 					boolean dimensionCriteria = false;
 					if (dimensionType == DimensionType.OVERWORLD)
 						dimensionCriteria = true;
+					if (dimensionType == AihkanTestPortalDimension.type)
+						dimensionCriteria = true;
 					if (!dimensionCriteria)
 						return false;
 					return super.place(world, generator, rand, pos, config);
@@ -80,8 +83,10 @@ public class SihkumiteOreBlock extends AihkanModElements.ModElement {
 				boolean blockCriteria = false;
 				if (blockAt.getBlock() == Blocks.STONE.getDefaultState().getBlock())
 					blockCriteria = true;
+				if (blockAt.getBlock() == Blocks.IRON_ORE.getDefaultState().getBlock())
+					blockCriteria = true;
 				return blockCriteria;
-			}), block.getDefaultState(), 6)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(4, 12, 12, 32))));
+			}), block.getDefaultState(), 6)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(10, 12, 12, 50))));
 		}
 	}
 }
