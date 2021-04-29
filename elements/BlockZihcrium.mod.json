@@ -92,14 +92,22 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [],
+    "spawnWorldTypes": [
+      "CUSTOM:AihkanTestPortal"
+    ],
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
         "value": "Blocks.STONE"
+      },
+      {
+        "value": "Blocks.REDSTONE_ORE"
+      },
+      {
+        "value": "Blocks.GOLD_ORE"
       }
     ],
-    "frequencyPerChunks": 4,
+    "frequencyPerChunks": 6,
     "frequencyOnChunk": 6,
     "minGenerateHeight": 12,
     "maxGenerateHeight": 34
