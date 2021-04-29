@@ -11,7 +11,6 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
-import net.minecraft.block.Blocks;
 
 import net.mcreator.aihkan.item.PureTihttriumItem;
 import net.mcreator.aihkan.item.DropTihttriumItem;
@@ -74,7 +73,7 @@ public class PurifierProcedureProcedure extends AihkanModElements.ModElement {
 				}
 				return _retval.get();
 			}
-		}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0))).getItem() == new ItemStack(PureTihttriumItem.block, (int) (1)).getItem())
+		}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0))).getItem() == new ItemStack(Items.WATER_BUCKET, (int) (1)).getItem())
 				&& ((new Object() {
 					public ItemStack getItemStack(BlockPos pos, int sltid) {
 						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
@@ -110,7 +109,7 @@ public class PurifierProcedureProcedure extends AihkanModElements.ModElement {
 						}
 						return _retval.get();
 					}
-				}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (2))).getItem() == new ItemStack(Items.WATER_BUCKET, (int) (1))
+				}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (2))).getItem() == new ItemStack(PureTihttriumItem.block, (int) (1))
 						.getItem())) || ((new Object() {
 							public ItemStack getItemStack(BlockPos pos, int sltid) {
 								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
@@ -122,8 +121,8 @@ public class PurifierProcedureProcedure extends AihkanModElements.ModElement {
 								}
 								return _retval.get();
 							}
-						}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (2))).getItem() == new ItemStack(Blocks.WATER, (int) (1))
-								.getItem()))))) {
+						}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (2)))
+								.getItem() == new ItemStack(PureTihttriumItem.block, (int) (1)).getItem()))))) {
 			{
 				TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 				if (_ent != null) {
